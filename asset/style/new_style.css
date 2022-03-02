@@ -1,5 +1,9 @@
 body {}
 
+.slider {
+    width: 80%;
+}
+
 h1 {
     font-size: 30px;
     display: block;
@@ -130,7 +134,7 @@ h1 {
 
 .pro-btn {
     display: block;
-    width: 120px;
+    width: 100%;
     margin: auto;
 }
 
@@ -144,6 +148,7 @@ h1 {
     height: 15px;
     width: 15px;
     margin: 0 2px;
+    border: black;
     background-color: #fff;
     border-radius: 50%;
     display: inline;
@@ -165,7 +170,7 @@ h1 {
     margin: auto;
     margin-top: 20px;
     border-radius: 30px;
-    background-color: rgb(255, 32, 32);
+    background-color: #F26A4F;
     font-size: 27px;
     color: #fff;
     cursor: pointer;
@@ -186,6 +191,7 @@ h1 {
     flex-wrap: wrap;
     width: 100%;
     margin: auto;
+    margin-top: 50px;
     background-image: url('../img/section-pic1.png');
     height: 630px;
     background-size: cover;
@@ -213,7 +219,7 @@ h1 {
     margin: auto;
     margin-top: 40px;
     border-radius: 30px;
-    background-color: rgb(255, 32, 32);
+    background-color: #F26A4F;
     font-size: 27px;
     color: #fff;
     cursor: pointer;
@@ -228,8 +234,56 @@ h1 {
 /************grid or flex*************/
 
 .grid-card {
-    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 55%;
     margin: auto;
+}
+
+.img-grid-p1 {
+    border-radius: 5px;
+}
+
+.box-grid-a2 {
+    width: 628px;
+    height: 323px;
+}
+
+.img-grid-p3 {
+    border-radius: 5px;
+}
+
+.txt-grid-parent {
+    display: block;
+}
+
+.box-grid-a1 {
+    width: 1000px;
+    height: 495px;
+}
+
+.txt-grid-parent a,
+.txt-grid-parent a:active {
+    color: #010662;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .6 linear;
+}
+
+.txt-grid-parent a:hover {
+    opacity: .6;
+}
+
+.txt,
+.viewed-all {
+    display: block;
+}
+
+.txt-grid-p2 {
+    font-size: 40px;
+    text-align: right;
+    left: 10%;
+    top: 50%;
 }
 
 
@@ -251,6 +305,9 @@ h1 {
 
 .article-image {
     position: relative;
+}
+
+.product-thumb {
     width: 570px;
     height: 400px;
 }
@@ -261,10 +318,15 @@ h1 {
     background-color: #fff;
     box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     border-radius: 30px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
     width: 500px;
-    height: 330px;
+    height: 331px;
+    top: 58%;
+    left: 6%;
+}
+
+.article-info-txt {
+    color: #7B7B7B;
+    font-size: 30px;
 }
 
 .bot-article-info {
@@ -275,13 +337,29 @@ h1 {
 
 .bot-article-info-kid {
     flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.author-data {
+    color: #7B7B7B;
+    width: 170px;
+    height: 44px;
+    display: inline;
+    margin-top: 0%;
+    font-size: 25px;
+}
+
+.bot-article-info-img {
+    width: 35px;
+    height: 35px;
+    display: inline;
 }
 
 .read-more {
-    background-color: rgb(211, 211, 211);
+    background-color: #F9F9F9;
     width: 100%;
     height: 70px;
-    color: rgb(255, 32, 32);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     text-align: center;
@@ -294,6 +372,13 @@ h1 {
     line-height: 70px;
 }
 
+.read-more-in,
+.read-more-in:active {
+    color: #F26A4F;
+    font-size: 30px;
+    text-decoration: none;
+}
+
 .button-article {
     display: block;
     width: 400px;
@@ -301,7 +386,7 @@ h1 {
     margin: auto;
     margin-top: 285px;
     border-radius: 30px;
-    background-color: rgb(255, 32, 32);
+    background-color: #F26A4F;
     font-size: 27px;
     color: #fff;
     cursor: pointer;
