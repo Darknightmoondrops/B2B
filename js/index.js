@@ -1,3 +1,38 @@
+
+
+// ======================MENU=====================
+
+var tabLinks = document.querySelectorAll(".tablinks");
+var tabContent = document.querySelectorAll(".tabcontent");
+
+
+tabLinks.forEach(function(el) {
+    el.addEventListener("click", openTabs);
+});
+
+
+function openTabs(el) {
+    var btnTarget = el.currentTarget;
+    var valuetxt = btnTarget.dataset.valuetxt;
+
+    tabContent.forEach(function(el) {
+        el.classList.remove("active");
+    });
+
+    tabLinks.forEach(function(el) {
+        el.classList.remove("active");
+    });
+
+    document.querySelector("#" + valuetxt).classList.add("active");
+
+    btnTarget.classList.add("active");
+}
+// ======================MENU=====================
+
+
+
+
+
 const container = document.querySelector('.rating');
 const items = container.querySelectorAll('rating-item');
 container.onclick = e => {
