@@ -1,7 +1,277 @@
 body {}
 
-.slider {
-    width: 80%;
+
+/* *******************menu********* */
+
+p {
+    margin-right: 20px;
+}
+
+ul {
+    direction: rtl;
+    list-style: none;
+}
+
+ul li {
+    position: relative;
+    margin-left: auto;
+}
+
+ul li i {
+    float: left;
+    transform: translate(-6px, 0);
+    margin-top: 5px;
+    margin-left: 50px;
+    right: 0;
+}
+
+ul li i:before,
+ul li i:after {
+    content: "";
+    position: absolute;
+    margin-left: 50px;
+    background-color: #515151;
+    width: 3px;
+    height: 9px;
+}
+
+ul li i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+
+ul li i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+
+ul li input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+}
+
+ul li input[type=checkbox]:checked~p {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+}
+
+ul li input[type=checkbox]:checked~i:before {
+    transform: translate(2px, 0) rotate(45deg);
+}
+
+ul li input[type=checkbox]:checked~i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+    0% {
+        opacity: 0;
+        transform-origin: top center;
+        transform: rotateX(-90deg);
+    }
+    5% {
+        opacity: 1;
+    }
+    80% {
+        transform: rotateX(8deg);
+    }
+    83% {
+        transform: rotateX(6deg);
+    }
+    92% {
+        transform: rotateX(-3deg);
+    }
+    100% {
+        transform-origin: top center;
+        transform: rotateX(0deg);
+    }
+}
+
+a:link,
+a:visited {
+    font-size: larger;
+    text-decoration: none;
+    color: #070707;
+}
+
+a:hover {
+    color: red;
+}
+
+#wrapper {}
+
+.content {
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Tabs menu */
+
+.tabs {
+    display: flex;
+    color: red;
+}
+
+
+/* Tab Links */
+
+.tablinks {
+    background-image: red;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    font-size: 24px;
+}
+
+
+/* Tab active */
+
+.tablinks.active {
+    background-color: rgb(255, 0, 0);
+    z-index: 0;
+    border-left: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+.tablinks.active p,
+.tablinks.active:hover p {
+    opacity: 1;
+    color: red;
+    background-image: linear-gradient(135deg, red 0%, red 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tablinks p {
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    color: #070707;
+    backface-visibility: hidden;
+    font-weight: 400;
+    margin-top: -70px;
+}
+
+.tablinks:hover p {
+    opacity: 1;
+}
+
+.wrapper_tabcontent {
+    background-color: white;
+    opacity: 1;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent.active {
+    transition: all 1s ease;
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 257px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/***********************************slider**************************/
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.slide {
+    width: 1920px;
+    height: 933px;
+}
+
+.slide-img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.all-dot-btn {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+}
+
+.dot-btn {
+    display: inline;
+    height: 26px;
+    width: 26px;
+    margin: 10px 3%;
+    border: 1px solid #707070;
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    transition: .7s ease;
+    cursor: pointer;
+}
+
+.dot-btn:hover,
+.slide-active {
+    background-color: #1368AA;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 h1 {
@@ -397,27 +667,29 @@ body {
 
 .all-dot {
     display: block;
-    width: 120px;
+    width: 250px;
     margin: auto;
 }
 
 .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    border: black;
+    display: inline;
+    height: 26px;
+    width: 26px;
+    margin: 0 8px;
+    border: 1px solid #707070;
     background-color: #fff;
     border-radius: 50%;
     display: inline;
     transition: .7s ease;
+    cursor: pointer;
 }
 
 .dot:hover {
-    background-color: blue;
+    background-color: #8db7d6;
 }
 
-.dot:active {
-    background-color: blue;
+.dot-active {
+    background-color: #2771aa;
 }
 
 .button {
@@ -493,8 +765,14 @@ body {
 .grid-card {
     display: flex;
     justify-content: space-evenly;
+    position: relative;
     width: 55%;
     margin: auto;
+    margin-top: 30px;
+}
+
+.img-grid {
+    position: relative;
 }
 
 .img-grid-p1 {
@@ -502,8 +780,10 @@ body {
 }
 
 .box-grid-a2 {
-    width: 628px;
-    height: 323px;
+    width: 1000px;
+    height: 495px;
+    position: relative;
+    display: flex;
 }
 
 .img-grid-p3 {
@@ -515,8 +795,10 @@ body {
 }
 
 .box-grid-a1 {
-    width: 1000px;
-    height: 495px;
+    width: 628px;
+    height: 329px;
+    position: relative;
+    display: flex;
 }
 
 .txt-grid-parent a,
@@ -531,16 +813,36 @@ body {
     opacity: .6;
 }
 
-.txt,
 .viewed-all {
+    font-size: 30px;
     display: block;
+    position: absolute;
+    top: 75%;
+    left: 13%;
+}
+
+.viewed-all-p2 {
+    font-size: 30px;
+    display: block;
+    position: absolute;
+    top: 79%;
+    right: 8%;
+}
+
+.txt-grid-p1 {
+    font-size: 40px;
+    text-align: right;
+    position: absolute;
+    right: 6%;
+    top: 37%;
 }
 
 .txt-grid-p2 {
     font-size: 40px;
     text-align: right;
-    left: 10%;
-    top: 50%;
+    position: absolute;
+    left: 9%;
+    top: 23%;
 }
 
 
