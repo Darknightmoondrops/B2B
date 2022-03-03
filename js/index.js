@@ -1,3 +1,65 @@
+//===========================slider=========================
+var slideIndex = 1;
+showSliders(slideIndex);
+
+//dot-btn => image controls
+function currentSlide(n) {
+    showSliders(slideIndex = n);
+}
+
+function showSliders(n) {
+    var i;
+    var slides = document.getElementsByClassName("carousel-item");
+    var dotsBtn = document.getElementsByClassName("dot-btn");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dotsBtn.length; i++) {
+        dotsBtn[i].classList.remove("slide-active");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dotsBtn[slideIndex - 1].classList.add("slide-active");
+}
+
+
+
+
+
+// ======================MENU=====================
+
+var tabLinks = document.querySelectorAll(".tablinks");
+var tabContent = document.querySelectorAll(".tabcontent");
+
+
+tabLinks.forEach(function(el) {
+    el.addEventListener("click", openTabs);
+});
+
+
+function openTabs(el) {
+    var btnTarget = el.currentTarget;
+    var valuetxt = btnTarget.dataset.valuetxt;
+
+    tabContent.forEach(function(el) {
+        el.classList.remove("active");
+    });
+
+    tabLinks.forEach(function(el) {
+        el.classList.remove("active");
+    });
+
+    document.querySelector("#" + valuetxt).classList.add("active");
+
+    btnTarget.classList.add("active");
+}
+// ======================MENU=====================
+
+
+
+
+
 const container = document.querySelector('.rating');
 const items = container.querySelectorAll('rating-item');
 container.onclick = e => {

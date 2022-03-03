@@ -7,55 +7,309 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--styles-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js" />
     <link rel="stylesheet" href="./asset/style/new_style.css" />
     <link rel="stylesheet" href="./asset/plugins/fontawesome/css/all.min.css">
-    <!--<link rel="stylesheet" href="./asset/plugins/aos-master/dist/aos.css">-->
-    <!--<link rel="stylesheet" href="./asset/plugins/hover-master/css/hover-min.css">-->
-    <!--<link rel="stylesheet" href="./asset/css/ionicons.css">-->
-    <!--<link rel="stylesheet" href="./asset/css/droopmenu.css">-->
-    <!--<link rel="stylesheet" href="./asset/css/highlight.css">-->
-    <!--<link rel="stylesheet" href="./asset/css/nouislider.min.css">-->
-    <!--<link rel="stylesheet" href="./asset/css/style.css">-->
-    <!--<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />-->
+
     <!--/styles-->
     <title>wellcome to C2|Home</title>
 </head>
 
 <body>
     <!--header-->
+    <!-- =========================MENU======================== -->
 
-    <!--   slider   -->
-    <section id="slider" class="">
-        <div class="container">
+    <section id="">
 
-            <div class="" data-aos="fade-zoom-in" data-aos-duration="700">
-                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+        <nav style="direction: rtl;width: 100%; height: auto; " class=" ">
+
+
+            <div class="" style="width: 100% ;height: auto ;margin: 5px; direction: rtl; margin-right: 20px; border: 1px solid #707070; display: flex;">
+                <div style="display: inline-block;margin: 50px  ;">
+                    <a href="#" aria-expanded="false">
+                        <img style="width: 35px; height: 35px;" src="./asset/icons/menu-icon" alt="">
+                        <em class="droopmenu-topanim"></em>
+                    </a>
+                </div>
+                <div style="display: inline-block;margin:auto ;">
+                    <a href="./index.html">
+                        <img style="width: 220px; height: 140px;" src="./asset/img/main-logo.png" alt="">
+                    </a>
+                </div>
+
+                <div style="
+            display: flex;
+            margin: 60px;
+            flex-direction: row-reverse;float: left;">
+
+                    <div style="width:40px; height: 40px;">
+                        <a href="#"><img style="width:31px; height: 31px;" src="./asset/icons/icon-19.png" alt=""></a>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="#"><img src="/asset/img/pic-18.jpg" class="d-block" alt="..."></a>
+                    <div style="width:45px; height: 45px;" class="dropdown">
+                        <a href="#"><img style=" width: 30px;
+                        height: 30px;
+                        " src="./asset/icons/icon-21.png" alt=""></a>
+
+                        <div class="dropdown-content">
+                            <a href="#">ورود</a>/
+                            <a href="#">ثبت نام</a>
                         </div>
-                        <div class="carousel-item">
-                            <a href="#"><img src="/asset/img/pic-19.jpg" class="d-block" alt="..."></a>
+                    </div>
+                    <div style="width:45px; height: 45px;">
+                        <a href="./cart.html">
+                            <img style="width: 30px; height: 30px;" src="./asset/icons/icon-20.png" alt="">
+                        </a>
+                    </div>
+                    <div style="width:45px; height: 45px;">
+                        <a href="./cart.html">
+                            <img style="width: 30px; height: 30px;" src="./asset/icons/icon-22.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <ul>
+        <li>
+          <input type="checkbox" checked>
+          <i></i>
+          <a href="#"><img style=" width: 60px;
+              height: 60px;
+              " src="./asset/icons/icon-3.png" alt=""></a>
+          <p  style="display: grid " >
+          <a href="#">ورود</a>
+          <a href="#">ثبت نام</a>
+          </p>
+      </li>
+  </ul> -->
+
+            <!--------------------------------------------list ----------------------->
+            <div style="direction: rtl;width: 100%; height: auto; position: relative;display: flex; ">
+
+                <div class="tabs" style="width: 15%;height: auto ;text-align: -webkit-center;;margin-right: 20px;">
+                    <li class="nav-item style " style=" width: 100% ;  display: grid   ">
+                        <button style="border: none ;background-color: white;" class=" tablinks active " data-valuetxt="first">
+                        <p data-title="محصولات">محصولات</p>
+                    </button>
+                        <button style="border: none;background-color: white;   " class=" tablinks " data-valuetxt="second">
+                        <p data-title="خدمات "> خدمات</p>
+                    </button>
+                    </li>
+                </div>
+
+                <div class="wrapper_tabcontent" style="width: 100%;">
+
+                    <div id="first" class=" tabcontent active" style=" width: 100%; height: auto ;margin-right: 10px; ;">
+                        <div class="" style="width: 25% ;height: auto;padding-right: 10px ;border-right: 1px solid #707070 ;">
+                            <a href="#" style=" border-right: 3px solid red; font-weight: bold;margin-right: 10px;padding-right: 5px;" class="">پوشاک</a>
+                            <div style="display: grid ;padding-right: 10px;" class="">
+
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">لباس مردانه</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">کفش  مردانه</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">کفش  روزمره</a>
+                                            <a href="#" class=" ">کفش رسمی</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">اکسسوری مردانه</a>
+                                        <p></p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <a href="#"><img src="/asset/img/pic-19.jpg" class="d-block" alt="..."></a>
+                        <div class="" style="width: 25% ;height: auto;">
+                            <a href="#" class="nav-link alfa" style="font-weight: bold; border-right: 3px solid red;padding-right: 5px">آشپزخانه</a>
+                            <div style="display: grid;" class="">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  صوتی تصویری</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> دکراتیو </a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">آینه</a>
+                                            <a href="#" class=" ">پرده</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">موادشوینده</a>
+                                        <p></p>
+                                    </li>
+                                </ul>
+
+
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <a href="#"><img src="/asset/img/pic-19.jpg" class="d-block" alt="..."></a>
+                        <div class="" style="width: 25% ;height: auto">
+                            <a href="#" class="nav-link alfa" style=" border-right: 3px solid red ;font-weight: bold;padding-right: 5px">الکترونیک  </a>
+                            <div style="display: grid;" class="">
+
+
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  لپتاپ</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> گوشی </a>
+                                        <p style="display: grid ">
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">دوربین</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">دوربین چاپ فوری</a>
+                                            <a href="#" class=" "> دوربین دیجیتال</a>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="" style="width: 25% ;height: auto">
+                            <a href="#" class="nav-link alfa" style=" border-right: 3px solid red;font-weight: bold;padding-right: 5px">الکترونیک  </a>
+                            <div style="display: grid;" class="">
+
+
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  لپتاپ</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> گوشی </a>
+                                        <p style="display: grid ">
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">دوربین</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">دوربین چاپ فوری</a>
+                                            <a href="#" class=" "> دوربین دیجیتال</a>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="second" class="tabcontent">
+                        <div class="" style="width: 20% ;height: auto ;padding-right: 10px ;border-right: 1px solid #707070 ;">
+                            <a href="#" class="nav-link alfa" style=" margin-right: 10px ;  border-right: 3px solid red ;font-weight: bold;padding-right: 5px">الکترونیک  </a>
+                            <div style="display: grid;padding-right:10px ;" class="">
+
+
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  لپتاپ</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> گوشی </a>
+                                        <p style="display: grid ">
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">دوربین</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">دوربین چاپ فوری</a>
+                                            <a href="#" class=" "> دوربین دیجیتال</a>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
 
+        </nav>
 
+
+        <!--------------------------------------------search----------------------->
+        <!-- 
+<div class="searchFild"  >
+<input class=" float-right "  placeholder="دنبال چی میگردی...؟" type="search"/>
+<button class=" btn" id="search_style3">
+    <svg style="width: 100%;height:30px" class="bi bi-search  icon1 text-center" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
+        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
+    </svg>
+</button>
+</div>
+ -->
+    </section>
+    <!--   slider   -->
+    <section id="slider" class="">
+        <div class="container">
+            <div class="carousel-inner">
+                <div class="carousel-item fade">
+                    <a class="slide" href="#"><img class="slide-img" src="./asset/img/pic-18.jpg" class="d-block" alt="..."></a>
+                </div>
+                <div class="carousel-item fade">
+                    <a class="slide" href="#"><img class="slide-img" src="./asset/img/pic-19.jpg" class="d-block" alt="..."></a>
+                </div>
+                <div class="carousel-item fade">
+                    <a class="slide" href="#"><img class="slide-img" src="./asset/img/pic-20.jpg" class="d-block" alt="..."></a>
+                </div>
+                <div class="carousel-item fade">
+                    <a class="slide" href="#"><img class="slide-img" src="./asset/img/pic-19.jpg" class="d-block" alt="..."></a>
+                </div>
+            </div>
+            <div class="all-dot-btn">
+                <button type="button" class="dot-btn slide-active" onclick="currentSlide(1)"></button>
+                <button type="button" class="dot-btn" onclick="currentSlide(2)"></button>
+                <button type="button" class="dot-btn" onclick="currentSlide(3)"></button>
+                <button type="button" class="dot-btn" onclick="currentSlide(4)"></button>
+            </div>
         </div>
     </section>
 
@@ -87,7 +341,7 @@
                     </div>
                     <div class="price">2.000.000 T</div>
                     <br>
-                    <br>
+
                 </div>
 
             </div>
@@ -149,10 +403,10 @@
         </div>
     </section>
     <div class="all-dot" style="text-align: center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
     </div>
 
 
@@ -226,10 +480,10 @@
         </div>
     </section>
     <div class="all-dot" style="text-align: center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
     </div>
     <!--Grid section-->
     <div class="grid-card">
@@ -239,8 +493,8 @@
                 <a class="box-grid-a1" href="#">
                     <img class="img-grid img-grid-p3" src="./asset/img/pic-4.png" alt="لوازم آشپزخانه" />
                     <div class="txt-grid-parent">
-                        <a class="txt txt-grid-p2">لوازم آشپزخانه</a>
-                        <a class="viewed-all" href="#">مشاهده همه</a>
+                        <span class="txt txt-grid-p2">لوازم آشپزخانه</span>
+                        <span class="viewed-all" href="#">مشاهده همه</span>
                     </div>
                 </a>
 
@@ -250,8 +504,8 @@
                 <a class="box-grid-a1" href="#">
                     <img class="img-grid img-grid-p3" src="./asset/img/pic-5.png" alt="موبایل و لپتاپ" />
                     <div class="txt-grid-parent">
-                        <a class="txt txt-grid-p2">تعمیرات<br />موبایل و لپتاپ</a>
-                        <a class="viewed-all" href="#">مشاهده همه</a>
+                        <span class="txt txt-grid-p2">تعمیرات<br />موبایل و لپتاپ</span>
+                        <span class="viewed-all" href="#">مشاهده همه</span>
                     </div>
                 </a>
 
@@ -261,8 +515,8 @@
                 <a class="box-grid-a1" href="#">
                     <img class="img-grid img-grid-p3" src="./asset/img/pic-6.png" alt="غذای حیوانات" />
                     <div class="txt-grid-parent">
-                        <a class="txt txt-grid-p2">غذای حیوانات</a>
-                        <a class="viewed-all" href="#">مشاهده همه</a>
+                        <span class="txt txt-grid-p2">غذای حیوانات</span>
+                        <span class="viewed-all" href="#">مشاهده همه</span>
                     </div>
                 </a>
 
@@ -274,8 +528,8 @@
                 <a class="box-grid-a2" href="#">
                     <img class="img-grid img-grid-p1" src="./asset/img/pic-8.png" alt="محصولات آرایشی" />
                     <div class="txt-grid-parent">
-                        <a class="txt txt-grid-p1">محصولات آرایشی<br />وبهداشتی</a>
-                        <a class="viewed-all" href="#">مشاهده همه</a>
+                        <span class="txt txt-grid-p1">محصولات آرایشی<br />وبهداشتی</span>
+                        <span class="viewed-all" href="#">مشاهده همه</span>
                     </div>
                 </a>
 
@@ -285,8 +539,8 @@
                 <a class="box-grid-a2" href="#">
                     <img class="img-grid img-grid-p1" src="./asset/img/pic-7.png" alt="تجهیزات و تعمیرات خودرو های لوکس" />
                     <div class="txt-grid-parent">
-                        <a class="txt txt-grid-p1">تجهیزات و تعمیرات<br />خودرو های لوکس</a>
-                        <a class="viewed-all" href="#">مشاهده همه</a>
+                        <span class="txt txt-grid-p1">تجهیزات و تعمیرات<br />خودرو های لوکس</span>
+                        <span class="viewed-all" href="#">مشاهده همه</span>
                     </div>
                 </a>
             </div>
@@ -366,13 +620,13 @@
         <div class="pre-btn">
             <img src="./asset/icons/icon-16.png" alt="arrow" />
         </div>
-        <div style="text-align: center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
     </section>
+    <div style="text-align: center">
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+    </div>
     <div class="pro-btn">
         <button class="button" type="button">مشاهده همه پیشنهادات</button>
     </div>
@@ -472,10 +726,10 @@
         </div>
     </section>
     <div style="text-align: center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
     </div>
     <div class="pro-btn">
         <button class="button" type="button">مشاهده همه تخفیفات</button>
@@ -666,7 +920,7 @@
         </div>
     </footer>
     <!--script-->
-
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
