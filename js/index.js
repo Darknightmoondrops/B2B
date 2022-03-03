@@ -28,6 +28,15 @@ function openTabs(el) {
     btnTarget.classList.add("active");
 }
 // ======================MENU=====================
+// ======================SEARCH_MENU==============
+function myFunction() {
+    document.getElementById("search-box").style.display = "block";
+  } 
+  function myFunction2() {
+    document.getElementById("search-box").style.display = "none";
+  }   
+// ======================SEARCH_MENU==============
+
 
 
 
