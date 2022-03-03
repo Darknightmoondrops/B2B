@@ -428,11 +428,11 @@ h1 {
 }
 
 .dot:hover {
-    background-color: #2771aa;
+    background-color: #8db7d6;
 }
 
-.dot:active {
-    background-color: #1368AA;
+.dot-active {
+    background-color: #2771aa;
 }
 
 .button {
@@ -523,8 +523,10 @@ h1 {
 }
 
 .box-grid-a2 {
-    width: 628px;
-    height: 323px;
+    width: 1000px;
+    height: 495px;
+    position: relative;
+    display: flex;
 }
 
 .img-grid-p3 {
@@ -533,14 +535,13 @@ h1 {
 
 .txt-grid-parent {
     display: block;
-    position: absolute;
-    top: 10%;
-    left: 20%;
 }
 
 .box-grid-a1 {
-    width: 1000px;
-    height: 495px;
+    width: 628px;
+    height: 329px;
+    position: relative;
+    display: flex;
 }
 
 .txt-grid-parent a,
@@ -555,16 +556,36 @@ h1 {
     opacity: .6;
 }
 
-.txt,
 .viewed-all {
+    font-size: 30px;
     display: block;
+    position: absolute;
+    top: 75%;
+    left: 13%;
+}
+
+.viewed-all-p2 {
+    font-size: 30px;
+    display: block;
+    position: absolute;
+    top: 79%;
+    right: 8%;
+}
+
+.txt-grid-p1 {
+    font-size: 40px;
+    text-align: right;
+    position: absolute;
+    right: 6%;
+    top: 37%;
 }
 
 .txt-grid-p2 {
     font-size: 40px;
     text-align: right;
-    left: 10%;
-    top: 50%;
+    position: absolute;
+    left: 9%;
+    top: 23%;
 }
 
 
