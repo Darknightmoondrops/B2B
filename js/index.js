@@ -1,4 +1,27 @@
+//===========================slider=========================
+var slideIndex = 1;
+showSliders(slideIndex);
 
+//dot-btn => image controls
+function currentSlide(n) {
+    showSliders(slideIndex = n);
+}
+
+function showSliders(n) {
+    var i;
+    var slides = document.getElementsByClassName("carousel-item");
+    var dotsBtn = document.getElementsByClassName("dot-btn");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dotsBtn.length; i++) {
+        dotsBtn[i].classList.remove("slide-active");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dotsBtn[slideIndex - 1].classList.add("slide-active");
+}
 
 // ======================MENU=====================
 
@@ -29,19 +52,20 @@ function openTabs(el) {
 }
 
 function menufunc() {
-    var toggeler =  document.getElementById("menu-list").style.display
-    if(toggeler== "none") document.getElementById("menu-list").style.display = "flex";
-    if(toggeler== "flex") document.getElementById("menu-list").style.display = "none";
+    var toggeler = document.getElementById("menu-list").style.display
+    if (toggeler == "none") document.getElementById("menu-list").style.display = "flex";
+    if (toggeler == "flex") document.getElementById("menu-list").style.display = "none";
 
 }
 // ======================MENU=====================
 // ======================SEARCH_MENU==============
 function myFunction() {
     document.getElementById("search-box").style.display = "block";
-  } 
-  function myFunction2() {
+}
+
+function myFunction2() {
     document.getElementById("search-box").style.display = "none";
-  }   
+}
 // ======================SEARCH_MENU==============
 
 
