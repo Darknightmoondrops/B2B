@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--styles-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./asset/style/new_style.css" />
+        <link rel="stylesheet" href="./asset/style/about_style.css" />
+
+        <link rel="stylesheet" href="./asset/plugins/fontawesome/css/all.min.css">
+    
+        <!--/styles-->
+        <title>wellcome to C2|Home</title>
+    </head>
+    
+<body>
+ <!--header-->
+ <section id="">
+    <!--  MENU -->
+            <!----------------------------------search--------------------------------->
+            <div onclick="" id="search-box" class=""> 
+                <button onclick="myFunction2()" id="search-btn-close" class="search-btn-close">x</button>
+                <div class="main-div">
+                    <input type="search" class="search-input" placeholder="جستجو" />
+                    <button class="search-btn"><img style="width:20px; height: 20px;" src="./asset/icons/icon-19.png" alt=""></button>
+                </div>
+            </div>
+    <!-- ------------------------------------------------------------------------>
+    
+            <nav style="direction: rtl;width: 100%; height: 80px; background-color: white; " class=" " >
+            <div class="" style="width: 100% ;height: 80px ;margin: 5px; direction: rtl; margin-right: 20px; display: flex; border-radius: 2px;"  >
+                <div onclick="menufunc()" style="display: inline-block;margin:25px 5% 25px 5%;">
+                    <a href="#" aria-expanded="false">
+                        <img style="width: 35px; height: 35px;" src="./asset/icons/menu-icon" alt="">
+                        <em class="droopmenu-topanim"></em>
+                    </a>
+                </div>
+                <div style="display: inline-block;margin: -25px 30% 0px 20% ;">
+                    <a href="./index.html">
+                        <img style="width: 220px; height: 140px;" src="./asset/img/main-logo.png" alt="">
+                    </a> 
+                </div>
+    
+                <div  style="
+                    display: flex;
+                    margin-top:25px  ;
+                    margin-left: 20;
+                    flex-direction: row-reverse;float: left;">
+    
+                        <div  onclick="myFunction()" style="width:40px; height: 40px; margin: 0px 8%;" >
+                            <a href="#"><img style="width:30px; height: 30px;" src="./asset/icons/icon-19.png" alt=""></a>
+                        </div>
+                        <div style="width:40px; height: 40px;margin: 0px 8%;"  class="tooltip ">
+                            <a href="#"><img style=" width: 30px;
+                                height: 30px;
+                                " src="./asset/icons/icon-21.png" alt=""></a>
+                                
+                            <div class="tooltiptext" style="margin-top: 25px;">
+                                <a class="" href="#">ورود</a>/
+                                <a class="" href="#">ثبت نام</a>
+                            </div>
+                        </div>
+                        <div style="width:40px; height: 40px;margin: 0px 8%;" >
+                            <a href="./cart.html">
+                                <img style="width: 30px; height: 30px;" src="./asset/icons/icon-20.png" alt="">
+                            </a>
+                        </div>
+                        <div style="width:40px; height: 40px;margin: 0px 8%;" >
+                            <a href="./cart.html">
+                                <img style="width: 30px; height: 30px;" src="./asset/icons/icon-22.png" alt="">
+                            </a>
+                        </div>
+                </div>
+    
+            </div>
+        <!--------------------------------------------list ----------------------->
+        <div id="menu-list" class="menu-list"  style="z-index: 10;direction: rtl;margin-top: -5px;width: 100%; height: auto; position: absolute;display: none; "  >
+        
+            <div class="tabs" style="width: 15%;height: auto ;text-align: -webkit-center;"  >
+                <li class="nav-item style "  style=" width: 100% ;  display: grid   ">
+                    <button style="border: none ;background-color: white;" class=" tablinks active " data-valuetxt="first">
+                        <p style="font-family: 'sansfont';" data-title="محصولات">محصولات</p>
+                    </button>
+                    <button  style="border: none;background-color: white;   " class=" tablinks " data-valuetxt="second">
+                        <p style="font-family: 'sansfont';"  data-title="خدمات "> خدمات</p>
+                    </button>
+                </li>
+            </div>
+
+
+        
+            <div class="wrapper_tabcontent" style="width: 100%;">
+        
+                <div id="first" class=" tabcontent active" style=" width: 100%; height: auto ;margin-right: 10px; ;">
+                    <div class="" style="width: 25% ;height: auto;padding-right: 10px ;border-right: 1px solid #b1adad ;"  >
+                            <a  href="#" style=" border-right: 3px solid red; font-weight: bold;margin-right: 10px;padding-right: 5px;" class="">پوشاک</a>
+                            <div style="display: grid ;padding-right: 10px;"  class="" > 
+
+                                <ul>
+                                    <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <a href="#">لباس مردانه</a>  
+                                    <p></p>
+                                    </li>
+            
+                                    <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <a href="#">کفش  مردانه</a>
+                                    <p  style="display: grid " >
+                                        <a href="#" class="">کفش  روزمره</a>
+                                        <a href="#" class=" ">کفش رسمی</a>
+                                    </p>
+                                    </li>
+                                    <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <a href="#">اکسسوری مردانه</a>
+                                    <p></p>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="" style="width: 25% ;height: auto;" >
+                            <a href="#" class="nav-link alfa" style="font-weight: bold; border-right: 3px solid red;padding-right: 5px">آشپزخانه</a>
+                            <div style="display: grid;"  class="" >
+                                <ul>
+                                    <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <a href="#">  صوتی تصویری</a>  
+                                    <p></p>
+                                    </li>
+            
+                                    <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <a href="#"> دکراتیو </a>
+                                    <p  style="display: grid " >
+                                        <a href="#" class="">آینه</a>
+                                        <a href="#" class=" ">پرده</a>
+                                    </p>
+                                    </li>
+                                    <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <a href="#">موادشوینده</a>
+                                    <p></p>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                    </div>
+                    <div class="" style="width: 25% ;height: auto" >
+                            <a href="#"  class="nav-link alfa" style=" border-right: 3px solid red ;font-weight: bold;padding-right: 5px">الکترونیک  </a>
+                            <div style="display: grid;"  class="" >
+
+
+                                <ul>
+                                    <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <a href="#">  لپتاپ</a>  
+                                    <p></p>
+                                    </li>
+            
+                                    <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <a href="#"> گوشی </a>
+                                    <p  style="display: grid " >
+                                       
+                                    </p>
+                                    </li>
+                                    <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <a href="#">دوربین</a>
+                                    <p style="display: grid ">
+                                        <a href="#" class="">دوربین چاپ فوری</a>
+                                        <a href="#" class=" "> دوربین دیجیتال</a>
+                                    </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                    </div>
+                    <div class="" style="width: 25% ;height: auto" >
+                            <a href="#" class="nav-link alfa"style=" border-right: 3px solid red;font-weight: bold;padding-right: 5px">الکترونیک  </a>
+                            <div style="display: grid;"  class="" >
+                         
+
+                                <ul>
+                                    <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <a href="#">  لپتاپ</a>  
+                                    <p></p>
+                                    </li>
+            
+                                    <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <a href="#"> گوشی </a>
+                                    <p  style="display: grid " >
+                                       
+                                    </p>
+                                    </li>
+                                    <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <a href="#">دوربین</a>
+                                    <p style="display: grid ">
+                                        <a href="#" class="">دوربین چاپ فوری</a>
+                                        <a href="#" class=" "> دوربین دیجیتال</a>
+                                    </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                    </div>
+                </div>       
+
+                   <div id="second" class="tabcontent">
+                    <div class="" style="width: 20% ;height: auto ;padding-right: 10px ;border-right: 1px solid #b1adad ;" >
+                            <a href="#" class="nav-link alfa" style=" margin-right: 10px ;  border-right: 3px solid red ;font-weight: bold;padding-right: 5px">الکترونیک  </a>
+                            <div style="display: grid;padding-right:10px ;"  class="" >
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  لپتاپ</a>  
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <a href="#"> گوشی </a>
+                                    <p  style="display: grid " >
+                                       
+                                    </p>
+                                    </li>
+                                    <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <a href="#">دوربین</a>
+                                    <p style="display: grid ">
+                                        <a href="#" class="">دوربین چاپ فوری</a>
+                                        <a href="#" class=" "> دوربین دیجیتال</a>
+                                    </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </nav>
+    <!--  MENU -->
+
+</section>
+<!--header-->
+<!-- content -->
+<div class="location-img">
+    <!-- <img  class="location-img"  src="./asset/img/location-about.jpeg"/> -->
+    <div id="map" style="width:100%;height:400px"></div>
+</div>
+
+<div class="content">
+
+    <div class="form-link">
+        <div class="form-right-box">
+            <ol>
+                <li class="head-div"></li>
+                <h2 class="form-title">اطلاعات تماس</h2>
+                <li class="form-item "  style="display: flex; width: 80%;">
+                        <a ><img src="./asset/icons/icon-32.png"/></a>
+                        <a style="width: auto;text-align: center;"  href="#"> تهران صادقیه</a></li>
+                    <div  style="display: flex; width: 85%;">
+                        <a ><img src="./asset/icons/icon-31.png"/></a>
+                        <a style="width: auto;text-align: center;" href="#"> info@sadeghi.com</a>
+            
+                    </div>
+                    
+                    <div  style="display: flex;">
+                        <a ><img  src="./asset/icons/icon-33.png"/></a>
+                        <a style="width: auto;text-align: center;" href="#"> ساعات کار مجموعه همه روزه از ساعت 10-18</a>
+                    
+                    </div>
+                </li>
+                <li class="form-item  " style="display: flex;">
+                    <a ><img src="./asset/icons/icon-26.png"/></a>
+                    <div style=" width: 70%;">
+                        <a style="width: auto;" href="#"> 021-23232323</a>
+                        <a style="width: auto;" href="#"> 021-23232323</a>
+                        <a style="width: auto;" href="#"> 021-23232323</a>
+                    </div>
+                </li> 
+ 
+                <li class="media" style="width: auto;">
+                    <div class="medialogo">
+                        <a href="#"><img src="./asset/icons/icon-10.png" alt=""></a>
+                    </div>
+                    <div class="medialogo">
+                        <a href="#"><img src="./asset/icons/icon-11.png" alt=""></a>
+                    </div>
+                    <div class="medialogo">
+                        <a href="#"><img src="./asset/icons/icon-12.png" alt=""></a>
+                    </div>
+                    <div class="medialogo">
+                        <a href="#"><img src="./asset/icons/icon-13.png" alt=""></a>
+                    </div>
+                    <div class="medialogo">
+                        <a href="#"><img src="./asset/icons/icon-14.png" alt=""></a>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <div class="form-left-box">
+            <ol>
+                <li class="">
+                    <li class="head-div"></li>
+                    <h4 style="margin-top:20px;" class="form-title">  تماس با ما </h4>
+                    <p style="margin-top: -8px;" class="form-title"> ما برای کمک و همراهی با شما اینجا هستیم. مشکلات خود را با ما درمیان بگذارید</p>
+                </li>
+                <li class="form-item "  style="display: flex; width: 100%;">
+                    <input type="text" class="form-input" placeholder="نام" />
+                    <input type="text" class="form-input" placeholder="نام خانوادگی" />            
+            </li>
+            <li  style="display: flex; width: 100%;">
+                <input type="text" class="form-input" placeholder="شماره تماس" />
+                <input type="text" class="form-input" placeholder="ایمیل" />
+            </li>
+            <li  style="display: flex;width: 100%;">
+                    <input type="text" class="form-input" placeholder="نام شرکت" />
+                    <input type="text" class="form-input" placeholder="موضوع یا دپارتمان" />
+                
+            </li>
+            <li class="form-item  " style="display: flex; width: 94%;">
+                <div style=" width: 100%;">
+                    <textarea class="form-input-textarea" placeholder="متن پیام" name="textarea-input" rows="5" cols="50"></textarea>
+
+                </div>
+            </li> 
+            <li>
+                <div class="pro-btn">
+                    <button class="form-btn" type="button">ارسال درخواست</button>
+                </div>
+            </li>
+            </ol>
+        </div>
+    </div>
+  
+</div>  
+
+<!-- content -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer-box">
+        <br>
+        <br>
+        <br>
+        <div class="main-logo-footer">
+            <a class="main-logo-footer-a" href="./index.html">
+                <img class="main-logo-footer-img" src="./asset/img/logo-removebg-preview.png" alt="" />
+            </a>
+        </div>
+        <div class="loremtxt">
+
+            <h3 class="lorem">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون<br> بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+            </h3>
+        </div>
+        <div class="links">
+            <div class="company-name">
+                <ol>
+                    <li class="head title"><a href="#"> همراه با نام شرکت</a></li>
+                    <li class="links-kid"><a href="#"> درباره ما</a></li>
+                    <li class="links-kid"><a href="#"> تماس با ما</a></li>
+                    <li class="links-kid"><a href="#"> قوانین و مقررات</a></li>
+                    <li class="media">
+                        <div class="medialogo">
+                            <a href="#"><img src="./asset/icons/icon-10.png" alt=""></a>
+                        </div>
+                        <div class="medialogo">
+                            <a href="#"><img src="./asset/icons/icon-11.png" alt=""></a>
+                        </div>
+                        <div class="medialogo">
+                            <a href="#"><img src="./asset/icons/icon-12.png" alt=""></a>
+                        </div>
+                        <div class="medialogo">
+                            <a href="#"><img src="./asset/icons/icon-13.png" alt=""></a>
+                        </div>
+                        <div class="medialogo">
+                            <a href="#"><img src="./asset/icons/icon-14.png" alt=""></a>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="sell-web">
+                <ol>
+                    <li class="head title"><a class="bot-title" href="#"> فروش در سایت</a></li>
+                    <li class="links-kid"><a href="#"> ثبت نام تامین کننده</a></li>
+                    <li class="links-kid"><a href="#"> ورود تامین کننده</a></li>
+                    <li class="links-kid"><a href="#"> سوالات متداول تامین کننده</a></li>
+                    <li class="links-kid"><a href="#"> آموزش فروش</a></li>
+                </ol>
+            </div>
+            <div class="buy-web">
+                <ol>
+                    <li class="head title"><a class="bot-title" href="#"> خرید از سایت</a></li>
+                    <li class="links-kid"><a href="#"> روش استفاده از خدمات</a></li>
+                    <li class="links-kid"><a href="#"> روش خرید محصولات</a></li>
+                    <li class="links-kid"><a href="#"> سوالات متداول خریدار</a></li>
+                    <li class="links-kid"><a href="#"> محصول1</a></li>
+                </ol>
+            </div>
+            <div class="last_article">
+                <ol>
+                    <li class="head title"><a class="bot-title" href="#"> آخرین مقالات</a></li>
+                    <li class="links-kid"><a href="#"> مقاله 1</a></li>
+                    <li class="links-kid"><a href="#"> مقاله 2</a></li>
+                    <li class="links-kid"><a href="#"> مقاله 3</a></li>
+                    <li class="links-kid"><a href="#"> مقاله 4</a></li>
+                </ol>
+            </div>
+        </div>
+        <div class="red-line">
+            <div class="div call"><img class="phone" src="./asset/icons/icon-8.png" alt="">
+                <p class="div-p">021-234324</p>
+            </div>
+            <div class="div loc"><img class="location" src="./asset/icons/icon-7.png" alt="">
+                <p class="div-p">تهران -خیابان - کوچه</p>
+            </div>
+            <div class="div"><img class="message" src="./asset/icons/icon-6.png" alt="">
+                <p class="div-p">test@test.com</p>
+            </div>
+
+        </div>
+        <div class="botlane">
+            <div class="application ">
+                <h3 class="application-text" id="h3">دانلود اپلیکیشن</h3>
+                <div class="app-img">
+                    <a href="#"><img class="applogo" src="./asset/img/appstore.png" alt=""></a>
+                    <a href="#"><img class="applogo" src="./asset/img/googleplay.png" alt=""></a>
+                </div>
+
+            </div>
+            <div class="validation-logo">
+                <a href="#"><img class="valid-logo" src="./asset/img/pic-15.png" alt=""></a>
+                <a href="#"><img class="valid-logo" src="./asset/img/pic-16.png" alt=""></a>
+                <a href="#"><img class="valid-logo" src="./asset/img/pic-17.png" alt=""></a>
+            </div>
+        </div>
+        <div class="botlane-txt">
+            <p class="text-center">حق چاپ © 2022 . تمامی حقوق محفوظ است.</p>
+        </div>
+    </div>
+</footer>
+<!-- footer -->
+<script src="./js/index.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+</html>
