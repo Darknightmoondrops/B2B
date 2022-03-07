@@ -1,3 +1,87 @@
+//=========================================== slider product 5 ===========================
+var pagenumber5 = 1;
+slidechenger5(1);
+
+
+function plusslides5(n) {
+    slidechenger5(pagenumber5 += n)
+}
+
+function currentslide5(n) {
+    slidechenger5(pagenumber5 = n);
+}
+
+function slidechenger5(n) {
+    var i;
+    var page = document.getElementsByClassName("p5-page");
+    var number = document.getElementsByClassName("dot5");
+    if (n > page.length) { pagenumber5 = 1 }
+    if (n < 1) { pagenumber5 = page.length }
+    for (i = 0; i < page.length; i++) {
+        page[i].style.display = "none";
+    }
+    for (i = 0; i < number.length; i++) {
+        number[i].classList.remove("dot-active");
+    }
+    page[pagenumber5 - 1].style.display = "block";
+    number[pagenumber5 - 1].classList.add("dot-active");
+}
+//=========================================== slider product 6 ===========================
+var pagenumber6 = 1;
+slidechenger6(1);
+
+
+function plusslides6(n) {
+    slidechenger6(pagenumber6 += n)
+}
+
+function currentslide6(n) {
+    slidechenger6(pagenumber6 = n);
+}
+
+function slidechenger6(n) {
+    var i;
+    var page = document.getElementsByClassName("p6-page");
+    var number = document.getElementsByClassName("dot6");
+    if (n > page.length) { pagenumber6 = 1 }
+    if (n < 1) { pagenumber6 = page.length }
+    for (i = 0; i < page.length; i++) {
+        page[i].style.display = "none";
+    }
+    for (i = 0; i < number.length; i++) {
+        number[i].classList.remove("dot-active");
+    }
+    page[pagenumber6 - 1].style.display = "block";
+    number[pagenumber6 - 1].classList.add("dot-active");
+}
+//=========================================== slider product 7 ===========================
+var pagenumber7 = 1;
+slidechenger7(1);
+
+
+function plusslides7(n) {
+    slidechenger7(pagenumber7 += n)
+}
+
+function currentslide7(n) {
+    slidechenger7(pagenumber7 = n);
+}
+
+function slidechenger7(n) {
+    var i;
+    var page = document.getElementsByClassName("p7-page");
+    var number = document.getElementsByClassName("dot7");
+    if (n > page.length) { pagenumber7 = 1 }
+    if (n < 1) { pagenumber7 = page.length }
+    for (i = 0; i < page.length; i++) {
+        page[i].style.display = "none";
+    }
+    for (i = 0; i < number.length; i++) {
+        number[i].classList.remove("dot-active");
+    }
+    page[pagenumber7 - 1].style.display = "block";
+    number[pagenumber7 - 1].classList.add("dot-active");
+}
 //=============================price range=======================
 const rangeInput = document.querySelectorAll(".multi-range input"),
     priceInput = document.querySelectorAll(".text-violet input"),
@@ -47,6 +131,7 @@ function changepage(n) {
     var mode1 = document.getElementsByClassName("vert-list");
     var bordshow1 = document.getElementsByClassName("show-mode-p1");
     var bordshow2 = document.getElementsByClassName("show-mode-p2");
+
     if (n == 1) {
         mode1[0].style.display = "block";
         mode2[0].style.display = "none";
@@ -83,11 +168,13 @@ function pagechenger(n) {
     var i;
     var page = document.getElementsByClassName("products-page");
     var number = document.getElementsByClassName("page");
+    if (n > page.length) { pagenumber = 1 }
+    if (n < 1) { pagenumber = page.length }
     for (i = 0; i < page.length; i++) {
         page[i].style.display = "none";
     }
     for (i = 0; i < number.length; i++) {
-        page[i].classList.remove("pageActive");
+        number[i].classList.remove("pageActive");
     }
     page[pagenumber - 1].style.display = "block";
     number[pagenumber - 1].classList.add("pageActive");

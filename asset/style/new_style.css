@@ -614,7 +614,7 @@ a:hover {
     flex-direction: row;
 }
 
-.product-container-id {
+#product-container-id {
     width: 1700px;
     max-width: 100%;
     height: auto;
@@ -739,7 +739,126 @@ a:hover {
     margin-top: 2%;
 }
 
+.p1-page {
+    display: none;
+}
+
+.p2-page {
+    display: none;
+}
+
+.p3-page {
+    display: none;
+}
+
+.p4-page {
+    display: none;
+}
+
+.p5-page {
+    display: none;
+}
+
+.p6-page {
+    display: none;
+}
+
+.p7-page {
+    display: none;
+}
+
 .dot {
+    display: inline;
+    height: 26px;
+    width: 26px;
+    margin: 0 8px;
+    border: 1px solid #707070;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline;
+    transition: .7s ease;
+    cursor: pointer;
+}
+
+.dot1 {
+    display: inline;
+    height: 26px;
+    width: 26px;
+    margin: 0 8px;
+    border: 1px solid #707070;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline;
+    transition: .7s ease;
+    cursor: pointer;
+}
+
+.dot2 {
+    display: inline;
+    height: 26px;
+    width: 26px;
+    margin: 0 8px;
+    border: 1px solid #707070;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline;
+    transition: .7s ease;
+    cursor: pointer;
+}
+
+.dot3 {
+    display: inline;
+    height: 26px;
+    width: 26px;
+    margin: 0 8px;
+    border: 1px solid #707070;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline;
+    transition: .7s ease;
+    cursor: pointer;
+}
+
+.dot4 {
+    display: inline;
+    height: 26px;
+    width: 26px;
+    margin: 0 8px;
+    border: 1px solid #707070;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline;
+    transition: .7s ease;
+    cursor: pointer;
+}
+
+.dot5 {
+    display: inline;
+    height: 26px;
+    width: 26px;
+    margin: 0 8px;
+    border: 1px solid #707070;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline;
+    transition: .7s ease;
+    cursor: pointer;
+}
+
+.dot6 {
+    display: inline;
+    height: 26px;
+    width: 26px;
+    margin: 0 8px;
+    border: 1px solid #707070;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline;
+    transition: .7s ease;
+    cursor: pointer;
+}
+
+.dot7 {
     display: inline;
     height: 26px;
     width: 26px;
