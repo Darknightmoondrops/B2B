@@ -569,6 +569,10 @@ input[type="range"]::-moz-range-thumb {
     display: none;
 }
 
+.products-page1 {
+    display: none;
+}
+
 .hori-list {
     display: block;
 }
@@ -597,6 +601,17 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .page {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 32px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.pages {
     width: 60px;
     height: 60px;
     border-radius: 50%;

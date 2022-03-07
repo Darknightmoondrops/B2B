@@ -1115,11 +1115,19 @@
                 </div>
 
             </div>
+            <div class="page-slider">
+                <div class="page-icon" onclick="pluspage(1)"><img class="page-icon-img" src="./asset/icons/icon-35.png" alt=""></div>
+                <div class="page-number" dir="ltr">
+                    <span class="page1 page pageActive" onclick="pageslide(1)">1</span>
+                    <span class="page2 page" onclick="pageslide(2)">2</span>
+                </div>
+                <div class="page-icon" onclick="pluspage(-1)"><img class="page-icon-img" src="./asset/icons/icon-34.png" alt=""></div>
+            </div>
         </div>
         <!----------     vetical list    ------------------------->
         <div class="vert-list">
             <!-------- page 1 -------------->
-            <div class="@">
+            <div class="products-page1">
                 <!----1---->
                 <div class="product-box-vert">
                     <div class="image-parent-vert">
@@ -1280,7 +1288,7 @@
                 </div>
             </div>
             <!----------- page 2 ------------------>
-            <div class="products-page">
+            <div class="products-page1">
                 <!----1---->
                 <div class="product-box-vert">
                     <div class="image-parent-vert">
@@ -1440,15 +1448,16 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="page-slider">
-            <div class="page-icon" onclick="pluspage(1)"><img class="page-icon-img" src="./asset/icons/icon-35.png" alt=""></div>
-            <div class="page-number" dir="ltr">
-                <span class="page1 page pageActive" onclick="pageslide(1)">1</span>
-                <span class="page2 page" onclick="pageslide(2)">2</span>
+            <div class="page-slider">
+                <div class="page-icon" onclick="pluspages(1)"><img class="page-icon-img" src="./asset/icons/icon-35.png" alt=""></div>
+                <div class="page-number" dir="ltr">
+                    <span class="page1 pages pageActive" onclick="pageslides(1)">1</span>
+                    <span class="page2 pages" onclick="pageslides(2)">2</span>
+                </div>
+                <div class="page-icon" onclick="pluspages(-1)"><img class="page-icon-img" src="./asset/icons/icon-34.png" alt=""></div>
             </div>
-            <div class="page-icon" onclick="pluspage(0)"><img class="page-icon-img" src="./asset/icons/icon-34.png" alt=""></div>
         </div>
+
     </section>
     <!------------------------------------------------------  /body  ------------------------------------------------>
     <!-------------------------------------------      product slider 1     ---------------------------------------->
