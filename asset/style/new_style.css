@@ -619,7 +619,7 @@ a:hover {
     width: 1700px;
     max-width: 100%;
     height: auto;
-    left: 50%;
+    display: flex;
 }
 
 .product-box {
@@ -747,7 +747,7 @@ a:hover {
     display: block;
     width: 250px;
     margin: auto;
-    margin-top: 2%;
+    margin-top: 6%;
 }
 
 .p1-page {
@@ -895,13 +895,14 @@ a:hover {
     width: 400px;
     height: 70px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 2%;
     border-radius: 30px;
     background-color: #F26A4F;
     font-size: 27px;
     color: #fff;
     cursor: pointer;
     transition: .6s linear;
+    font-weight: bold;
 }
 
 .button:hover {
@@ -981,6 +982,7 @@ a:hover {
     color: #fff;
     cursor: pointer;
     transition: .6s linear;
+    font-weight: bold;
 }
 
 .section-p1-service button {
@@ -1193,10 +1195,11 @@ a:hover {
     margin-top: 285px;
     border-radius: 30px;
     background-color: #F26A4F;
-    font-size: 27px;
+    font-size: 28px;
     color: #fff;
     cursor: pointer;
     transition: .6s linear;
+    font-weight: bold;
 }
 
 
@@ -1443,4 +1446,8 @@ ol {
     height: 0;
     pointer-events: none;
     user-select: none;
+}
+
+.display {
+    display: none;
 }

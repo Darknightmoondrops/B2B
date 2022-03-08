@@ -26,7 +26,6 @@ function slidechenger1(n) {
     }
     page[pagenumber1 - 1].style.display = "block";
     number[pagenumber1 - 1].classList.add("dot-active");
-    console.log(pagenumber1);
 }
 //=========================================== slider product 2 ===========================
 var pagenumber2 = 1;
