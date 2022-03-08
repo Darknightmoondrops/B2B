@@ -269,6 +269,7 @@ a:hover {
 }
 
 .slide-img {
+    position: relative;
     width: 100%;
     height: auto;
 }
@@ -631,10 +632,20 @@ a:hover {
     position: relative;
 }
 
+.image-parent-service {
+    position: relative;
+}
+
 .image {
     position: relative;
     width: 470px;
     height: 560px;
+}
+
+.image-service {
+    position: relative;
+    width: 470px;
+    height: 470px;
 }
 
 .token-img {
@@ -914,18 +925,48 @@ a:hover {
     background-repeat: no-repeat;
 }
 
+.section-p1-service {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    background-image: url('../img/pic-24.png');
+    height: 630px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .section-p1>div {
+    flex: 1;
+    padding-bottom: 10px;
+}
+
+.section-p1-service>div {
     flex: 1;
     padding-bottom: 10px;
 }
 
 .section-p1-txt {
     font-size: 50px;
-    color: rgb(230, 25, 25);
+    color: #F26A4F;
     display: block;
     text-align: center;
     line-height: 80px;
     width: 100%;
+}
+
+.section-p1-txt-service {
+    font-size: 50px;
+    color: #F26A4F;
+    display: block;
+    text-align: center;
+    line-height: 80px;
+    width: 26%;
+    margin: auto;
+    margin-left: 21%;
 }
 
 .section-p1 button {
@@ -942,7 +983,26 @@ a:hover {
     transition: .6s linear;
 }
 
+.section-p1-service button {
+    display: block;
+    width: 400px;
+    height: 75px;
+    margin: auto;
+    margin-top: 1%;
+    margin-left: 25%;
+    border-radius: 20px;
+    background-color: #F26A4F;
+    font-size: 27px;
+    color: #fff;
+    cursor: pointer;
+    transition: .6s linear;
+}
+
 .section-p1 button:hover {
+    opacity: .6;
+}
+
+.section-p1-service button:hover {
     opacity: .6;
 }
 
@@ -1307,4 +1367,80 @@ ol {
     text-align: center;
     color: #F26A4F;
     font-size: 27px;
+}
+
+
+/***************** filter service **********************/
+
+
+/****** type of company *********/
+
+.title-space-selector {
+    display: inline-block;
+    font-size: 20px;
+    color: #F26A4F;
+    width: 273px;
+}
+
+.select {
+    position: relative;
+    min-width: 420px;
+}
+
+.select svg {
+    position: absolute;
+    left: 7%;
+    top: calc(50% - 3px);
+    width: 10px;
+    height: 6px;
+    stroke-width: 2px;
+    stroke: #000000;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+}
+
+.select select {
+    -webkit-appearance: none;
+    padding: 7px 40px 7px 12px;
+    width: 100%;
+    border: 1px solid #e8eaed;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 1px 3px -2px #9098a9;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 150ms ease;
+}
+
+.select select:required:invalid {
+    color: #5a667f;
+}
+
+.select select option {
+    color: #223254;
+}
+
+.select select option[value=""][disabled] {
+    display: none;
+}
+
+.select select:focus {
+    outline: none;
+    border-color: #F26A4F;
+    box-shadow: 0 0 0 2px #F26A4F;
+}
+
+.select select:hover+svg {
+    stroke: #F26A4F;
+}
+
+.sprites {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    user-select: none;
 }
