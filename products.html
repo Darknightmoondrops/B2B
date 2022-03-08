@@ -331,7 +331,7 @@
                 </div>
             </div>
             <div class="filter-box">
-                <div class="background"></div>
+                <div class="background" onclick="filterbox(2)"></div>
                 <div class=" filter-products-box filter-products-off">
                     <div class="filter-products-titles-all">
                         <p class="filter-products-title">فیلتر محصولات</p>
@@ -384,97 +384,95 @@
                         <div class="color-selector">
                             <p class="color-selector-title">رنگ</p>
                             <div class="color-select-all">
-                                <div class="color-select"></div>
-                                <div class="all-colors">
-                                    <div class="color">
+                                <div class="color-select">
+                                    <div class="colors">
                                         <p>صورتی</p><span class="pink color-back"></span></div>
-                                    <div class="color">
+                                    <div class="colors">
                                         <p>آبی</p><span class="blue color-back"></span></div>
-                                    <div class="color">
+                                    <div class="colors">
                                         <p>زرد</p><span class="yellow color-back"></span></div>
-                                    <div class="color">
+                                    <div class="colors">
                                         <p>سبز</p><span class="green color-back"></span></div>
-                                    <div class="color">
+                                    <div class="colors">
                                         <p>بنفش</p><span class="purple color-back"></span></div>
-                                    <div class="color">
+                                    <div class="colors">
+                                        <p>قرمز</p><span class="red color-back"></span></div>
+                                </div>
+                                <div class="all-colors">
+                                    <div class="color" onclick="pink()">
+                                        <p>صورتی</p><span class="pink color-back"></span></div>
+                                    <div class="color" onclick="blue()">
+                                        <p>آبی</p><span class="blue color-back"></span></div>
+                                    <div class="color" onclick="yellow()">
+                                        <p>زرد</p><span class="yellow color-back"></span></div>
+                                    <div class="color" onclick="green()">
+                                        <p>سبز</p><span class="green color-back"></span></div>
+                                    <div class="color" onclick="purple()">
+                                        <p>بنفش</p><span class="purple color-back"></span></div>
+                                    <div class="color" onclick="red()">
                                         <p>قرمز</p><span class="red color-back"></span></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="filter-titles">
-                        <p>نوع فروشنده</p><img src="./asset/icons/icon-28.png" alt=""></div>
-                    <div class="filter-titles">
-                        <p>نوع فروشنده</p><img src="./asset/icons/icon-28.png" alt=""></div>
-                    <div class="filter-titles">
-                        <p>نوع فروشنده</p><img src="./asset/icons/icon-28.png" alt=""></div>
-                    <div class="filter-titles">
-                        <p>نوع فروشنده</p><img src="./asset/icons/icon-28.png" alt=""></div>
-                    <div class="filter-titles">
-                        <p>نوع فروشنده</p><img src="./asset/icons/icon-28.png" alt=""></div>
-                    <div class="filter-titles">
-                        <p>نوع فروشنده</p><img src="./asset/icons/icon-28.png" alt=""></div> -->
+                    <ul class="filter-titles">
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h4>نوع فروشنده</h4>
+                            <p style="display: grid ">
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="filter-titles">
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h4>نوع فروشنده</h4>
+                            <p style="display: grid ">
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="filter-titles">
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h4>نوع فروشنده</h4>
+                            <p style="display: grid ">
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="filter-titles">
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h4>نوع فروشنده</h4>
+                            <p style="display: grid ">
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="filter-titles">
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h4>نوع فروشنده</h4>
+                            <p style="display: grid ">
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="filter-titles">
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h4>نوع فروشنده</h4>
+                            <p style="display: grid ">
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="filter-btn-all">
+                        <button class="filter-btn" type="submit">اعمال فیلتر</button>
+                    </div>
 
-
-
-                        <ul  class="filter-titles">
-                            <li>
-                                <input type="checkbox" checked>
-                                <i></i>
-                                <h4 >نوع فروشنده</h4>  
-                                <p  style="display: grid " >
-                                </p>
-                            </li>
-                        </ul>
-                        <ul  class="filter-titles">
-                            <li>
-                                <input type="checkbox" checked>
-                                <i></i>
-                                <h4 >نوع فروشنده</h4>  
-                                <p  style="display: grid " >
-                                </p>
-                            </li>
-                        </ul>
-                        <ul  class="filter-titles">
-                            <li>
-                                <input type="checkbox" checked>
-                                <i></i>
-                                <h4 >نوع فروشنده</h4>  
-                                <p  style="display: grid " >
-                                </p>
-                            </li>
-                        </ul>
-                        <ul  class="filter-titles">
-                            <li>
-                                <input type="checkbox" checked>
-                                <i></i>
-                                <h4 >نوع فروشنده</h4>  
-                                <p  style="display: grid " >
-                                </p>
-                            </li>
-                        </ul>
-                        <ul  class="filter-titles">
-                            <li>
-                                <input type="checkbox" checked>
-                                <i></i>
-                                <h4 >نوع فروشنده</h4>  
-                                <p  style="display: grid " >
-                                </p>
-                            </li>
-                        </ul>
-                        <ul  class="filter-titles">
-                            <li>
-                                <input type="checkbox" checked>
-                                <i></i>
-                                <h4 >نوع فروشنده</h4>  
-                                <p  style="display: grid " >
-                                </p>
-                            </li>
-                        </ul>
-                        <div class="filter-btn-all">
-                            <button class="filter-btn" type="submit">اعمال فیلتر</button>
-                        </div>
-                        
                 </div>
 
                 <div class="filter-part4 filter">
