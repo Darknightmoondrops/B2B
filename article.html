@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./asset/style/new_style.css" />
+    <link rel="stylesheet" href="./asset/style/articles.css">
+    <link rel="stylesheet" href="./asset/plugins/fontawesome/css/all.min.css">
+
+    <!--/styles-->
+    <title>wellcome to C2|Home</title>
+</head>
+
+<body>
+    <!--header-->
+    <section id="">
+        <!--  MENU -->
+        <!----------------------------------search--------------------------------->
+        <div onclick="" id="search-box" class="">
+            <button onclick="myFunction2()" id="search-btn-close" class="search-btn-close">x</button>
+            <div class="main-div">
+                <input type="search" class="search-input" placeholder="جستجو" />
+                <button class="search-btn"><img style="width:20px; height: 20px;" src="./asset/icons/icon-19.png" alt=""></button>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------>
+
+        <nav style="direction: rtl;width: 100%; height: 80px; background-color: white; " class=" ">
+            <div class="" style="width: 100% ;height: 80px ;margin: 5px; direction: rtl; margin-right: 20px; display: flex; border-radius: 2px;">
+                <div onclick="menufunc()" style="display: inline-block;margin:25px 5% 25px 5%;">
+                    <a href="#" aria-expanded="false">
+                        <img style="width: 35px; height: 35px;" src="./asset/icons/menu-icon" alt="">
+                        <em class="droopmenu-topanim"></em>
+                    </a>
+                </div>
+                <div style="display: inline-block;margin: -25px 30% 0px 20% ;">
+                    <a href="./index.html">
+                        <img style="width: 220px; height: 140px;" src="./asset/img/main-logo.png" alt="">
+                    </a>
+                </div>
+
+                <div style="
+                        display: flex;
+                        margin-top:25px  ;
+                        margin-left: 20;
+                        flex-direction: row-reverse;float: left;">
+
+                    <div onclick="myFunction()" style="width:40px; height: 40px; margin: 0px 8%;">
+                        <a href="#"><img style="width:30px; height: 30px;" src="./asset/icons/icon-19.png" alt=""></a>
+                    </div>
+                    <div style="width:40px; height: 40px;margin: 0px 8%;" class="tooltip ">
+                        <a href="#"><img style=" width: 30px;
+                                    height: 30px;
+                                    " src="./asset/icons/icon-21.png" alt=""></a>
+
+                        <div class="tooltiptext" style="margin-top: 25px;">
+                            <a class="" href="#">ورود</a>/
+                            <a class="" href="#">ثبت نام</a>
+                        </div>
+                    </div>
+                    <div style="width:40px; height: 40px;margin: 0px 8%;">
+                        <a href="./cart.html">
+                            <img style="width: 30px; height: 30px;" src="./asset/icons/icon-20.png" alt="">
+                        </a>
+                    </div>
+                    <div style="width:40px; height: 40px;margin: 0px 8%;">
+                        <a href="./cart.html">
+                            <img style="width: 30px; height: 30px;" src="./asset/icons/icon-22.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!--------------------------------------------list ----------------------->
+            <div id="menu-list" class="menu-list" style="z-index: 10;direction: rtl;margin-top: -5px;width: 100%; height: auto; position: absolute;display: none; ">
+
+                <div class="tabs" style="width: 15%;height: auto ;text-align: -webkit-center;">
+                    <li class="nav-item style " style=" width: 100% ;  display: grid   ">
+                        <button style="border: none ;background-color: white;" class=" tablinks active " data-valuetxt="first">
+                            <p style="font-family: 'sansfont';" data-title="محصولات">محصولات</p>
+                        </button>
+                        <button style="border: none;background-color: white;   " class=" tablinks " data-valuetxt="second">
+                            <p style="font-family: 'sansfont';"  data-title="خدمات "> خدمات</p>
+                        </button>
+                    </li>
+                </div>
+
+
+
+                <div class="wrapper_tabcontent" style="width: 100%;">
+
+                    <div id="first" class=" tabcontent active" style=" width: 100%; height: auto ;margin-right: 10px; ;">
+                        <div class="" style="width: 25% ;height: auto;padding-right: 10px ;border-right: 1px solid #b1adad ;">
+                            <a href="#" style=" border-right: 3px solid red; font-weight: bold;margin-right: 10px;padding-right: 5px;" class="">پوشاک</a>
+                            <div style="display: grid ;padding-right: 10px;" class="">
+
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">لباس مردانه</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">کفش  مردانه</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">کفش  روزمره</a>
+                                            <a href="#" class=" ">کفش رسمی</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">اکسسوری مردانه</a>
+                                        <p></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="" style="width: 25% ;height: auto;">
+                            <a href="#" class="nav-link alfa" style="font-weight: bold; border-right: 3px solid red;padding-right: 5px">آشپزخانه</a>
+                            <div style="display: grid;" class="">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  صوتی تصویری</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> دکراتیو </a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">آینه</a>
+                                            <a href="#" class=" ">پرده</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">موادشوینده</a>
+                                        <p></p>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                        <div class="" style="width: 25% ;height: auto">
+                            <a href="#" class="nav-link alfa" style=" border-right: 3px solid red ;font-weight: bold;padding-right: 5px">الکترونیک  </a>
+                            <div style="display: grid;" class="">
+
+
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  لپتاپ</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> گوشی </a>
+                                        <p style="display: grid ">
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">دوربین</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">دوربین چاپ فوری</a>
+                                            <a href="#" class=" "> دوربین دیجیتال</a>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="" style="width: 25% ;height: auto">
+                            <a href="#" class="nav-link alfa" style=" border-right: 3px solid red;font-weight: bold;padding-right: 5px">الکترونیک  </a>
+                            <div style="display: grid;" class="">
+
+
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  لپتاپ</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> گوشی </a>
+                                        <p style="display: grid ">
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">دوربین</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">دوربین چاپ فوری</a>
+                                            <a href="#" class=" "> دوربین دیجیتال</a>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="second" class="tabcontent">
+                        <div class="" style="width: 20% ;height: auto ;padding-right: 10px ;border-right: 1px solid #b1adad ;">
+                            <a href="#" class="nav-link alfa" style=" margin-right: 10px ;  border-right: 3px solid red ;font-weight: bold;padding-right: 5px">الکترونیک  </a>
+                            <div style="display: grid;padding-right:10px ;" class="">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  لپتاپ</a>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> گوشی </a>
+                                        <p style="display: grid ">
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">دوربین</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">دوربین چاپ فوری</a>
+                                            <a href="#" class=" "> دوربین دیجیتال</a>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <!--  MENU -->
+
+    </section>
+    <!--header-->
+
+    <div class="header-article">
+        <img class="header-article-img" src="./asset/img/pic-37.png" alt="">
+        <div class="header-article-details">
+            <h2>روش ساده برای بزرگ‌تر کردن آشپزخانه‌ی کوچک شما</h2>
+            <p class="header-article-details-p">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+            <div class="header-text">
+                <div class="header-text-d"><img class="article-icon" src="./asset/icons/icon-36.png" alt="">
+                    <p>نادیه نجم آبادی</p>
+                </div>
+                <div class="header-text-d"><img class="article-icon" src="./asset/icons/icon-33.png" alt="">
+                    <p>1400/12/11</p>
+                </div>
+                <div class="header-text-d"><img class="article-icon" src="./asset/icons/icon-37.png" alt="">
+                    <p>5000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="all-article">
+        <div>
+            <p>آشپزخانه قلب خانه است. بنابراین داشتن آشپزخانه‌ای که در آن احساس راحتی کنید، مهم است. احتمالا زمانی که به آشپزخانه‌ی رویایی خود فکر می‌کنید، آن را بزرگ و دلباز تصور می‌کنید. اما واقعیت آن است که امروزه بسیاری از ما در آپارتمان‌های کوچک که
+                فضای زیادی ندارند، زندگی می‌کنیم و به همین دلیل آشپزخانه‌ها در مقایسه با گذشته کوچک‌تر هستند. این محدودیت باعث شده که افراد همواره به دنبال راهکاری برای بزرگ‌تر نشان دادن آشپزخانه بگردند. راه‌های زیادی وجود دارد که می‌توانید به کمک آن‌ها
+                فضای کوچک آشپزخانه را بزرگ‌تر از آنچه هست نشان دهید. ما در این مقاله از دیجی‌کالا مگ نکات ساده‌ای را گردآوری کرده‌ایم که کمک می‌کند آشپزخانه‌ی دلبازتری داشته باشید و حتی از کوچک‌ترین فضاهای آن هم بهترین استفاده را ببرید. ما را تا انتهای
+                این مطلب همراهی کنید. گر می‌خواهید آشپزخانه‌ی شما بزرگ‌تر از چیزی که هست به نظر برسد، می‌توانید از ترفندهای زیر کمک بگیرید.</p>
+        </div>
+        <div><img class="article-img-md" src="./asset/img/pic-38.png" alt=""></div>
+        <div>
+            <div>
+                <h3> برای کابینت‌ها از درب‌های شیشه‌ای استفاده کنید</h3>
+            </div>
+            <div>
+                <p>کابینت‌ها اصلی‌ترین جزء آشپزخانه هستند که می‌توانید با ایجاد تغییراتی در آن‌ها به بزرگ‌تر نشان دادن فضای داخلی آشپزخانه کمک کنید. اگر به جای درب‌های معمول از درب‌های شیشه‌ای برای کابینت‌ها استفاده کنید، نگاه‌ی شما به جای اینکه روی درب
+                    متوقف شود به داخل کابینت و انتهای آن کشیده می‌شود. از این رو، فضا عمق بیشتری پیدا می‌کند، دیوارها دورتر به نظر می‌رسند و این احساس ایجاد می‌شود که آشپزخانه‌ بزرگ‌تر است. فقط مراقب باشید داخل کابینت‌ها را خیلی شلوغ نکنید که نتیجه‌ی
+                    معکوس می‌دهد و تلاش‌تان برای بزرگ‌تر نشان دادن آشپزخانه را از بین می‌برد. در صورت تمایل، می‌توانید از این ایده برای تمام کابینت‌ها یا فقط تعدادی از آن‌ها استفاده کنید. به‌عنوان مثال، در‌ب‌های کابینت‌های پایینی را تغییر ندهید و از آن‌ها
+                    برای نگهداری تمام وسایلی که نمی‌خواهید در معرض دید باشند، استفاده کنید. سپس برای کابینت‌های دیواری درب‌ شیشه‌ای بگذارید و از آن‌ها برای نگهداری بهترین بشقاب‌ها، لیوان‌ها و وسایل تزیینی خود استفاده کنید. فضای داخلی کابینت را هم نورپردازی
+                    کنید تا شب‌ها جلوه‌ی زیباتری داشته باشد. اگر نمی‌خواهید محتویات کابینت‌ مشخص باشد، می‌توانید شیشه‌های مات را انتخاب کنید که به پنهان کردن آنچه در داخل کابینت است، کمک می‌کند. حتی شیشه‌های مات هم نور را منعکس می‌کنند و آشپزخانه را روشن‌تر
+                    و بزرگ‌تر نشان می‌دهند.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>کابینت‌ها را همرنگ دیوار انتخاب کنید</h3>
+            </div>
+            <div>
+                <p>از ایجاد تضاد رنگی شدید بین دیوارها و کابینت‌ها اجتناب کنید. از یک رنگ یا رنگ‌های نزدیک به هم برای دیوارها و کابینت‌های خود استفاده کنید. این کار با خلق یک فضای یکپارچه و بدون مرز برای چشم خطای دید ایجاد می‌کند و فضا را بزرگ‌تر نشان می‌دهد.
+                    نوع رنگی که برای دیوارها و کابینت‌ها انتخاب می‌کنید هم مهم است و می‌تواند روی تصور ذهن از ابعاد فضا تأثیر داشته باشد. رنگ‌های روشن نور بیشتری را منعکس می‌کنند و فضا را بزرگ‌تر نشان می‌دهند. کابینت‌ها و دیوارها را به رنگ سفید یا سایر
+                    رنگ‌های روشن رنگ‌آمیزی کنید و سپس برای ایجاد کنتراست چند وسیله‌ی تزیینی به رنگ‌های مختلف در آشپزخانه قرار دهید.</p>
+            </div>
+        </div>
+        <div class="article-box1">
+            <div class="article-text-md1">
+                <div>
+                    <h3>توجه‌ی چشم‌ها را به سمت بالا جلب کنید</h3>
+                </div>
+                <div>
+                    <p>یکی ترفندهای بصری برای بزرگ‌تر نشان دادن آشپزخانه هدایت چشم‌ها به سمت بالا است. الگوها و عناصر بصری‌ای را انتخاب کنید که به هدایت چشم به سمت سقف آشپزخانه کمک می‌کنند. وجود خطوط عمودی روی دیوارها ارتفاع را بلندتر و فضای داخلی آشپزخانه
+                        را بزرگ‌تر نشان می‌دهد. استفاده از کابینت‌های دیواری بلند یا قرار دادن وسایل تزیینی در بالای کابینت‌ها هم همین حس را القا می‌کند.</p>
+                </div>
+            </div>
+            <div class="article-img-md2"><img class="article-img-md2" src="./asset/img/pic-39.png" alt=""></div>
+        </div>
+        <div>
+            <p>راه‌های زیادی برای بزرگ‌تر نشان دادن آشپزخانه وجود دارد تا هم در حین آشپزی احساس راحتی کنید و هم خانه‌ی زیباتری داشته باشید. انتخاب رنگ‌های روشن، استفاده‌ی مناسب از نور طبیعی و مصنوعی، رنگ‌آمیزی یکپارچه‌ی دیوارها و کابینت‌ها و نصب درب‌های
+                شیشه‌ای روی کابینت‌ها از جمله راهکارهایی هستند که می‌توانند در این زمینه کمک‌کننده باشند.</p>
+        </div>
+        <div class="article-bott">
+            <div class="article-tags">
+                <div class="tags-title">
+                    <p>برچسب ها :</p>
+                </div>
+                <div class="tags">
+                    <a href="#">اشپزخانه </a>
+                </div>
+                <div class="tags">
+                    <a href="#">مبل</a>
+                </div>
+                <div class="tags">
+                    <a href="#">خانه</a>
+                </div>
+            </div>
+            <div class="article-likes">
+                <div class="likes">
+                    <img class="icon-bot" src="./asset/icons/icon-38.png" alt="">
+                </div>
+                <div class="likes">
+                    <p class="likes-number">100</p>
+                    <img class="icon-bot" src="./asset/icons/icon-39.png" alt="">
+                </div>
+                <div class="likes">
+                    <p class="likes-number">25</p>
+                    <img class="icon-bot" src="./asset/icons/icon-40.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>ثبت دیدگاه جدید</h3>
+            <p>شما هم درباره این کالا دیدگاه ثبت کنید</p>
+            <div class="all-name">
+                <div class="name-comm">
+                    <input type="text" placeholder="نام" name="name">
+                </div>
+                <div class="name-comm">
+                    <input type="text" placeholder="نام خانوادگی">
+                </div>
+            </div>
+            <div class="name-comm2">
+                <input type="text" placeholder="متن پیام" name="text-msg">
+            </div>
+            <button class="comments-btn" type="submit">ارسال نظر</button>
+        </div>
+        <div class="comments">
+            <!--1-->
+            <div class="comment1">
+                <div class="top-comment">
+                    <div class="profile">
+                        <div>
+                            <img class="prof-pic" src="./asset/img/pic-40.png" alt="">
+                        </div>
+                        <div class="name-prof">
+                            <p>علی علیزاده</p>
+                        </div>
+                    </div>
+                    <div class="date">
+                        <p>تیر 22</p>
+                    </div>
+                </div>
+                <div>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                </div>
+            </div>
+            <!--2-->
+            <div class="comment1">
+                <div class="top-comment">
+                    <div class="profile">
+                        <div>
+                            <img class="prof-pic" src="./asset/img/pic-40.png" alt="">
+                        </div>
+                        <div class="name-prof">
+                            <p>علی علیزاده</p>
+                        </div>
+                    </div>
+                    <div class="date">
+                        <p>تیر 22</p>
+                    </div>
+                </div>
+                <div>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------- footer ------------------------------>
+    <footer class="footer">
+        <div class="footer-box">
+            <br>
+            <br>
+            <br>
+            <div class="main-logo-footer">
+                <a class="main-logo-footer-a" href="./index.html">
+                    <img class="main-logo-footer-img" src="./asset/img/logo-removebg-preview.png" alt="" />
+                </a>
+            </div>
+            <div class="loremtxt">
+
+                <h3 class="lorem">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون<br> بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                </h3>
+            </div>
+            <div class="links">
+                <div class="company-name">
+                    <ol>
+                        <li class="head title"><a href="#"> همراه با نام شرکت</a></li>
+                        <li class="links-kid"><a href="#"> درباره ما</a></li>
+                        <li class="links-kid"><a href="#"> تماس با ما</a></li>
+                        <li class="links-kid"><a href="#"> قوانین و مقررات</a></li>
+                        <li class="media">
+                            <div class="medialogo">
+                                <a href="#"><img src="./asset/icons/icon-10.png" alt=""></a>
+                            </div>
+                            <div class="medialogo">
+                                <a href="#"><img src="./asset/icons/icon-11.png" alt=""></a>
+                            </div>
+                            <div class="medialogo">
+                                <a href="#"><img src="./asset/icons/icon-12.png" alt=""></a>
+                            </div>
+                            <div class="medialogo">
+                                <a href="#"><img src="./asset/icons/icon-13.png" alt=""></a>
+                            </div>
+                            <div class="medialogo">
+                                <a href="#"><img src="./asset/icons/icon-14.png" alt=""></a>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="sell-web">
+                    <ol>
+                        <li class="head title"><a class="bot-title" href="#"> فروش در سایت</a></li>
+                        <li class="links-kid"><a href="#"> ثبت نام تامین کننده</a></li>
+                        <li class="links-kid"><a href="#"> ورود تامین کننده</a></li>
+                        <li class="links-kid"><a href="#"> سوالات متداول تامین کننده</a></li>
+                        <li class="links-kid"><a href="#"> آموزش فروش</a></li>
+                    </ol>
+                </div>
+                <div class="buy-web">
+                    <ol>
+                        <li class="head title"><a class="bot-title" href="#"> خرید از سایت</a></li>
+                        <li class="links-kid"><a href="#"> روش استفاده از خدمات</a></li>
+                        <li class="links-kid"><a href="#"> روش خرید محصولات</a></li>
+                        <li class="links-kid"><a href="#"> سوالات متداول خریدار</a></li>
+                        <li class="links-kid"><a href="#"> محصول1</a></li>
+                    </ol>
+                </div>
+                <div class="last_article">
+                    <ol>
+                        <li class="head title"><a class="bot-title" href="#"> آخرین مقالات</a></li>
+                        <li class="links-kid"><a href="#"> مقاله 1</a></li>
+                        <li class="links-kid"><a href="#"> مقاله 2</a></li>
+                        <li class="links-kid"><a href="#"> مقاله 3</a></li>
+                        <li class="links-kid"><a href="#"> مقاله 4</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="red-line">
+                <div class="div call"><img class="phone" src="./asset/icons/icon-8.png" alt="">
+                    <p class="div-p">021-234324</p>
+                </div>
+                <div class="div loc"><img class="location" src="./asset/icons/icon-7.png" alt="">
+                    <p class="div-p">تهران -خیابان - کوچه</p>
+                </div>
+                <div class="div"><img class="message" src="./asset/icons/icon-6.png" alt="">
+                    <p class="div-p">test@test.com</p>
+                </div>
+
+            </div>
+            <div class="botlane">
+                <div class="application ">
+                    <h3 class="application-text" id="h3">دانلود اپلیکیشن</h3>
+                    <div class="app-img">
+                        <a href="#"><img class="applogo" src="./asset/img/appstore.png" alt=""></a>
+                        <a href="#"><img class="applogo" src="./asset/img/googleplay.png" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="validation-logo">
+                    <a href="#"><img class="valid-logo" src="./asset/img/pic-15.png" alt=""></a>
+                    <a href="#"><img class="valid-logo" src="./asset/img/pic-16.png" alt=""></a>
+                    <a href="#"><img class="valid-logo" src="./asset/img/pic-17.png" alt=""></a>
+                </div>
+            </div>
+            <div class="botlane-txt">
+                <p class="text-center">حق چاپ © 2022 . تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+    <!--script-->
+
+
+</body>
+
+
+</html>
