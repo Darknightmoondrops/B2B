@@ -1,11 +1,3 @@
-@font-face {
-    font-family: "sansfont";
-    src: url("../../asset/fonts/Sans\ a4fran3/Sans a4fran3.woff");
-}
-body {
-  font-family: "sansfont";
-}
-
 .all-panels {
     width: 100%;
     display: flex;
@@ -33,60 +25,39 @@ body {
     width: 60px;
     height: 60px;
     display: block;
-    margin: 25px 15px;
-}
-.order-history-icon{
-    background-image: url(../icons/icon-52.png);
-    width: 60px;
-    height: 60px;
-    display: block;
-    margin: 25px 15px;
+    margin: 15px 15px;
 }
 
-.services-received-icon {
-    background-image: url(../icons/icon-53.png);
+.product-add-icon {
+    background-image: url(../icons/icon-43.png);
     width: 60px;
     height: 60px;
     display: block;
-    margin: 25px 15px;
+    margin: 15px 15px;
 }
 
-.discount-icon {
-    background-image: url(../icons/icon-54.png);
+.product-list-icon {
+    background-image: url(../icons/icon-44.png);
     width: 60px;
     height: 60px;
     display: block;
-    margin: 25px 15px;
-    background-repeat: no-repeat;
-}
-.user-discount-btn{
-    width: 100px;
-    height: 40px;
-    color: white;
-    background-color: #F26A4F;
-    border: none;
-    border-radius: 15px 0 15px 0;
-    text-align: center;
-    justify-content: center;
-    margin-top: 15px;
-}
-.user-discount-btn p{
-    margin: 10px 15px ;
-}
-.score-icon {
-    background-image: url(../icons/icon-55.png);
-    width: 60px;
-    height: 60px;
-    display: block;
-    margin: 25px 15px;
+    margin: 15px 15px;
 }
 
-.comments-icon {
+.accounting-icon {
+    background-image: url(../icons/icon-45.png);
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 15px 15px;
+}
+
+.complaint-icon {
     background-image: url(../icons/icon-46.png);
     width: 60px;
     height: 60px;
     display: block;
-    margin: 25px 15px;
+    margin: 15px 15px;
 }
 
 .comments-icon {
@@ -94,9 +65,16 @@ body {
     width: 60px;
     height: 60px;
     display: block;
-    margin: 25px 15px;
+    margin: 15px 15px;
 }
 
+.clientele-icon {
+    background-image: url(../icons/icon-48.png);
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 15px 15px;
+}
 
 .exit-icon {
     background-image: url(../icons/icon-49.png);
@@ -142,145 +120,19 @@ body {
     height: 60px;
     margin-top: 40px;
 }
-.main-content-userpanel{
-    display: flex;
-    width: 100%;
-}
 
-.user-panel-input{
-    width: 80%;
-    font-size: 25px;
-    border-radius: 10px;
-    display: block;
-    margin: auto;
-    border: 1px solid #707070;
-    padding-right: 20px;
-    font-family: "sansfont";
-    margin-top: 4%;
-}
-.user-panel-btn{
-    width: 20%;
-    background-color: #F26A4F;
-    color: white;
-    font-family: "sansfont";
-    border-radius: 25px;
-    border: none;
-    height: 55px;
-    margin-top: 4%;
-    margin-right: 9%;
-    font-size: 24px;
-    cursor: pointer;
-}
 .panel-details {
     width: 70%;
     margin: 40px auto;
 
 }
-.user-panel-tab {
+.seller-account {
     width: 100%;
     box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     margin: auto;
 }
-.user-panel-title{
-    margin-right: 9%;
-    border-right: 5px solid #F26A4F;
-    padding-right: 10px;
-    font-size: 24px;
-}
-.order-history {
-    width: 100%;
-    box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-    margin: auto;
-}
-.user-history-box{
-    display: flex;
-    margin:20px  10% 20px 20px ;
 
-}
-.user-history-mainbox{
-    width: 100%;
-    display: grid;
-}
-.user-history-box-right{
-    display: flex;
-}
-.user-history-img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin: auto 15px;
-}
-.user-history-text{
-
-}
-.user-history-lefticon{
-    width: 50px;
-    height: 50px;
-    background-image: url(../icons/icon-51.png);
-    margin-top: 15px ;
-    margin-right: 20px;
-}
-.user-history-box-left{
-    direction: ltr;
-    float: left;
-    display: flex;
-    margin: 0 auto 0 15%;
-
-}
-.div-line{
-    width: 80%;
-    height: 2px;
-    background-color: #707070;
-    margin: auto;
-}
-.services-received{
-    width: 100%;
-    box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-    margin: auto;
-}
-.discount{
-    width: 100%;
-    box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-    margin: auto;
-
-}
-.user-discount-img{
-    width: 120px;
-    height: 120px;
-    margin-left: 20px;
-    border-radius: 10px;
-
-}
-.score{
-    width: 100%;
-    box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-    margin: auto;
-
-}
-.user-score-text{
-    margin: auto 10px;
-}
-.rate{
-    margin: auto 10px;
-
-}
-.comments{
-    width: 100%;
-    box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-    margin: auto;
-}
-.user-comments-img{
-    width: 120px;
-    height: 120px;
-    margin-left: 20px;
-    border-radius: 50%;
-}
 .add-products {
     width: 100%;
     box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
@@ -288,7 +140,7 @@ body {
     margin: auto;
 }
 
-.user-panel-tab-title {
+.seller-account-title {
     border-right: 6px solid #F26A4F;
     width: 100%;
     height: 50px;
@@ -300,6 +152,41 @@ body {
     font-size: 27px;
 }
 
+.acc-inputs {
+    width: 100%;
+    display: block;
+}
+
+.acc-inputs input {
+    width: 80%;
+    font-size: 25px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    border: 1px solid #707070;
+    margin-top: 4%;
+    height: 52px;
+}
+
+.acc-btn {
+    display: block;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.acc-btn button {
+    cursor: pointer;
+    width: 270px;
+    height: 60px;
+    display: block;
+    margin: auto;
+    margin-right: 10%;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #F26A4F;
+    font-size: 30px;
+    color: white;
+}
 
 .add-icons {
     width: 90%;
