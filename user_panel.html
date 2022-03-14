@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./asset/style/new_style.css" />
+    <link rel="stylesheet" href="./asset/style/user_panel_style.css">
+    <link rel="stylesheet" href="./asset/plugins/fontawesome/css/all.min.css">
+
+    <!--/styles-->
+    <title>wellcome to C2|Home</title>
+</head>
+
+<body>
+    <!--header-->
+    <section id="">
+        <!--  MENU -->
+        <!----------------------------------search--------------------------------->
+        <div onclick="" id="search-box" class="">
+            <button onclick="myFunction2()" id="search-btn-close" class="search-btn-close">x</button>
+            <div class="main-div">
+                <input type="search" class="search-input" placeholder="جستجو" />
+                <button class="search-btn"><img style="width:20px; height: 20px;" src="./asset/icons/icon-19.png" alt=""></button>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------>
+
+        <nav style="direction: rtl;width: 100%; height: 80px; background-color: white; " class=" ">
+            <div class="" style="width: 100% ;height: 80px ;margin: 5px; direction: rtl; margin-right: 20px; display: flex; border-radius: 2px;">
+                <div onclick="menufunc()" style="display: inline-block;margin:25px 5% 25px 5%;">
+                    <a href="#" aria-expanded="false">
+                        <img style="width: 35px; height: 35px;" src="./asset/icons/menu-icon" alt="">
+                        <em class="droopmenu-topanim"></em>
+                    </a>
+                </div>
+                <div style="display: inline-block;margin: -25px 30% 0px 20% ;">
+                    <a href="./index.html">
+                        <img style="width: 220px; height: 140px;" src="./asset/img/main-logo.png" alt="">
+                    </a>
+                </div>
+
+                <div style="
+                        display: flex;
+                        margin-top:25px  ;
+                        margin-left: 20;
+                        flex-direction: row-reverse;float: left;">
+
+                    <div onclick="myFunction()" style="width:40px; height: 40px; margin: 0px 8%;">
+                        <a href="#"><img style="width:30px; height: 30px;" src="./asset/icons/icon-19.png" alt=""></a>
+                    </div>
+                    <div style="width:40px; height: 40px;margin: 0px 8%;" class="tooltip ">
+                        <a href="#"><img style=" width: 30px;
+                                    height: 30px;
+                                    " src="./asset/icons/icon-21.png" alt=""></a>
+
+                        <div class="tooltiptext" style="margin-top: 25px;">
+                            <a class="" href="#">ورود</a>/
+                            <a class="" href="#">ثبت نام</a>
+                        </div>
+                    </div>
+                    <div style="width:40px; height: 40px;margin: 0px 8%;">
+                        <a href="./cart.html">
+                            <img style="width: 30px; height: 30px;" src="./asset/icons/icon-20.png" alt="">
+                        </a>
+                    </div>
+                    <div style="width:40px; height: 40px;margin: 0px 8%;">
+                        <a href="./cart.html">
+                            <img style="width: 30px; height: 30px;" src="./asset/icons/icon-22.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!--------------------------------------------list ----------------------->
+            <div id="menu-list" class="menu-list" style="z-index: 10;direction: rtl;margin-top: -5px;width: 100%; height: auto; position: absolute;display: none; ">
+
+                <div class="tabs" style="width: 15%;height: auto ;text-align: -webkit-center;">
+                    <li class="nav-item style " style=" width: 100% ;  display: grid   ">
+                        <button style="border: none ;background-color: white;" class=" tablinks active " data-valuetxt="first">
+                            <p style="font-family: 'sansfont';" data-title="محصولات">محصولات</p>
+                        </button>
+                        <button style="border: none;background-color: white;   " class=" tablinks " data-valuetxt="second">
+                            <p style="font-family: 'sansfont';"  data-title="خدمات "> خدمات</p>
+                        </button>
+                    </li>
+                </div>
+
+
+
+                <div class="wrapper_tabcontent" style="width: 100%;">
+
+                    <div id="first" class=" tabcontent active" style=" width: 100%; height: auto ;margin-right: 10px; ;">
+                        <div class="" style="width: 25% ;height: auto;padding-right: 10px ;border-right: 1px solid #b1adad ;">
+                            <a href="#" style=" border-right: 3px solid red; font-weight: bold;margin-right: 10px;padding-right: 5px;" class="">پوشاک</a>
+                            <div style="display: grid ;padding-right: 10px;" class="">
+
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">لباس مردانه</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">کفش  مردانه</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">کفش  روزمره</a>
+                                            <a href="#" class=" ">کفش رسمی</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">اکسسوری مردانه</a>
+                                        <p></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="" style="width: 25% ;height: auto;">
+                            <a href="#" class="nav-link alfa" style="font-weight: bold; border-right: 3px solid red;padding-right: 5px">آشپزخانه</a>
+                            <div style="display: grid;" class="">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  صوتی تصویری</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> دکراتیو </a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">آینه</a>
+                                            <a href="#" class=" ">پرده</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">موادشوینده</a>
+                                        <p></p>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                        <div class="" style="width: 25% ;height: auto">
+                            <a href="#" class="nav-link alfa" style=" border-right: 3px solid red ;font-weight: bold;padding-right: 5px">الکترونیک  </a>
+                            <div style="display: grid;" class="">
+
+
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  لپتاپ</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> گوشی </a>
+                                        <p style="display: grid ">
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">دوربین</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">دوربین چاپ فوری</a>
+                                            <a href="#" class=" "> دوربین دیجیتال</a>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="" style="width: 25% ;height: auto">
+                            <a href="#" class="nav-link alfa" style=" border-right: 3px solid red;font-weight: bold;padding-right: 5px">الکترونیک  </a>
+                            <div style="display: grid;" class="">
+
+
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  لپتاپ</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> گوشی </a>
+                                        <p style="display: grid ">
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">دوربین</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">دوربین چاپ فوری</a>
+                                            <a href="#" class=" "> دوربین دیجیتال</a>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="second" class="tabcontent">
+                        <div class="" style="width: 20% ;height: auto ;padding-right: 10px ;border-right: 1px solid #b1adad ;">
+                            <a href="#" class="nav-link alfa" style=" margin-right: 10px ;  border-right: 3px solid red ;font-weight: bold;padding-right: 5px">الکترونیک  </a>
+                            <div style="display: grid;padding-right:10px ;" class="">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  لپتاپ</a>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> گوشی </a>
+                                        <p style="display: grid ">
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">دوربین</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">دوربین چاپ فوری</a>
+                                            <a href="#" class=" "> دوربین دیجیتال</a>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <!--  MENU -->
+
+    </section>
+    <!--header-->
+
+
+    <!--script-->
+    <div class="main-content-userpanel">
+        <div class="panel">
+            <div class="panels">
+
+                <p>پنل کاربری</p>
+                <div class="panels-icon"></div>
+
+            </div>
+            <div class="panels-details2" onclick="SelectPanel2(1)" >
+                <div class="edit-prof-icon"></div>
+                <p>ویرایش حساب کاربری</p>
+            </div>
+            <div class="panels-details2" onclick="SelectPanel2(2)">
+                <div class="order-history-icon"></div>
+                <p>سابقه سفارش </p>
+            </div>
+            <div class="panels-details2" onclick="SelectPanel2(3)">
+                <div class="services-received-icon"></div>
+                <p> خدمات دریافت شده</p>
+            </div>
+            <div class="panels-details2" onclick="SelectPanel2(4)">
+                <div class="discount-icon"></div>
+                <p>تخفیفات</p>
+            </div>
+            <div class="panels-details2" onclick="SelectPanel2(5)">
+                <div class="score-icon"></div>
+                <p>امتیاز</p>
+            </div>
+            <div class="panels-details2" onclick="SelectPanel2(6)">
+                <div class="comments-icon"></div>
+                <p>نظرات</p>
+            </div>
+            <div class="panels-details2" >
+                <div class="exit-icon"></div>
+                <p>خروج</p>
+            </div>
+        </div>
+
+        <div class="panel-details">
+
+
+            <div id="edit-acount" class="user-panel-tab panel-page2">
+                <h3 class="user-panel-title">ویرایش حساب کاربری</h3>
+                <input class="user-panel-input" type="text" placeholder="نام و نام خانوادگی">
+                <input  class="user-panel-input" type="text" placeholder="شماره تماس">
+                <input  class="user-panel-input" type="text" placeholder=" شماره تماس">
+                <input  class="user-panel-input" type="text" placeholder="ایمیل">
+                <input  class="user-panel-input" type="text" placeholder="رمز عبور فعلی">
+                <input  class="user-panel-input" type="text" placeholder="رمز عبور جدید">
+                <button type="button" class="user-panel-btn">ویرایش</button>
+            </div>
+            
+            <div id="order-history" class="order-history panel-page2" >
+                <h3 class="user-panel-title">سابقه سفارش</h3>
+                <div class="user-history-mainbox">
+                    <div class="user-history-box">
+                        <div class=" user-history-box-right">
+                            <img src="./asset/img/pic-29.png" class="user-history-img">
+                            <img src="./asset/img/pic-32.png" class="user-history-img">
+                            <img src="./asset/img/pic-13.png" class="user-history-img">
+                            <h3 class="user-history-text">سفارش 1</h3>
+                        </div>
+                        <div class="  user-history-box-left">
+                            <div class="user-history-lefticon"></div>
+                            <h3 class="user-history-text" > 990,000 </h3>
+                        </div>
+                    </div>
+                    <div class="div-line"></div>
+                </div>
+
+                <div class="user-history-mainbox">
+                    <div class="user-history-box">
+                        <div class=" user-history-box-right">
+                            <img src="./asset/img/pic-29.png" class="user-history-img">
+                            <img src="./asset/img/pic-32.png" class="user-history-img">
+                            <img src="./asset/img/pic-13.png" class="user-history-img">
+                            <h3 class="user-history-text">سفارش 1</h3>
+                        </div>
+                        <div class="  user-history-box-left">
+                            <div class="user-history-lefticon"></div>
+                            <h3 class="user-history-text" > 990,000 </h3>
+                        </div>
+                    </div>
+                    <div class="div-line"></div>
+                </div>
+                <div class="user-history-mainbox">
+                    <div class="user-history-box">
+                        <div class=" user-history-box-right">
+                            <img src="./asset/img/pic-29.png" class="user-history-img">
+                            <img src="./asset/img/pic-32.png" class="user-history-img">
+                            <img src="./asset/img/pic-13.png" class="user-history-img">
+                            <h3 class="user-history-text">سفارش 1</h3>
+                        </div>
+                        <div class="  user-history-box-left">
+                            <div class="user-history-lefticon"></div>
+                            <h3 class="user-history-text" > 990,000 </h3>
+                        </div>
+                    </div>
+                    <div class="div-line"></div>
+                </div>
+                <div class="user-history-mainbox">
+                    <div class="user-history-box">
+                        <div class=" user-history-box-right">
+                            <img src="./asset/img/pic-29.png" class="user-history-img">
+                            <img src="./asset/img/pic-32.png" class="user-history-img">
+                            <img src="./asset/img/pic-13.png" class="user-history-img">
+                            <h3 class="user-history-text">سفارش 1</h3>
+                        </div>
+                        <div class="  user-history-box-left">
+                            <div class="user-history-lefticon"></div>
+                            <h3 class="user-history-text" > 990,000 </h3>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div id="services-received" class="services-received panel-page2">
+                <h3 class="user-panel-title"> خدمات دریافت شده</h3>
+                <div class="user-history-mainbox">
+                    <div class="user-history-box">
+                        <div class=" user-history-box-right">
+                            <img src="./asset/img/pic-25.png" class="user-history-img">
+
+                            <h3 class="user-history-text"> نظافت اتومبیل(روشویی و توشویی)</h3>
+                        </div>
+                        <div class="  user-history-box-left">
+                            <div class="user-history-lefticon"></div>
+                            <h3 class="user-history-text" > 990,000 </h3>
+                        </div>
+                    </div>
+                    <div class="div-line"></div>
+                </div>
+                <div class="user-history-mainbox">
+                    <div class="user-history-box">
+                        <div class=" user-history-box-right">
+                            <img src="./asset/img/pic-25.png" class="user-history-img">
+
+                            <h3 class="user-history-text"> نظافت اتومبیل(روشویی و توشویی)</h3>
+                        </div>
+                        <div class="  user-history-box-left">
+                            <div class="user-history-lefticon"></div>
+                            <h3 class="user-history-text" > 990,000 </h3>
+                        </div>
+                    </div>
+                    <div class="div-line"></div>
+                </div>
+                <div class="user-history-mainbox">
+                    <div class="user-history-box">
+                        <div class=" user-history-box-right">
+                            <img src="./asset/img/pic-25.png" class="user-history-img">
+
+                            <h3 class="user-history-text"> نظافت اتومبیل(روشویی و توشویی)</h3>
+                        </div>
+                        <div class="  user-history-box-left">
+                            <div class="user-history-lefticon"></div>
+                            <h3 class="user-history-text" > 990,000 </h3>
+                        </div>
+                    </div>
+                    <div class="div-line"></div>
+                </div>
+                <div class="user-history-mainbox">
+                    <div class="user-history-box">
+                        <div class=" user-history-box-right">
+                            <img src="./asset/img/pic-25.png" class="user-history-img">
+
+                            <h3 class="user-history-text"> نظافت اتومبیل(روشویی و توشویی)</h3>
+                        </div>
+                        <div class="  user-history-box-left">
+                            <div class="user-history-lefticon"></div>
+                            <h3 class="user-history-text" > 990,000 </h3>
+                        </div>
+                    </div>
+                    <div class="div-line"></div>
+                </div> 
+            </div>
+        
+            <div id="discount" class="discount panel-page2">
+                <h3 class="user-panel-title"> تخفیفات</h3>
+                <div class="user-history-mainbox">
+                    <div class="user-history-box">
+                        <div class=" user-history-box-right">
+                            <img src="./asset/icons/icon-54.png" class="user-discount-img"/>
+                            <div class="user-discount-text">
+                                <h3> نظافت اتومبیل(روشویی و توشویی)</h3>
+                                <h4>تا سقف 20 هزار تومن</h4>
+                            </div>
+                        </div>
+                        <div class="  user-history-box-left">
+                            <div class="user-history-lefticon"></div>
+                            <div class="user-discount-btn" ><p >20%</p> </div>
+                        </div>
+                    </div>
+                    <div class="div-line"></div>
+                </div>
+                <div class="user-history-mainbox">
+                    <div class="user-history-box">
+                        <div class=" user-history-box-right">
+                            <img src="./asset/icons/icon-54.png" class="user-discount-img"/>
+                            <div class="user-discount-text">
+                                <h3> نظافت اتومبیل(روشویی و توشویی)</h3>
+                                <h4>تا سقف 20 هزار تومن</h4>
+                            </div>
+                        </div>
+                        <div class="  user-history-box-left">
+                            <div class="user-history-lefticon"></div>
+                            <div class="user-discount-btn" ><p >20%</p> </div>
+                        </div>
+                    </div>
+                    <div class="div-line"></div>
+                </div>
+                <div class="user-history-mainbox">
+                    <div class="user-history-box">
+                        <div class=" user-history-box-right">
+                            <img src="./asset/icons/icon-54.png" class="user-discount-img"/>
+                            <div class="user-discount-text">
+                                <h3> نظافت اتومبیل(روشویی و توشویی)</h3>
+                                <h4>تا سقف 20 هزار تومن</h4>
+                            </div>
+                        </div>
+                        <div class="  user-history-box-left">
+                            <div class="user-history-lefticon"></div>
+                            <div class="user-discount-btn" ><p >20%</p> </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+
+            <div id="score" class="score  panel-page2">
+            <h3 class="user-panel-title"> امتیازات شما</h3>
+            <div class="user-history-mainbox">
+                <div class="user-history-box">
+                    <div class=" user-history-box-right">
+                        <img src="./asset/icons/icon-48.png" class="user-discount-img"/>
+                        <div class="user-score-text">
+                            <h2>چاپ فوری</h2>
+                        </div>
+                    </div>
+                    <div class="  user-history-box-left">
+                        <div class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="div-line"></div>
+            </div>
+            <div class="user-history-mainbox">
+                <div class="user-history-box">
+                    <div class=" user-history-box-right">
+                        <img src="./asset/icons/icon-49.png" class="user-discount-img"/>
+                        <div class="user-score-text">
+                            <h2>چاپ فوری</h2>
+                        </div>
+                    </div>
+                    <div class="  user-history-box-left">
+                        <div class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="div-line"></div>
+            </div>
+            <div class="user-history-mainbox">
+                <div class="user-history-box">
+                    <div class=" user-history-box-right">
+                        <img src="./asset/icons/icon-54.png" class="user-discount-img"/>
+                        <div class="user-score-text">
+                            <h2>خدمات فروش </h2>
+                        </div>
+                    </div>
+                    <div class="  user-history-box-left">
+                        <div class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <div id="comments" class="comments panel-page2">
+                <h3 class="user-panel-title">  نظرات</h3>
+                <div class="user-history-mainbox">
+                    <div class="user-history-box">
+                        <div class=" user-history-box-right">
+                            <img src="./asset/img/pic-29.png" class="user-comments-img"/>
+                            <div class="user-comments-text">
+                                <h2>بانکه چوبی </h2>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                        از صنعت چاپ، و با استفاده از طراحان گرافیک است، لورم
+                                        ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، 
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="  user-history-box-left">
+                            <div><p>22تیر </p></div>
+                            
+                        </div>
+                    </div>
+                    <div class="div-line"></div>
+                </div>
+                <div class="user-history-mainbox">
+                    <div class="user-history-box">
+                        <div class=" user-history-box-right">
+                            <img src="./asset/img/pic-29.png" class="user-comments-img"/>
+                            <div class="user-comments-text">
+                                <h2>بانکه چوبی </h2>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                        از صنعت چاپ، و با استفاده از طراحان گرافیک است، لورم
+                                        ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، 
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="  user-history-box-left">
+                            <div><p>22تیر </p></div>
+                            
+                        </div>
+                    </div>
+                    <div class="div-line"></div>
+                </div>
+                <div class="user-history-mainbox">
+                    <div class="user-history-box">
+                        <div class=" user-history-box-right">
+                            <img src="./asset/img/pic-29.png" class="user-comments-img"/>
+                            <div class="user-comments-text">
+                                <h2>بانکه چوبی </h2>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                        از صنعت چاپ، و با استفاده از طراحان گرافیک است، لورم
+                                        ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، 
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="  user-history-box-left">
+                            <div><p>22تیر </p></div>
+                            
+                        </div>
+                    </div>
+                    <div class="div-line"></div>
+                </div>
+                <div class="user-history-mainbox">
+                    <div class="user-history-box">
+                        <div class=" user-history-box-right">
+                            <img src="./asset/img/pic-29.png" class="user-comments-img"/>
+                            <div class="user-comments-text">
+                                <h2>بانکه چوبی </h2>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                        از صنعت چاپ، و با استفاده از طراحان گرافیک است، لورم
+                                        ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، 
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="  user-history-box-left">
+                            <div><p>22تیر </p></div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="order" class="user-panel-history order">
+                        <h3 class="user-panel-title">  سفارش 1</h3>
+                        <div class="user-history-mainbox">
+                            <div class="user-history-box">
+                                <div class=" user-history-box-right">
+                                    <img src="./asset/img/pic-29.png" class="user-order-img"/>
+                                    <div class="user-order-maintext">
+                                        <h2> بانکه ادویه</h2>
+                                        <div class="user-order-div">
+                                            <div class="user-order-color  "></div>
+                                            <p class="user-order-text">بزرگ</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="  user-history-box-left">
+                                    <div class="user-order-maintext">
+                                        <p>990,000</p>
+                                        <div class="user-score-leftdiv"> <p class="user-score-leftdiv-p"> 2</p></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="div-line"></div>
+                        </div>
+                        <div class="user-history-mainbox">
+                            <div class="user-history-box">
+                                <div class=" user-history-box-right">
+                                    <img src="./asset/img/pic-29.png" class="user-order-img"/>
+                                    <div class="user-order-maintext">
+                                        <h2> بانکه ادویه</h2>
+                                        <div class="user-order-div">
+                                            <div class="user-order-color  "></div>
+                                            <p class="user-order-text">بزرگ</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="  user-history-box-left">
+                                    <div class="user-order-maintext">
+                                        <p>990,000</p>
+                                        <div class="user-score-leftdiv"> <p class="user-score-leftdiv-p"> 2</p></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="div-line"></div>
+                        </div>
+                        <div class="user-history-mainbox">
+                            <div class="user-history-box">
+                                <div class=" user-history-box-right">
+                                    <img src="./asset/img/pic-29.png" class="user-order-img"/>
+                                    <div class="user-order-maintext">
+                                        <h2> بانکه ادویه</h2>
+                                        <div class="user-order-div">
+                                            <div class="user-order-color  "></div>
+                                            <p class="user-order-text">بزرگ</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="  user-history-box-left">
+                                    <div class="user-order-maintext">
+                                        <p>990,000</p>
+                                        <div class="user-score-leftdiv"> <p class="user-score-leftdiv-p"> 2</p></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div> 
+
+    </div>
+   
+
+    <script src="./js/index.js"></script>
+    <script src="./js/fixed.js"></script>
+
+</body>
+
+
+</html>
