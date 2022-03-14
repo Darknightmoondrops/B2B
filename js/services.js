@@ -1,3 +1,35 @@
+//============================================= sugg page ===============================
+function suggbox(n) {
+    var filterboxEl = document.getElementsByClassName("sugg-page");
+    var blackback = document.getElementsByClassName("sugg-background");
+    if (n == 1) {
+        filterboxEl[0].classList.remove("sugg-page-off");
+        filterboxEl[0].classList.add("sugg-page-on");
+        blackback[0].style.display = "block";
+    }
+    if (n == 2) {
+        filterboxEl[0].classList.remove("sugg-page-on");
+        filterboxEl[0].classList.add("sugg-page-off");
+        blackback[0].style.display = "none";
+    }
+}
+// =========================================== presented services =======================
+function prsbox(n) {
+    var filterboxEl = document.getElementsByClassName("prs-page");
+    var blackback = document.getElementsByClassName("prs-background");
+    if (n == 1) {
+        filterboxEl[0].classList.remove("prs-page-off");
+        filterboxEl[0].classList.add("prs-page-on");
+        blackback[0].style.display = "block";
+    }
+    if (n == 2) {
+        filterboxEl[0].classList.remove("prs-page-on");
+        filterboxEl[0].classList.add("prs-page-off");
+        blackback[0].style.display = "none";
+    }
+}
+
+
 //=========================================== slider product 5 ===========================
 var pagenumber5 = 1;
 slidechenger5(1);
@@ -57,34 +89,7 @@ function slidechenger6(n) {
     page[pagenumber6 - 1].style.display = "block";
     number[pagenumber6 - 1].classList.add("dot-active");
 }
-//=========================================== slider product 7 ===========================
-var pagenumber7 = 1;
-slidechenger7(1);
 
-
-function plusslides7(n) {
-    slidechenger7(pagenumber7 += n)
-}
-
-function currentslide7(n) {
-    slidechenger7(pagenumber7 = n);
-}
-
-function slidechenger7(n) {
-    var i;
-    var page = document.getElementsByClassName("p7-page");
-    var number = document.getElementsByClassName("dot7");
-    if (n > page.length) { pagenumber7 = 1 }
-    if (n < 1) { pagenumber7 = page.length }
-    for (i = 0; i < page.length; i++) {
-        page[i].style.display = "none";
-    }
-    for (i = 0; i < number.length; i++) {
-        number[i].classList.remove("dot-active");
-    }
-    page[pagenumber7 - 1].style.display = "block";
-    number[pagenumber7 - 1].classList.add("dot-active");
-}
 //================================================  colors ==============================================
 // ============ 1 =============
 function pink() {

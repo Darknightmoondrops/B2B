@@ -385,19 +385,17 @@ input[type="range"]::-moz-range-thumb {
     display: block;
 }
 
-
 .filter-titles {
     display: block;
 }
 
-.filter-titles h4,p {
+.filter-titles h4,
+p {
     width: 89%;
     font-family: "sansfont";
     color: #F26A4F;
     display: inline-block;
-    
 }
-
 
 .filter-titles p {
     width: 89%;
@@ -517,8 +515,8 @@ input[type="range"]::-moz-range-thumb {
 .color-selector {
     position: relative;
     display: flex;
-    justify-content: space-evenly;
-    width: 94%;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .color-selector-title {
@@ -534,12 +532,14 @@ input[type="range"]::-moz-range-thumb {
     display: inline-block;
     width: 600px;
 }
-.checkbox-inp{
+
+.checkbox-inp {
     margin-right: 5px;
     width: 25px;
     height: 25px;
     border-radius: 5px 5px;
 }
+
 .color-select {
     display: inline-block;
     position: relative;
@@ -570,6 +570,15 @@ input[type="range"]::-moz-range-thumb {
     cursor: pointer;
 }
 
+.color:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+.colors {
+    display: none;
+    cursor: pointer;
+}
+
 .color p {
     display: inline-block;
     width: 88%;
@@ -577,7 +586,18 @@ input[type="range"]::-moz-range-thumb {
     line-height: 15px;
 }
 
+.colors p {
+    display: inline-block;
+    width: 88%;
+    font-size: 25px;
+    line-height: 15px;
+}
+
 .color img {
+    display: inline-block;
+}
+
+.colors img {
     display: inline-block;
 }
 
@@ -602,7 +622,7 @@ input[type="range"]::-moz-range-thumb {
     width: 370px;
     height: 60px;
     margin: auto;
-    margin-top: 3%;
+    margin-top: 7%;
 }
 
 .page-icon {
