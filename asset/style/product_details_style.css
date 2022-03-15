@@ -10,7 +10,6 @@ body {
 
 /***********************************slider**************************/
 .back-linkss:hover .go-backs {
-    /* display: flex; */
     visibility: visible;
     z-index: 12;
     position: absolute;
@@ -22,7 +21,18 @@ body {
     position: absolute;
     box-shadow: grey 1px 1px 1px 1px;
 }
-
+.forward-linkss:hover .go-forward {
+    visibility: visible;
+    z-index: 12;
+    position: absolute;
+}
+.go-forward{
+    border-radius: 15px 15px;
+    visibility: hidden;
+    position: absolute;
+    box-shadow: grey 1px 1px 1px 1px;
+    margin-left: -150px;
+}
 .nxt-btnditails{
     cursor: pointer;
     display: flex;
