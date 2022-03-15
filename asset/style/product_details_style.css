@@ -21,6 +21,15 @@ body {
     position: absolute;
     box-shadow: grey 1px 1px 1px 1px;
 }
+.go-back-icon{
+    width: 20px;
+    background-image: url(../icons/right.jpeg);
+    height: 20px;
+    margin-top: 15px;
+    margin-left: -40px;
+    background-repeat: no-repeat;
+
+}
 .forward-linkss:hover .go-forward {
     visibility: visible;
     z-index: 12;
@@ -33,6 +42,14 @@ body {
     box-shadow: grey 1px 1px 1px 1px;
     margin-left: -150px;
 }
+.go-forward-icon{
+    background-image: url(../icons/left.jpeg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+    margin-left: -57px;
+}
 .nxt-btnditails{
     cursor: pointer;
     display: flex;
@@ -41,13 +58,40 @@ body {
     margin-left: -60px;
     z-index: 5;
 }
+.nxt-btnditails-img{
+    background-image: url(../icons/right-arrow.jpeg);
+    background-repeat: no-repeat;
+    border-radius:  25px 25px 25px 25px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 0px 0 ;
+}
 .pre-btnditails{
     cursor: pointer;
     display: flex;
     align-items: center;
     flex-direction: row;
     margin-right: -60px;
-    z-index: 5;
+    z-index: 5;}
+.pre-btnditails-img{
+    background-image: url(../icons/left-arrow.jpeg);
+    background-repeat: no-repeat;
+    border-radius:  25px 25px 25px 25px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 0px 0 ;
+}
+.pre-btn-img{
+    width: 60px;
+    height: 60px;
+    background-image: url(../icons/icon-16.png);
+    background-repeat: no-repeat;
+}
+.nxt-btn-img{
+    width: 60px;
+    height: 60px;
+    background-image: url(../icons/icon-15.png);
+    background-repeat: no-repeat;
 }
 .containerdetails {
     width: 30%;
