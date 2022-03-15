@@ -90,7 +90,6 @@
     display: flex;
     justify-content: space-between;
     background-color: #F99687;
-    color: #fff;
     font-size: 40px;
 }
 
@@ -99,6 +98,7 @@
     height: 60px;
     display: block;
     margin: auto;
+    color: #fff;
 }
 
 .panels-details {
@@ -124,8 +124,8 @@
 .panel-details {
     width: 70%;
     margin: 40px auto;
-
 }
+
 .seller-account {
     width: 100%;
     box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
@@ -644,8 +644,9 @@
     height: 250px;
     display: block;
     margin: auto;
-    background-image: url(../icons/icon-49.png);
+    background-image: url(../icons/icon-58.png);
     margin-top: 3%;
+    background-repeat: no-repeat;
 }
 
 .close-icon {
