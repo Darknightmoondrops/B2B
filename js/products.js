@@ -266,3 +266,18 @@ function changepage(n) {
         bordshow2[0].classList.add("show-mode-border");
     }
 }
+//========================================= filter ================================
+function filterbox(n) {
+    var filterboxEl = document.getElementsByClassName("filter-products-box");
+    var blackback = document.getElementsByClassName("background");
+    if (n == 1) {
+        filterboxEl[0].classList.remove("filter-products-off");
+        filterboxEl[0].classList.add("filter-products");
+        blackback[0].style.display = "block";
+    }
+    if (n == 2) {
+        filterboxEl[0].classList.remove("filter-products");
+        filterboxEl[0].classList.add("filter-products-off");
+        blackback[0].style.display = "none";
+    }
+}

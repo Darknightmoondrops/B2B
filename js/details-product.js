@@ -156,3 +156,36 @@ function myFunction2() {
     document.getElementById("search-box").style.display = "none";
 }
 // ======================SEARCH_MENU==============
+
+//============== slide =============
+var slideIndex = 1;
+showSliders(slideIndex);
+
+//dot-btn => image controls
+function currentSlide(n) {
+    showSliders(slideIndex = n);
+}
+
+function plusSlides(n) {
+    showSliders(slideIndex += n);
+}
+
+function showSliders(n) {
+    var i;
+    var slides = document.getElementsByClassName("carousel-item");
+    var dotsBtn = document.getElementsByClassName("dot-btn");
+    var def = document.getElementById("def");
+    if (n > slides.length) { slideIndex = def }
+    if (n == (def + 1)) { slideIndex = 1 }
+    if (n == (def - 1)) { slideIndex = slides.length }
+    if (n < 1) { slideIndex = def }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dotsBtn.length; i++) {
+        dotsBtn[i].classList.remove("slide-active");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dotsBtn[slideIndex - 1].classList.add("slide-active");
+
+}
