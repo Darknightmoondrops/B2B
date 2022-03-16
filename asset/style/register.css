@@ -36,6 +36,24 @@
     margin-top: 3%;
 }
 
+.all-inp-out {
+    width: 89%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.login-inp-in {
+    width: 40%;
+    height: 50px;
+    border-radius: 10px 10px;
+    padding-right: 20px;
+    display: block;
+    margin: auto;
+}
+
 .login-check-inp {
     display: flex;
     width: 86%;
@@ -163,3 +181,5 @@
     margin-top: -21%;
     z-index: 1;
 }
+
+.send-btn {}
