@@ -253,6 +253,65 @@ h1 {
 
 /* Tabs menu */
 
+/* Tab Alert */
+
+.sucsses {
+
+    background-color: #2ACB34;
+
+  }
+  
+  .error {
+    background-color: rgb(235, 26, 3);
+  }
+  #snackbar{
+    width: 20%;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 20px;
+    position: fixed;
+    z-index: 1;
+    bottom: 30px;
+    font-size: 17px;   
+  }
+/*   
+  .snackbar .sucsses {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  .snackbar .error {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  } */
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+/*  */
+
+
 .detailstabs {
     width: 800px;
     background-color: white;
@@ -350,7 +409,7 @@ h1 {
 .detailswrapper_tabcontent {
     background-color: white;
     margin: auto;
-    z-index: -3;
+    /* z-index: -3; */
     position: relative;
     opacity: 1;
     overflow: hidden;
