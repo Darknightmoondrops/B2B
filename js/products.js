@@ -86,62 +86,14 @@ function slidechenger7(n) {
     number[pagenumber7 - 1].classList.add("dot-active");
 }
 //================================================  colors ==============================================
-// ============ 1 =============
-function pink() {
+function colorSelector(n) {
     var i;
-    var color1 = document.getElementsByClassName("colors");
-    for (i = 0; i < color1.length; i++) {
-        color1[i].style.display = "none";
+    var colorBox = document.getElementsByClassName("colors");
+    for (i = 0; i < colorBox.length; i++) {
+        colorBox[i].style.display = "none";
     }
-    color1[0].style.display = "block";
+    colorBox[n - 1].style.display = "block";
 }
-// ============ 2 =============
-function blue() {
-    var i;
-    var color2 = document.getElementsByClassName("colors");
-    for (i = 0; i < color2.length; i++) {
-        color2[i].style.display = "none";
-    }
-    color2[1].style.display = "block";
-}
-// ============ 3 =============
-function yellow() {
-    var i;
-    var color3 = document.getElementsByClassName("colors");
-    for (i = 0; i < color3.length; i++) {
-        color3[i].style.display = "none";
-    }
-    color3[2].style.display = "block";
-}
-// ============ 4 =============
-function green() {
-    var i;
-    var color4 = document.getElementsByClassName("colors");
-    for (i = 0; i < color4.length; i++) {
-        color4[i].style.display = "none";
-    }
-    color4[3].style.display = "block";
-}
-// ============ 5 =============
-function purple() {
-    var i;
-    var color5 = document.getElementsByClassName("colors");
-    for (i = 0; i < color5.length; i++) {
-        color5[i].style.display = "none";
-    }
-    color5[4].style.display = "block";
-}
-// ============ 6 =============
-function red() {
-    var i;
-    var color6 = document.getElementsByClassName("colors");
-    for (i = 0; i < color6.length; i++) {
-        color6[i].style.display = "none";
-    }
-    color6[5].style.display = "block";
-}
-
-
 //======================================== change page horiz ==============================================
 
 var pagenumber = 1;
@@ -279,5 +231,22 @@ function filterbox(n) {
         filterboxEl[0].classList.remove("filter-products");
         filterboxEl[0].classList.add("filter-products-off");
         blackback[0].style.display = "none";
+    }
+}
+//================================= search brand =====================
+function searchBrand() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("p")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
     }
 }

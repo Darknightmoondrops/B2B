@@ -362,55 +362,48 @@
                             </div>
                             <div class="brand-searchbox">
                                 <form class="brand-searchbox-all" action="">
-                                    <input class="brand-searchbox-in" type="text" placeholder="جستوجو">
-                                    <button class="brand-searchbox-btn" type="submit"><img src="./asset/icons/icon-27.png" alt=""></button>
+                                    <input class="brand-searchbox-in" type="text" id="myInput" placeholder="جستوجو" onkeyup="searchBrand()">
+                                    <button class="brand-searchbox-btn"><img src="./asset/icons/icon-27.png" alt=""></button>
                                 </form>
-                                <div>
-                                    <div class="brand-checkbox">
-                                        <input class="checkbox-inp" type="checkbox" id="brand1">
-                                        <label for="brand1"><p class="brand-checkbox-p1">لیمون</p><p class="brand-checkbox-p2">limon</p></label>
-                                    </div>
-                                    <div class="brand-checkbox">
-                                        <input class="checkbox-inp" type="checkbox" id="brand2">
-                                        <label for="brand2"><p class="brand-checkbox-p1">ایکیا</p><p class="brand-checkbox-p2">limoka</p></label>
-                                    </div>
-                                    <div class="brand-checkbox">
-                                        <input class="checkbox-inp" type="checkbox" id="brand3">
-                                        <label for="brand3"><p class="brand-checkbox-p1">هوم کت</p><p class="brand-checkbox-p2">homeket</p></label>
-                                    </div>
-                                </div>
+                                <ul class="ul-search" id="myUL">
+                                    <li>
+                                        <div class="brand-checkbox">
+                                            <div class="tik-box"><input class="checkbox-inp" type="checkbox" id="brand1"></div>
+                                            <div class="textBar-search"><label for="brand1"><p class="brand-checkbox-p1">لیمون</p><p class="brand-checkbox-p2">limon</p></label></div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="brand-checkbox">
+                                            <div class="tik-box"><input class="checkbox-inp" type="checkbox" id="brand1"></div>
+                                            <div class="textBar-search"><label for="brand1"><p class="brand-checkbox-p1">آرین</p><p class="brand-checkbox-p2">arian</p></label></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="brand-checkbox">
+                                            <div class="tik-box"><input class="checkbox-inp" type="checkbox" id="brand1"></div>
+                                            <div class="textBar-search"><label for="brand1"><p class="brand-checkbox-p1">علی</p><p class="brand-checkbox-p2">ali</p></label></div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="color-selector">
                             <p class="color-selector-title">رنگ</p>
                             <div class="color-select-all">
                                 <div class="color-select">
+
                                     <div class="colors">
-                                        <p>صورتی</p><span class="pink color-back"></span></div>
+                                        <p>صورتی</p><span style="background-color: aqua;" class="color-back"></span></div>
                                     <div class="colors">
-                                        <p>آبی</p><span class="blue color-back"></span></div>
-                                    <div class="colors">
-                                        <p>زرد</p><span class="yellow color-back"></span></div>
-                                    <div class="colors">
-                                        <p>سبز</p><span class="green color-back"></span></div>
-                                    <div class="colors">
-                                        <p>بنفش</p><span class="purple color-back"></span></div>
-                                    <div class="colors">
-                                        <p>قرمز</p><span class="red color-back"></span></div>
+                                        <p>صورتی</p><span style="background-color: blue;" class="color-back"></span></div>
                                 </div>
                                 <div class="all-colors">
-                                    <div class="color" onclick="pink()">
-                                        <p>صورتی</p><span class="pink color-back"></span></div>
-                                    <div class="color" onclick="blue()">
-                                        <p>آبی</p><span class="blue color-back"></span></div>
-                                    <div class="color" onclick="yellow()">
-                                        <p>زرد</p><span class="yellow color-back"></span></div>
-                                    <div class="color" onclick="green()">
-                                        <p>سبز</p><span class="green color-back"></span></div>
-                                    <div class="color" onclick="purple()">
-                                        <p>بنفش</p><span class="purple color-back"></span></div>
-                                    <div class="color" onclick="red()">
-                                        <p>قرمز</p><span class="red color-back"></span></div>
+                                    <div class="color" onclick="colorSelector(1)">
+                                        <p>صورتی</p><span style="background-color: #2ACB34;" class="color-back"></span></div>
+                                    <div class="color" onclick="colorSelector(2)">
+                                        <p>آبی</p><span style="background-color: blue;" class="color-back"></span></div>
+
                                 </div>
                             </div>
                         </div>
