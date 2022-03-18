@@ -3,6 +3,7 @@
     src: url("../../asset/fonts/Sans\ a4fran3/Sans a4fran3.woff");
 }
 body {
+    color: #000000;
     font-family: "sansfont";
   }
   
@@ -11,15 +12,23 @@ body {
     display: flex;
 }
 
+.border {
+    border-right: 13px solid #F26A4F;
+}
 .panel {
     display: inline-block;
     top: 0;
     right: 0;
-    width: 520px;
-    height: 1108px;
+    width: 20%;
     box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
-
+.services-panel-title p{ 
+    color: #000000;
+    margin-right: 9%;
+    border-right: 5px solid #F26A4F;
+    padding-right: 10px;
+    font-size: 24px;
+}
 .panels-icon {
     background-image: url(../icons/icon-41.png);
     width: 40px;
@@ -92,6 +101,10 @@ body {
     display: block;
     margin: auto;
 }
+.services-panel-inp{
+    padding-right: 20px;
+    font-family: "sansfont";
+}
 
 .panels {
     width: 100%;
@@ -108,6 +121,7 @@ body {
     height: 60px;
     display: block;
     margin: auto;
+    color: white;
 }
 
 .panels-details {
@@ -128,6 +142,8 @@ body {
     width: 366px;
     height: 60px;
     margin-top: 40px;
+    color: black;
+
 }
 
 .panel-details {
@@ -151,7 +167,7 @@ body {
     border-radius: 15px;
     margin: auto;
     margin-right: 9%;
-    border: 1px solid;
+    color: #000000;
 }
 
 .services-account-title {
@@ -356,6 +372,18 @@ body {
     margin: auto;
     margin-top: 2%;
 }
+.top-table p,
+.mid-table p,
+.top-table-acc p,
+.complaint-box p,
+.comment-detail-box p,
+.complaint-box .download-complaintbox,
+.mid-table-cli p,
+.mid-table-acc p{
+    color: #000000;
+    font-family: "sansfont";
+
+}
 
 .mid-table {
     display: flex;
@@ -453,7 +481,7 @@ body {
 }
 
 .complaint-div-img {
-    width: 135px;
+    width: 10%;
     height: 135px;
     display: block;
 }
@@ -472,8 +500,10 @@ body {
     margin-top: 5%;
     border-bottom: 4px solid #707070;
 }
-
-.complaint-vote div {
+.complaint-box-content{
+    width:90%;
+}
+.complaint-vote i {
     text-align: center;
     color: #ffd700;
     font-size: 25px;
@@ -494,9 +524,15 @@ body {
 
 .name-complaintbox {
     font-size: 25px;
+    width: 30%;
 }
 
+.rate{
+    margin: auto 10px;
+
+}
 .top-complaintbox {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
