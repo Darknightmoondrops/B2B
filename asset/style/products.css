@@ -782,3 +782,15 @@ p {
     display: block;
     margin: auto;
 }
+
+.slider-product {
+    width: 80%;
+    display: block;
+    margin: auto;
+    height: 50%;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: auto;
+}

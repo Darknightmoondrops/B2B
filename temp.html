@@ -1,0 +1,2503 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./asset/style/new_style.css" />
+    <link rel="stylesheet" href="./asset/style/products.css">
+    <link rel="stylesheet" href="./js/splide-3.6.12/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./asset/plugins/fontawesome/css/all.min.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new Splide('.splide', {
+                type: 'loop',
+                perPage: 3,
+                perMove: 1,
+            }).mount();
+        });
+
+
+        splide.mount();
+    </script>
+    <!--/styles-->
+    <title>wellcome to C2|Home</title>
+</head>
+
+<body>
+    <!--header-->
+    <section id="">
+        <!--  MENU -->
+        <!----------------------------------search--------------------------------->
+        <div onclick="" id="search-box" class="">
+            <button onclick="myFunction2()" id="search-btn-close" class="search-btn-close">x</button>
+            <div class="main-div">
+                <input type="search" class="search-input" placeholder="جستجو" />
+                <button class="search-btn"><img style="width:20px; height: 20px;" src="./asset/icons/icon-19.png" alt=""></button>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------>
+
+        <nav style="direction: rtl;width: 100%; height: 80px; background-color: white; " class=" ">
+            <div class="" style="width: 100% ;height: 80px ;margin: 5px; direction: rtl; margin-right: 20px; display: flex; border-radius: 2px;">
+                <div onclick="menufunc()" style="display: inline-block;margin:25px 5% 25px 5%;">
+                    <a href="#" aria-expanded="false">
+                        <img style="width: 35px; height: 35px;" src="./asset/icons/menu-icon" alt="">
+                        <em class="droopmenu-topanim"></em>
+                    </a>
+                </div>
+                <div style="display: inline-block;margin: -25px 30% 0px 20% ;">
+                    <a href="./index.html">
+                        <img style="width: 220px; height: 140px;" src="./asset/img/main-logo.png" alt="">
+                    </a>
+                </div>
+
+                <div style="
+                        display: flex;
+                        margin-top:25px  ;
+                        margin-left: 20;
+                        flex-direction: row-reverse;float: left;">
+
+                    <div onclick="myFunction()" style="width:40px; height: 40px; margin: 0px 8%;">
+                        <a href="#"><img style="width:30px; height: 30px;" src="./asset/icons/icon-19.png" alt=""></a>
+                    </div>
+                    <div style="width:40px; height: 40px;margin: 0px 8%;" class="tooltip ">
+                        <a href="#"><img style=" width: 30px;
+                                    height: 30px;
+                                    " src="./asset/icons/icon-21.png" alt=""></a>
+
+                        <div class="tooltiptext" style="margin-top: 25px;">
+                            <a class="" href="#">ورود</a>/
+                            <a class="" href="#">ثبت نام</a>
+                        </div>
+                    </div>
+                    <div style="width:40px; height: 40px;margin: 0px 8%;">
+                        <a href="./cart.html">
+                            <img style="width: 30px; height: 30px;" src="./asset/icons/icon-20.png" alt="">
+                        </a>
+                    </div>
+                    <div style="width:40px; height: 40px;margin: 0px 8%;">
+                        <a href="./cart.html">
+                            <img style="width: 30px; height: 30px;" src="./asset/icons/icon-22.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!--------------------------------------------list ----------------------->
+            <div id="menu-list" class="menu-list" style="z-index: 10;direction: rtl;margin-top: -5px;width: 100%; height: auto; position: absolute;display: none; ">
+
+                <div class="tabs" style="width: 15%;height: auto ;text-align: -webkit-center;">
+                    <li class="nav-item style " style=" width: 100% ;  display: grid   ">
+                        <button style="border: none ;background-color: white;" class=" tablinks active " data-valuetxt="first">
+                            <p style="font-family: 'sansfont';" data-title="محصولات">محصولات</p>
+                        </button>
+                        <button style="border: none;background-color: white;   " class=" tablinks " data-valuetxt="second">
+                            <p style="font-family: 'sansfont';"  data-title="خدمات "> خدمات</p>
+                        </button>
+                    </li>
+                </div>
+
+
+
+                <div class="wrapper_tabcontent" style="width: 100%;">
+
+                    <div id="first" class=" tabcontent active" style=" width: 100%; height: auto ;margin-right: 10px; ;">
+                        <div class="" style="width: 25% ;height: auto;padding-right: 10px ;border-right: 1px solid #b1adad ;">
+                            <a href="#" style=" border-right: 3px solid red; font-weight: bold;margin-right: 10px;padding-right: 5px;" class="">پوشاک</a>
+                            <div style="display: grid ;padding-right: 10px;" class="">
+
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">لباس مردانه</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">کفش  مردانه</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">کفش  روزمره</a>
+                                            <a href="#" class=" ">کفش رسمی</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">اکسسوری مردانه</a>
+                                        <p></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="" style="width: 25% ;height: auto;">
+                            <a href="#" class="nav-link alfa" style="font-weight: bold; border-right: 3px solid red;padding-right: 5px">آشپزخانه</a>
+                            <div style="display: grid;" class="">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  صوتی تصویری</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> دکراتیو </a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">آینه</a>
+                                            <a href="#" class=" ">پرده</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">موادشوینده</a>
+                                        <p></p>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                        <div class="" style="width: 25% ;height: auto">
+                            <a href="#" class="nav-link alfa" style=" border-right: 3px solid red ;font-weight: bold;padding-right: 5px">الکترونیک  </a>
+                            <div style="display: grid;" class="">
+
+
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  لپتاپ</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> گوشی </a>
+                                        <p style="display: grid ">
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">دوربین</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">دوربین چاپ فوری</a>
+                                            <a href="#" class=" "> دوربین دیجیتال</a>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="" style="width: 25% ;height: auto">
+                            <a href="#" class="nav-link alfa" style=" border-right: 3px solid red;font-weight: bold;padding-right: 5px">الکترونیک  </a>
+                            <div style="display: grid;" class="">
+
+
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  لپتاپ</a>
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> گوشی </a>
+                                        <p style="display: grid ">
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">دوربین</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">دوربین چاپ فوری</a>
+                                            <a href="#" class=" "> دوربین دیجیتال</a>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="second" class="tabcontent">
+                        <div class="" style="width: 20% ;height: auto ;padding-right: 10px ;border-right: 1px solid #b1adad ;">
+                            <a href="#" class="nav-link alfa" style=" margin-right: 10px ;  border-right: 3px solid red ;font-weight: bold;padding-right: 5px">الکترونیک  </a>
+                            <div style="display: grid;padding-right:10px ;" class="">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">  لپتاپ</a>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#"> گوشی </a>
+                                        <p style="display: grid ">
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked>
+                                        <i></i>
+                                        <a href="#">دوربین</a>
+                                        <p style="display: grid ">
+                                            <a href="#" class="">دوربین چاپ فوری</a>
+                                            <a href="#" class=" "> دوربین دیجیتال</a>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <!--  MENU -->
+
+    </section>
+    <!--header-->
+
+    <!--------------------------------------------   slider   --------------------------------->
+    <section id="slider" class="">
+        <div class="container">
+            <div class="carousel-inner">
+                <div class="carousel-item fade">
+                    <a class="slide" href="#"><img class="slide-img" src="./asset/img/pic-18.jpg" class="d-block" alt="..."></a>
+                </div>
+                <div class="carousel-item fade">
+                    <a class="slide" href="#"><img class="slide-img" src="./asset/img/pic-19.jpg" class="d-block" alt="..."></a>
+                </div>
+                <div class="carousel-item fade">
+                    <a class="slide" href="#"><img class="slide-img" src="./asset/img/pic-20.jpg" class="d-block" alt="..."></a>
+                </div>
+                <div class="carousel-item fade">
+                    <a class="slide" href="#"><img class="slide-img" src="./asset/img/pic-19.jpg" class="d-block" alt="..."></a>
+                </div>
+            </div>
+            <div class="all-dot-btn">
+                <button type="button" class="dot-btn slide-active" onclick="currentSlide(1)"></button>
+                <button type="button" class="dot-btn" onclick="currentSlide(2)"></button>
+                <button type="button" class="dot-btn" onclick="currentSlide(3)"></button>
+                <button type="button" class="dot-btn" onclick="currentSlide(4)"></button>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------  /slider -------------------------------------------->
+    <!-----------------------------------------------      body       ---------------------------------------------->
+    <section class="products">
+        <div class="category-bar">
+            <div class="category">
+                <a href="#">محصولات</a>/
+                <a href="#">پوشاک</a>/
+                <a href="#">کیف</a>
+            </div>
+            <div class="show-mode">
+                <div class="show-mode-p1" onclick="changepage(1)">
+                    <img class="show-mode-p1-img" src="./asset/icons/icon-25.png" alt="">
+                </div>
+                <div class="show-mode-p2 show-mode-border" onclick="changepage(2)">
+                    <img class="show-mode-p2-img" src="./asset/icons/icon-24.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="filter-bar">
+            <div class="filter-part1 filter">
+                <span class="filter-part1-txt">محصول مرتبط یافت شد 1400</span>
+            </div>
+            <div class="filter-part2 filter">
+                <span class="filter-part2-btn">مرتب سازی<img src="./asset/icons/icon-28.png" alt=""></span>
+                <div class="filter-part2-dropdown">
+                    <span class="filter-dropdown-txt">گرانترین</span>
+                    <span class="filter-dropdown-txt">ارزانترین</span>
+                    <span class="filter-dropdown-txt">پرفروش ترین</span>
+                    <span class="filter-dropdown-txt">پرطرفدارترین</span>
+                    <span class="filter-dropdown-txt">مرتبط ترین</span>
+                    <span class="filter-dropdown-txt">جدید ترین</span>
+                </div>
+            </div>
+            <div class="filter-part3 filter">
+                <div>
+                    <span class="filter-part2-btn" onclick="filterbox(1)">فیلتر محصولات</span>
+                </div>
+            </div>
+            <div class="filter-box">
+                <div class="background" onclick="filterbox(2)"></div>
+                <div class=" filter-products-box filter-products-off">
+                    <div class="filter-products-titles-all">
+                        <p class="filter-products-title">فیلتر محصولات</p>
+                        <img class="filter-products-img" src="./asset/icons/icon-29.png" alt="" onclick="filterbox(2)">
+                    </div>
+                    <div class="price-filter">
+                        <div class="filter-titles">
+                            <p>محدوده قیمت</p>
+                            <img src="./asset/icons/icon-30.png" alt="">
+                        </div>
+                        <div class="center">
+                            <div class="price text-violet">
+                                <p>از</p><input class="show-price" type="number" value="2500">
+                                <p>تا</p><input class="show-price" type="number" value="7500">
+                            </div>
+                            <div class="slider">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="multi-range">
+                                <input class="range-min" id="min" type="range" min="0" max="7500000" value="0" step="10000" />
+                                <input class="range-max" id="max" type="range" min="0" max="7500000" value="7500000" step="10000" />
+                            </div>
+                        </div>
+                        <div class="brand">
+                            <div class="filter-titles">
+                                <p>برند</p>
+                                <img src="./asset/icons/icon-30.png" alt="">
+                            </div>
+                            <div class="brand-searchbox">
+                                <form class="brand-searchbox-all" action="">
+                                    <input class="brand-searchbox-in" type="text" id="myInput" placeholder="جستوجو" onkeyup="searchBrand()">
+                                    <button class="brand-searchbox-btn"><img src="./asset/icons/icon-27.png" alt=""></button>
+                                </form>
+                                <ul class="ul-search" id="myUL">
+                                    <li>
+                                        <div class="brand-checkbox">
+                                            <div class="tik-box"><input class="checkbox-inp" type="checkbox" id="brand1"></div>
+                                            <div class="textBar-search"><label for="brand1"><p class="brand-checkbox-p1">لیمون</p><p class="brand-checkbox-p2">limon</p></label></div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="brand-checkbox">
+                                            <div class="tik-box"><input class="checkbox-inp" type="checkbox" id="brand1"></div>
+                                            <div class="textBar-search"><label for="brand1"><p class="brand-checkbox-p1">آرین</p><p class="brand-checkbox-p2">arian</p></label></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="brand-checkbox">
+                                            <div class="tik-box"><input class="checkbox-inp" type="checkbox" id="brand1"></div>
+                                            <div class="textBar-search"><label for="brand1"><p class="brand-checkbox-p1">علی</p><p class="brand-checkbox-p2">ali</p></label></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="color-selector">
+                            <p class="color-selector-title">رنگ</p>
+                            <div class="color-select-all">
+                                <div class="color-select">
+
+                                    <div class="colors">
+                                        <p>صورتی</p><span style="background-color: aqua;" class="color-back"></span></div>
+                                    <div class="colors">
+                                        <p>صورتی</p><span style="background-color: blue;" class="color-back"></span></div>
+                                </div>
+                                <div class="all-colors">
+                                    <div class="color" onclick="colorSelector(1)">
+                                        <p>صورتی</p><span style="background-color: #2ACB34;" class="color-back"></span></div>
+                                    <div class="color" onclick="colorSelector(2)">
+                                        <p>آبی</p><span style="background-color: blue;" class="color-back"></span></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="filter-titles">
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h4>نوع فروشنده</h4>
+                            <p style="display: grid ">
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="filter-titles">
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h4>نوع فروشنده</h4>
+                            <p style="display: grid ">
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="filter-titles">
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h4>نوع فروشنده</h4>
+                            <p style="display: grid ">
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="filter-titles">
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h4>نوع فروشنده</h4>
+                            <p style="display: grid ">
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="filter-titles">
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h4>نوع فروشنده</h4>
+                            <p style="display: grid ">
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="filter-titles">
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h4>نوع فروشنده</h4>
+                            <p style="display: grid ">
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="filter-btn-all">
+                        <button class="filter-btn" type="submit">اعمال فیلتر</button>
+                    </div>
+
+                </div>
+
+                <div class="filter-part4 filter">
+                    <form action="">
+                        <input class="filter-part4-btn-input" type="text" placeholder="جستوجو" name="search">
+                        <button class="filter-part4-btn" type="submit"><img src="./asset/icons/icon-27.png" alt=""></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--------products----------->
+
+        <div class="hori-list">
+            <div class="products-page">
+                <div class="products-list1">
+                    <div class="product-slider">
+                        <section class="product">
+                            <div id="product-container-id" class="product-container">
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-12.png" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="price">2.000.000T</div>
+                                    </div>
+                                </div>
+
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-13.png" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="price">2.000.000T</div>
+
+
+                                    </div>
+                                </div>
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-14.png" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="price">2.000.000T</div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="products-list2">
+                    <div class="product-slider">
+                        <section class="product">
+                            <div id="product-container-id" class="product-container">
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-12.png" alt="">
+                                            <span class="token">50%</span>
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="all-price">
+                                            <div class="sec-price">1.000.000 T</div>
+                                            <div class="main-price">2.000.000 T</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-13.png" alt="">
+                                            <span class="token">جدید</span>
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="all-price">
+                                            <div class="sec-price">1.000.000 T</div>
+                                            <div class="main-price">2.000.000 T</div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-14.png" alt="">
+                                            <span class="token">20%</span>
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="all-price">
+                                            <div class="sec-price">1.000.000 T</div>
+                                            <div class="main-price">2.000.000 T</div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="products-list3">
+                    <div class="product-slider">
+                        <section class="product">
+                            <div id="product-container-id" class="product-container">
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-12.png" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="price">2.000.000T</div>
+                                    </div>
+                                </div>
+
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-13.png" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="price">2.000.000T</div>
+
+
+                                    </div>
+                                </div>
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-14.png" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="price">2.000.000T</div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!------------- page 2 --------------------->
+            <div class="products-page">
+                <div class="products-list1">
+                    <div class="product-slider">
+                        <section class="product">
+                            <div id="product-container-id" class="product-container">
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-12.png" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="price">2.000.000T</div>
+                                    </div>
+                                </div>
+
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-13.png" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="price">2.000.000T</div>
+
+
+                                    </div>
+                                </div>
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-14.png" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="price">2.000.000T</div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="products-list2">
+                    <div class="product-slider">
+                        <section class="product">
+                            <div id="product-container-id" class="product-container">
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-12.png" alt="">
+                                            <span class="token">50%</span>
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="all-price">
+                                            <div class="sec-price">1.000.000 T</div>
+                                            <div class="main-price">2.000.000 T</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-13.png" alt="">
+                                            <span class="token">جدید</span>
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="all-price">
+                                            <div class="sec-price">1.000.000 T</div>
+                                            <div class="main-price">2.000.000 T</div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-14.png" alt="">
+                                            <span class="token">20%</span>
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="all-price">
+                                            <div class="sec-price">1.000.000 T</div>
+                                            <div class="main-price">2.000.000 T</div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="products-list3">
+                    <div class="product-slider">
+                        <section class="product">
+                            <div id="product-container-id" class="product-container">
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-12.png" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="price">2.000.000T</div>
+                                    </div>
+                                </div>
+
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-13.png" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="price">2.000.000T</div>
+
+
+                                    </div>
+                                </div>
+                                <div class="product-box">
+                                    <div class="image-parent">
+                                        <a href="#">
+                                            <img class="image" src="./asset/img/pic-14.png" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+
+                                        <a href="#">
+                                            <h2>میز چوبی</h2>
+                                        </a>
+                                        <div class="rate">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="price">2.000.000T</div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+            <div class="page-slider">
+                <div class="page-icon" onclick="pluspage(1)"><img class="page-icon-img" src="./asset/icons/icon-35.png" alt=""></div>
+                <div class="page-number" dir="ltr">
+                    <span class="page1 page pageActive" onclick="pageslide(1)">1</span>
+                    <span class="page2 page" onclick="pageslide(2)">2</span>
+                </div>
+                <div class="page-icon" onclick="pluspage(-1)"><img class="page-icon-img" src="./asset/icons/icon-34.png" alt=""></div>
+            </div>
+        </div>
+        <!----------     vetical list    ------------------------->
+        <div class="vert-list">
+            <!-------- page 1 -------------->
+            <div class="products-page1">
+                <!----1---->
+                <div class="product-box-vert">
+                    <div class="image-parent-vert">
+                        <a href="#">
+                            <img class="image-vert" src="./asset/img/pic-12.png" alt="">
+                            <span class="token-vert">20%</span>
+                        </a>
+                        <div>
+                            <a href="#">
+                                <img class="icon1-vart" src="./asset/icons/icon-9.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img class="icon2-vert" src="./asset/icons/icon-23.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="details-vert">
+                        <div class="details-vert-title">
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate-vert">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="details-vert-text">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+                        <div class="details-vert-bot">
+                            <div class="remaining-number">تنها 2 عدد باقی مانده</div>
+                            <div class="price-vert">2.000.000T</div>
+                        </div>
+                    </div>
+                </div>
+                <!----2---->
+                <div class="product-box-vert">
+                    <div class="image-parent-vert">
+                        <a href="#">
+                            <img class="image-vert" src="./asset/img/pic-12.png" alt="">
+                        </a>
+                        <div>
+                            <a href="#">
+                                <img class="icon1-vart" src="./asset/icons/icon-9.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img class="icon2-vert" src="./asset/icons/icon-23.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="details-vert">
+                        <div class="details-vert-title">
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate-vert">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="details-vert-text">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+                        <div class="details-vert-bot">
+                            <div class="remaining-number">تنها 2 عدد باقی مانده</div>
+                            <div class="price-vert">2.000.000T</div>
+                        </div>
+                    </div>
+                </div>
+                <!----3---->
+                <div class="product-box-vert">
+                    <div class="image-parent-vert">
+                        <a href="#">
+                            <img class="image-vert" src="./asset/img/pic-12.png" alt="">
+                            <span class="token-vert">20%</span>
+                        </a>
+                        <div>
+                            <a href="#">
+                                <img class="icon1-vart" src="./asset/icons/icon-9.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img class="icon2-vert" src="./asset/icons/icon-23.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="details-vert">
+                        <div class="details-vert-title">
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate-vert">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="details-vert-text">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+                        <div class="details-vert-bot">
+                            <div class="remaining-number">تنها 2 عدد باقی مانده</div>
+                            <div class="price-vert">2.000.000T</div>
+                        </div>
+                    </div>
+                </div>
+                <!----4---->
+                <div class="product-box-vert">
+                    <div class="image-parent-vert">
+                        <a href="#">
+                            <img class="image-vert" src="./asset/img/pic-12.png" alt="">
+                        </a>
+                        <div>
+                            <a href="#">
+                                <img class="icon1-vart" src="./asset/icons/icon-9.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img class="icon2-vert" src="./asset/icons/icon-23.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="details-vert">
+                        <div class="details-vert-title">
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate-vert">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="details-vert-text">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+                        <div class="details-vert-bot">
+                            <div class="remaining-number">تنها 2 عدد باقی مانده</div>
+                            <div class="price-vert">2.000.000T</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------- page 2 ------------------>
+            <div class="products-page1">
+                <!----1---->
+                <div class="product-box-vert">
+                    <div class="image-parent-vert">
+                        <a href="#">
+                            <img class="image-vert" src="./asset/img/pic-12.png" alt="">
+                            <span class="token-vert">20%</span>
+                        </a>
+                        <div>
+                            <a href="#">
+                                <img class="icon1-vart" src="./asset/icons/icon-9.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img class="icon2-vert" src="./asset/icons/icon-23.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="details-vert">
+                        <div class="details-vert-title">
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate-vert">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="details-vert-text">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+                        <div class="details-vert-bot">
+                            <div class="remaining-number">تنها 2 عدد باقی مانده</div>
+                            <div class="price-vert">2.000.000T</div>
+                        </div>
+                    </div>
+                </div>
+                <!----2---->
+                <div class="product-box-vert">
+                    <div class="image-parent-vert">
+                        <a href="#">
+                            <img class="image-vert" src="./asset/img/pic-12.png" alt="">
+                        </a>
+                        <div>
+                            <a href="#">
+                                <img class="icon1-vart" src="./asset/icons/icon-9.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img class="icon2-vert" src="./asset/icons/icon-23.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="details-vert">
+                        <div class="details-vert-title">
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate-vert">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="details-vert-text">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+                        <div class="details-vert-bot">
+                            <div class="remaining-number">تنها 2 عدد باقی مانده</div>
+                            <div class="price-vert">2.000.000T</div>
+                        </div>
+                    </div>
+                </div>
+                <!----3---->
+                <div class="product-box-vert">
+                    <div class="image-parent-vert">
+                        <a href="#">
+                            <img class="image-vert" src="./asset/img/pic-12.png" alt="">
+                            <span class="token-vert">20%</span>
+                        </a>
+                        <div>
+                            <a href="#">
+                                <img class="icon1-vart" src="./asset/icons/icon-9.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img class="icon2-vert" src="./asset/icons/icon-23.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="details-vert">
+                        <div class="details-vert-title">
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate-vert">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="details-vert-text">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+                        <div class="details-vert-bot">
+                            <div class="remaining-number">تنها 2 عدد باقی مانده</div>
+                            <div class="price-vert">2.000.000T</div>
+                        </div>
+                    </div>
+                </div>
+                <!----4---->
+                <div class="product-box-vert">
+                    <div class="image-parent-vert">
+                        <a href="#">
+                            <img class="image-vert" src="./asset/img/pic-12.png" alt="">
+                        </a>
+                        <div>
+                            <a href="#">
+                                <img class="icon1-vart" src="./asset/icons/icon-9.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img class="icon2-vert" src="./asset/icons/icon-23.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="details-vert">
+                        <div class="details-vert-title">
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate-vert">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="details-vert-text">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+                        <div class="details-vert-bot">
+                            <div class="remaining-number">تنها 2 عدد باقی مانده</div>
+                            <div class="price-vert">2.000.000T</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-slider">
+                <div class="page-icon" onclick="pluspages(1)"><img class="page-icon-img" src="./asset/icons/icon-35.png" alt=""></div>
+                <div class="page-number" dir="ltr">
+                    <span class="page1 pages pageActive" onclick="pageslides(1)">1</span>
+                    <span class="page2 pages" onclick="pageslides(2)">2</span>
+                </div>
+                <div class="page-icon" onclick="pluspages(-1)"><img class="page-icon-img" src="./asset/icons/icon-34.png" alt=""></div>
+            </div>
+        </div>
+
+    </section>
+    <!------------------------------------------------------  /body  ------------------------------------------------>
+    <!-------------------------------------------      product slider 1     ---------------------------------------->
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+                        </div>
+                    </div>
+                </li>
+                </li>
+                <li class="splide__slide">
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+                        </div>
+                    </div>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!------------------------------------------     /product slider 1      ---------------------------------------->
+    <!-------------------------------------------      product slider 2     ---------------------------------------->
+    <div class="product-slider">
+        <h1 class="title1">پیشنهاد ویژه</h1>
+        <section class="product">
+            <div class="nxt-btn" onclick="plusslides6(1)">
+                <img src="./asset/icons/icon-15.png" alt="arrow" />
+            </div>
+
+            <div class="p6-page">
+                <div id="product-container-id" class="product-container">
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-13.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+
+
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-14.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p6-page">
+                <div id="product-container-id" class="product-container">
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-13.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+
+
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-14.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p6-page">
+                <div id="product-container-id" class="product-container">
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-13.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+
+
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-14.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p6-page">
+                <div id="product-container-id" class="product-container">
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-13.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+
+
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-14.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="pre-btn" onclick="plusslides6(-1)">
+                <img src="./asset/icons/icon-16.png" alt="arrow" />
+            </div>
+        </section>
+        <div class="all-dot" style="text-align: center" dir="ltr">
+            <button onclick="currentslide6(1)" class="dot6 dot-active"></button>
+            <button onclick="currentslide6(2)" class="dot6"></button>
+            <button onclick="currentslide6(3)" class="dot6"></button>
+            <button onclick="currentslide6(4)" class="dot6"></button>
+        </div>
+    </div>
+    <!------------------------------------------     /product slider 2      ---------------------------------------->
+    <!-------------------------------------------      product slider 3     ---------------------------------------->
+    <div class="product-slider">
+        <h1 class="title1">پرفروش ترین دسته بندی ها</h1>
+        <section class="product">
+            <div class="nxt-btn" onclick="plusslides7(1)">
+                <img src="./asset/icons/icon-15.png" alt="arrow" />
+            </div>
+
+            <div class="p7-page">
+                <div id="product-container-id" class="product-container">
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>لوازم تحریر</h2>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-13.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>کالای الکترونیک</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-14.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>پوشاک</h2>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p7-page">
+                <div id="product-container-id" class="product-container">
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>لوازم تحریر</h2>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-13.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>کالای الکترونیک</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-14.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>پوشاک</h2>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p7-page">
+                <div id="product-container-id" class="product-container">
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>لوازم تحریر</h2>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-13.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>کالای الکترونیک</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-14.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>پوشاک</h2>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p7-page">
+                <div id="product-container-id" class="product-container">
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>لوازم تحریر</h2>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-13.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>کالای الکترونیک</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-14.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>پوشاک</h2>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="pre-btn" onclick="plusslides7(-1)">
+                <img src="./asset/icons/icon-16.png" alt="arrow" />
+            </div>
+        </section>
+        <div class="all-dot" style="text-align: center" dir="ltr">
+            <button onclick="currentslide7(1)" class="dot7 dot-active"></button>
+            <button onclick="currentslide7(2)" class="dot7"></button>
+            <button onclick="currentslide7(3)" class="dot7"></button>
+            <button onclick="currentslide7(4)" class="dot7"></button>
+        </div>
+    </div>
+    <!------------------------------------------     /product slider 3      ---------------------------------------->
+    <!-------------------------------footer ----------------------------------------->
+    <footer class="footer">
+        <div class="footer-box">
+            <br>
+            <br>
+            <br>
+            <div class="main-logo-footer">
+                <a class="main-logo-footer-a" href="./index.html">
+                    <img class="main-logo-footer-img" src="./asset/img/logo-removebg-preview.png" alt="" />
+                </a>
+            </div>
+            <div class="loremtxt">
+
+                <h3 class="lorem">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون<br> بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                </h3>
+            </div>
+            <div class="links">
+                <div class="company-name">
+                    <ol>
+                        <li class="head title"><a href="#"> همراه با نام شرکت</a></li>
+                        <li class="links-kid"><a href="#"> درباره ما</a></li>
+                        <li class="links-kid"><a href="#"> تماس با ما</a></li>
+                        <li class="links-kid"><a href="#"> قوانین و مقررات</a></li>
+                        <li class="media">
+                            <div class="medialogo">
+                                <a href="#"><img src="./asset/icons/icon-10.png" alt=""></a>
+                            </div>
+                            <div class="medialogo">
+                                <a href="#"><img src="./asset/icons/icon-11.png" alt=""></a>
+                            </div>
+                            <div class="medialogo">
+                                <a href="#"><img src="./asset/icons/icon-12.png" alt=""></a>
+                            </div>
+                            <div class="medialogo">
+                                <a href="#"><img src="./asset/icons/icon-13.png" alt=""></a>
+                            </div>
+                            <div class="medialogo">
+                                <a href="#"><img src="./asset/icons/icon-14.png" alt=""></a>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="sell-web">
+                    <ol>
+                        <li class="head title"><a class="bot-title" href="#"> فروش در سایت</a></li>
+                        <li class="links-kid"><a href="#"> ثبت نام تامین کننده</a></li>
+                        <li class="links-kid"><a href="#"> ورود تامین کننده</a></li>
+                        <li class="links-kid"><a href="#"> سوالات متداول تامین کننده</a></li>
+                        <li class="links-kid"><a href="#"> آموزش فروش</a></li>
+                    </ol>
+                </div>
+                <div class="buy-web">
+                    <ol>
+                        <li class="head title"><a class="bot-title" href="#"> خرید از سایت</a></li>
+                        <li class="links-kid"><a href="#"> روش استفاده از خدمات</a></li>
+                        <li class="links-kid"><a href="#"> روش خرید محصولات</a></li>
+                        <li class="links-kid"><a href="#"> سوالات متداول خریدار</a></li>
+                        <li class="links-kid"><a href="#"> محصول1</a></li>
+                    </ol>
+                </div>
+                <div class="last_article">
+                    <ol>
+                        <li class="head title"><a class="bot-title" href="#"> آخرین مقالات</a></li>
+                        <li class="links-kid"><a href="#"> مقاله 1</a></li>
+                        <li class="links-kid"><a href="#"> مقاله 2</a></li>
+                        <li class="links-kid"><a href="#"> مقاله 3</a></li>
+                        <li class="links-kid"><a href="#"> مقاله 4</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="red-line">
+                <div class="div call"><img class="phone" src="./asset/icons/icon-8.png" alt="">
+                    <p class="div-p">021-234324</p>
+                </div>
+                <div class="div loc"><img class="location" src="./asset/icons/icon-7.png" alt="">
+                    <p class="div-p">تهران -خیابان - کوچه</p>
+                </div>
+                <div class="div"><img class="message" src="./asset/icons/icon-6.png" alt="">
+                    <p class="div-p">test@test.com</p>
+                </div>
+
+            </div>
+            <div class="botlane">
+                <div class="application ">
+                    <h3 class="application-text" id="h3">دانلود اپلیکیشن</h3>
+                    <div class="app-img">
+                        <a href="#"><img class="applogo" src="./asset/img/appstore.png" alt=""></a>
+                        <a href="#"><img class="applogo" src="./asset/img/googleplay.png" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="validation-logo">
+                    <a href="#"><img class="valid-logo" src="./asset/img/pic-15.png" alt=""></a>
+                    <a href="#"><img class="valid-logo" src="./asset/img/pic-16.png" alt=""></a>
+                    <a href="#"><img class="valid-logo" src="./asset/img/pic-17.png" alt=""></a>
+                </div>
+            </div>
+            <div class="botlane-txt">
+                <p class="text-center">حق چاپ © 2022 . تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+    <!--script-->
+    <script src="./js/index.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/splide-3.6.12/dist/js/splide.min.js"></script>
+    <script src="https://kit.fontawesome.com/c2e98ef1bc.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

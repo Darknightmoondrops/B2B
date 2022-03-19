@@ -8,6 +8,8 @@
     <!--styles-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
     <link rel="stylesheet" href="./asset/style/new_style.css" />
+    <link rel="stylesheet" href="./asset/style/products.css">
+    <link rel="stylesheet" href="./js/splide-3.6.12/dist/css/splide.min.css">
     <link rel="stylesheet" href="./asset/plugins/fontawesome/css/all.min.css">
 
     <!--/styles-->
@@ -294,136 +296,11 @@
     </section>
     <!--   products   -->
     <div class="background"></div>
-    <div class="product-slider">
-        <h1 class="title1">محصولات پرفروش</h1>
-        <section class="product">
-            <div class="nxt-btn" onclick="plusslides1(1)">
-                <img src="./asset/icons/icon-15.png" alt="arrow" />
-            </div>
-
-            <div class="p1-page">
-                <div id="product-container-id" class="product-container">
-                    <div class="product-box">
-                        <div class="image-parent">
-                            <a href="#">
-                                <img class="image" src="./asset/img/pic-12.png" alt="">
-                            </a>
-                            <div>
-                                <a href="#">
-                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
-                                </a>
-                            </div>
-                            <div>
-
-                                <img class="icon2" src="./asset/icons/icon-23.png" alt="" onclick="quick(1)">
-
-                            </div>
-                        </div>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>میز چوبی</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="price">2.000.000T</div>
-                        </div>
-
-                        <div class="quick-product">
-                            <div><img class="quick-img" src="./asset/img/pic-51.png" alt=""></div>
-                            <div class="quick-detail">
-                                <div class="quick-border">
-                                    <div class="quick-header">
-                                        <div class="exit-icon" onclick="quick(0)"></div>
-                                        <div class="name-rate">
-                                            <div>
-                                                <p>صندلی چوبی</p>
-                                            </div>
-                                            <div class="rate-quick">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-text">
-                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
-                                    </div>
-                                    <div class="bot-quick">
-                                        <div class="number-order">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <div class="quick-price">
-                                            <p>2,000,000T</p>
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="quick-btn">افزودن به سبد خرید</button>
-                                </div>
-
-                                <div class="link-quick"><a href="#">میز و صندلی</a>/
-                                    <a href="#">اسباب منزل</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-13.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>میز چوبی</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="price">2.000.000T</div>
-
-
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-14.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>میز چوبی</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="price">2.000.000T</div>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="p1-page">
-                <div id="product-container-id" class="product-container">
+    <h1 class="title1">جدید ترین محصولات</h1>
+    <div class="splide" dir="ltr">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
                     <div class="product-box">
                         <div class="image-parent">
                             <a href="#">
@@ -455,55 +332,8 @@
                             <div class="price">2.000.000T</div>
                         </div>
                     </div>
-
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-13.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>میز چوبی</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="price">2.000.000T</div>
-
-
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-14.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>میز چوبی</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="price">2.000.000T</div>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="p1-page">
-                <div id="product-container-id" class="product-container">
+                </li>
+                <li class="splide__slide">
                     <div class="product-box">
                         <div class="image-parent">
                             <a href="#">
@@ -535,55 +365,8 @@
                             <div class="price">2.000.000T</div>
                         </div>
                     </div>
-
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-13.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>میز چوبی</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="price">2.000.000T</div>
-
-
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-14.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>میز چوبی</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="price">2.000.000T</div>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="p1-page">
-                <div id="product-container-id" class="product-container">
+                </li>
+                <li class="splide__slide">
                     <div class="product-box">
                         <div class="image-parent">
                             <a href="#">
@@ -615,11 +398,24 @@
                             <div class="price">2.000.000T</div>
                         </div>
                     </div>
-
+                </li>
+                <li class="splide__slide">
                     <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-13.png" alt="">
-                        </a>
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                         <div class="details">
 
                             <a href="#">
@@ -633,65 +429,40 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="price">2.000.000T</div>
-
-
                         </div>
                     </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-14.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>میز چوبی</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="price">2.000.000T</div>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="pre-btn" onclick="plusslides1(-1)">
-                <img src="./asset/icons/icon-16.png" alt="arrow" />
-            </div>
-        </section>
-        <div class="all-dot" style="text-align: center" dir="ltr">
-            <button onclick="currentslide1(1)" class="dot1 dot-active"></button>
-            <button onclick="currentslide1(2)" class="dot1"></button>
-            <button onclick="currentslide1(3)" class="dot1"></button>
-            <button onclick="currentslide1(4)" class="dot1"></button>
+                </li>
+            </ul>
         </div>
     </div>
 
 
 
-    <div class="product-slider">
-        <h1 class="title1">جدیدترین خدمات</h1>
-        <section class="product">
-            <div class="nxt-btn" onclick="plusslides2(1)">
-                <img src="./asset/icons/icon-15.png" alt="arrow" />
-            </div>
-            <div class="p2-page">
-                <div id="product-container-id" class="product-container">
+    <h1 class="title1">جدید ترین خدمات</h1>
+    <div class="splide" dir="ltr">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
                     <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-9.png" alt="">
-                        </a>
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                         <div class="details">
 
                             <a href="#">
-                                <h2>بازسازی منزل</h2>
+                                <h2>میز چوبی</h2>
                             </a>
                             <div class="rate">
                                 <i class="fa fa-star"></i>
@@ -700,16 +471,31 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
+                            <div class="price">2.000.000T</div>
                         </div>
                     </div>
+                </li>
+                <li class="splide__slide">
                     <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-10.png" alt="">
-                        </a>
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                         <div class="details">
 
                             <a href="#">
-                                <h2>تعمیرات لوله کشی</h2>
+                                <h2>میز چوبی</h2>
                             </a>
                             <div class="rate">
                                 <i class="fa fa-star"></i>
@@ -718,39 +504,31 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
+                            <div class="price">2.000.000T</div>
                         </div>
                     </div>
+                </li>
+                <li class="splide__slide">
                     <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-11.png" alt="">
-                        </a>
-                        <div class="details">
-
+                        <div class="image-parent">
                             <a href="#">
-                                <h2>نظافت منزل</h2>
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
                             </a>
-
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="p2-page">
-                <div id="product-container-id" class="product-container">
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-9.png" alt="">
-                        </a>
                         <div class="details">
 
                             <a href="#">
-                                <h2>بازسازی منزل</h2>
+                                <h2>میز چوبی</h2>
                             </a>
                             <div class="rate">
                                 <i class="fa fa-star"></i>
@@ -759,16 +537,31 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
+                            <div class="price">2.000.000T</div>
                         </div>
                     </div>
+                </li>
+                <li class="splide__slide">
                     <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-10.png" alt="">
-                        </a>
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                         <div class="details">
 
                             <a href="#">
-                                <h2>تعمیرات لوله کشی</h2>
+                                <h2>میز چوبی</h2>
                             </a>
                             <div class="rate">
                                 <i class="fa fa-star"></i>
@@ -777,157 +570,11 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
+                            <div class="price">2.000.000T</div>
                         </div>
                     </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-11.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>نظافت منزل</h2>
-                            </a>
-
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="p2-page">
-                <div id="product-container-id" class="product-container">
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-9.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>بازسازی منزل</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-10.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>تعمیرات لوله کشی</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-11.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>نظافت منزل</h2>
-                            </a>
-
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="p2-page">
-                <div id="product-container-id" class="product-container">
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-9.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>بازسازی منزل</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-10.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>تعمیرات لوله کشی</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-11.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>نظافت منزل</h2>
-                            </a>
-
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pre-btn" onclick="plusslides2(-1)">
-                <img src="./asset/icons/icon-16.png" alt="arrow" />
-            </div>
-        </section>
-        <div class="all-dot" style="text-align: center" dir="ltr">
-            <button onclick="currentslide2(1)" class="dot2 dot-active"></button>
-            <button onclick="currentslide2(2)" class="dot2"></button>
-            <button onclick="currentslide2(3)" class="dot2"></button>
-            <button onclick="currentslide2(4)" class="dot2"></button>
+                </li>
+            </ul>
         </div>
     </div>
     <!--Grid section-->
@@ -995,18 +642,27 @@
 
 
 
-    <div class="product-slider">
-        <h1 class="title1">پیشنهاد ویژه</h1>
-        <section class="product">
-            <div class="nxt-btn" onclick="plusslides3(1)">
-                <img src="./asset/icons/icon-15.png" alt="arrow" />
-            </div>
-            <div class="p3-page">
-                <div id="product-container-id" class="product-container">
+    <h1 class="title1">آخرین تخفیفات</h1>
+    <div class="splide" dir="ltr">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
                     <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-12.png" alt="">
-                        </a>
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                         <div class="details">
 
                             <a href="#">
@@ -1019,58 +675,27 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <div class="price">2.000.000 T</div>
+                            <div class="price">2.000.000T</div>
                         </div>
                     </div>
+                </li>
+                <li class="splide__slide">
                     <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-10.png" alt="">
-                        </a>
-                        <div class="details">
-
+                        <div class="image-parent">
                             <a href="#">
-                                <h2>تعمیرات لوله کشی</h2>
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
                             </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
                             </div>
-                            <br>
-
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-11.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>نظافت منزل</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
                             </div>
-                            <br>
-
                         </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="p3-page">
-                <div id="product-container-id" class="product-container">
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-12.png" alt="">
-                        </a>
                         <div class="details">
 
                             <a href="#">
@@ -1083,58 +708,27 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <div class="price">2.000.000 T</div>
+                            <div class="price">2.000.000T</div>
                         </div>
                     </div>
+                </li>
+                <li class="splide__slide">
                     <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-10.png" alt="">
-                        </a>
-                        <div class="details">
-
+                        <div class="image-parent">
                             <a href="#">
-                                <h2>تعمیرات لوله کشی</h2>
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
                             </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
                             </div>
-                            <br>
-
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-11.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>نظافت منزل</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
                             </div>
-                            <br>
-
                         </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="p3-page">
-                <div id="product-container-id" class="product-container">
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-12.png" alt="">
-                        </a>
                         <div class="details">
 
                             <a href="#">
@@ -1147,58 +741,27 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <div class="price">2.000.000 T</div>
+                            <div class="price">2.000.000T</div>
                         </div>
                     </div>
+                </li>
+                <li class="splide__slide">
                     <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-10.png" alt="">
-                        </a>
-                        <div class="details">
-
+                        <div class="image-parent">
                             <a href="#">
-                                <h2>تعمیرات لوله کشی</h2>
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
                             </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
                             </div>
-                            <br>
-
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-11.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>نظافت منزل</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
                             </div>
-                            <br>
-
                         </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="p3-page">
-                <div id="product-container-id" class="product-container">
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-12.png" alt="">
-                        </a>
                         <div class="details">
 
                             <a href="#">
@@ -1211,61 +774,11 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <div class="price">2.000.000 T</div>
+                            <div class="price">2.000.000T</div>
                         </div>
                     </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-10.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>تعمیرات لوله کشی</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <br>
-
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <img class="image" src="./asset/img/pic-11.png" alt="">
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>نظافت منزل</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <br>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="pre-btn" onclick="plusslides3(-1)">
-                <img src="./asset/icons/icon-16.png" alt="arrow" />
-            </div>
-        </section>
-        <div class="all-dot" style="text-align: center" dir="ltr">
-            <button onclick="currentslide3(1)" class="dot3 dot-active"></button>
-            <button onclick="currentslide3(2)" class="dot3"></button>
-            <button onclick="currentslide3(3)" class="dot3"></button>
-            <button onclick="currentslide3(4)" class="dot3"></button>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="pro-btn">
@@ -1280,21 +793,27 @@
         </div>
     </div>
 
-    <div class="product-slider">
-        <h1 class="title1">آخرین تخفیفات</h1>
-        <section class="product">
-            <div class="nxt-btn" onclick="plusslides4(1)">
-                <img src="./asset/icons/icon-15.png" alt="arrow" />
-            </div>
-            <div class="p4-page">
-                <div id="product-container-id" class="product-container">
+    <h1 class="title1">پر فروش ترین دسته بندی ها</h1>
+    <div class="splide" dir="ltr">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
                     <div class="product-box">
-                        <a href="#">
-                            <div class="token-img">
-                                <img class="spec-image" src="./asset/img/pic-12.png" alt="">
-                                <span class="token">20%</span>
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
                             </div>
-                        </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                         <div class="details">
 
                             <a href="#">
@@ -1307,69 +826,27 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <div class="all-price">
-                                <div class="sec-price">1.000.000 T</div>
-                                <div class="main-price">2.000.000 T</div>
-                            </div>
+                            <div class="price">2.000.000T</div>
                         </div>
                     </div>
+                </li>
+                <li class="splide__slide">
                     <div class="product-box">
-                        <a href="#">
-                            <div class="token-img">
-                                <img class="spec-image" src="./asset/img/pic-10.png" alt="">
-                                <span class="token">50%</span>
-                            </div>
-                        </a>
-                        <div class="details">
-
+                        <div class="image-parent">
                             <a href="#">
-                                <h2>تعمیرات لوله</h2>
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
                             </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
                             </div>
-                            <br>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <div class="token-img">
-                                <img class="spec-image" src="./asset/img/pic-11.png" alt="">
-                                <span class="token">10%</span>
-                            </div>
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>نظافت منزل</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <br>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="p4-page">
-                <div id="product-container-id" class="product-container">
-                    <div class="product-box">
-                        <a href="#">
-                            <div class="token-img">
-                                <img class="spec-image" src="./asset/img/pic-12.png" alt="">
-                                <span class="token">20%</span>
-                            </div>
-                        </a>
                         <div class="details">
 
                             <a href="#">
@@ -1382,69 +859,27 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <div class="all-price">
-                                <div class="sec-price">1.000.000 T</div>
-                                <div class="main-price">2.000.000 T</div>
-                            </div>
+                            <div class="price">2.000.000T</div>
                         </div>
                     </div>
+                </li>
+                <li class="splide__slide">
                     <div class="product-box">
-                        <a href="#">
-                            <div class="token-img">
-                                <img class="spec-image" src="./asset/img/pic-10.png" alt="">
-                                <span class="token">50%</span>
-                            </div>
-                        </a>
-                        <div class="details">
-
+                        <div class="image-parent">
                             <a href="#">
-                                <h2>تعمیرات لوله</h2>
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
                             </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
                             </div>
-                            <br>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <div class="token-img">
-                                <img class="spec-image" src="./asset/img/pic-11.png" alt="">
-                                <span class="token">10%</span>
-                            </div>
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>نظافت منزل</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <br>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="p4-page">
-                <div id="product-container-id" class="product-container">
-                    <div class="product-box">
-                        <a href="#">
-                            <div class="token-img">
-                                <img class="spec-image" src="./asset/img/pic-12.png" alt="">
-                                <span class="token">20%</span>
-                            </div>
-                        </a>
                         <div class="details">
 
                             <a href="#">
@@ -1457,69 +892,27 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <div class="all-price">
-                                <div class="sec-price">1.000.000 T</div>
-                                <div class="main-price">2.000.000 T</div>
-                            </div>
+                            <div class="price">2.000.000T</div>
                         </div>
                     </div>
+                </li>
+                <li class="splide__slide">
                     <div class="product-box">
-                        <a href="#">
-                            <div class="token-img">
-                                <img class="spec-image" src="./asset/img/pic-10.png" alt="">
-                                <span class="token">50%</span>
-                            </div>
-                        </a>
-                        <div class="details">
-
+                        <div class="image-parent">
                             <a href="#">
-                                <h2>تعمیرات لوله</h2>
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
                             </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
                             </div>
-                            <br>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <div class="token-img">
-                                <img class="spec-image" src="./asset/img/pic-11.png" alt="">
-                                <span class="token">10%</span>
-                            </div>
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>نظافت منزل</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <br>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="p4-page">
-                <div id="product-container-id" class="product-container">
-                    <div class="product-box">
-                        <a href="#">
-                            <div class="token-img">
-                                <img class="spec-image" src="./asset/img/pic-12.png" alt="">
-                                <span class="token">20%</span>
-                            </div>
-                        </a>
                         <div class="details">
 
                             <a href="#">
@@ -1532,73 +925,14 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <div class="all-price">
-                                <div class="sec-price">1.000.000 T</div>
-                                <div class="main-price">2.000.000 T</div>
-                            </div>
+                            <div class="price">2.000.000T</div>
                         </div>
                     </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <div class="token-img">
-                                <img class="spec-image" src="./asset/img/pic-10.png" alt="">
-                                <span class="token">50%</span>
-                            </div>
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>تعمیرات لوله</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <a href="#">
-                            <div class="token-img">
-                                <img class="spec-image" src="./asset/img/pic-11.png" alt="">
-                                <span class="token">10%</span>
-                            </div>
-                        </a>
-                        <div class="details">
-
-                            <a href="#">
-                                <h2>نظافت منزل</h2>
-                            </a>
-                            <div class="rate">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <br>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-            <div class="pre-btn" onclick="plusslides4(-1)">
-                <img src="./asset/icons/icon-16.png" alt="arrow" />
-            </div>
-        </section>
-        <div class="all-dot" style="text-align: center" dir="ltr">
-            <button onclick="currentslide4(1)" class="dot4 dot-active"></button>
-            <button onclick="currentslide4(2)" class="dot4"></button>
-            <button onclick="currentslide4(3)" class="dot4"></button>
-            <button onclick="currentslide4(4)" class="dot4"></button>
+                </li>
+            </ul>
         </div>
     </div>
-    </div>
+
 
     <div class="pro-btn">
         <button class="button" type="button">مشاهده همه تخفیفات</button>
@@ -1790,9 +1124,11 @@
         </div>
     </footer>
     <!--script-->
+    <script src="./js/splide-3.6.12/dist/js/splide.min.js"></script>s
     <script src="./js/index.js"></script>
     <script src="./js/slider-mainPage.js"></script>
     <script src="./js/quick-product.js"></script>
+    <script src="https://kit.fontawesome.com/c2e98ef1bc.js" crossorigin="anonymous"></script>
 
 </body>
 
