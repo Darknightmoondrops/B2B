@@ -28,48 +28,41 @@
         </div>
         <!-- ------------------------------------------------------------------------>
 
-        <nav style="direction: rtl;width: 100%; height: 80px; background-color: whitex; " class=" ">
-            <div class="" style="height: 80px ;margin: 5px; direction: rtl; margin-right: 20px; display: flex; border-radius: 2px;">
-                <div onclick="menufunc()" style="width: 20% ;display: inline-block;margin:25px 5% 25px 5%;">
+        <nav class="header-nav">
+            <div class="header-nav-div" >
+                <div class="header-nav-icon" onclick="menufunc()">
                     <a href="#" aria-expanded="false">
-                        <img style="width: 35px; height: 35px;" src="./asset/icons/menu-icon" alt="">
+                        <div class="header-nav-icon-img"></div>
                         <em class="droopmenu-topanim"></em>
                     </a>
                 </div>
-                <div style="display: inline-block;margin: -25px 30% 0px 20%;width: 77% ;">
+                <div class="header-nav-logo">
                     <a href="./index.html">
-                        <img style="width: 220px; height: 140px;" src="./asset/img/main-logo.png" alt="">
+                        <img class="header-nav-logo-img" src="./asset/img/main-logo.png" alt="">
                     </a>
                 </div>
 
-                <div style="
-                        width: 20%;
-                        display: flex;
-                        margin-top:25px  ;
-                        margin-left: 20;
-                        flex-direction: row-reverse;float: left;">
+                <div class="header-nav-left-icon">
 
-                    <div onclick="myFunction()" style="width:40px; height: 40px; margin: 0px 8%;">
-                        <a href="#"><img style="width:30px; height: 30px;" src="./asset/icons/icon-19.png" alt=""></a>
+                    <div onclick="myFunction()" class="header-nav-left-icons">
+                        <a href="#"><div class="header-nav-left-icons-ic ic1" ></div></a>
                     </div>
-                    <div style="width:40px; height: 40px;margin: 0px 8%;" class="tooltip ">
-                        <a href="#"><img style=" width: 30px;
-                                    height: 30px;
-                                    " src="./asset/icons/icon-21.png" alt=""></a>
+                    <div class="tooltip header-nav-left-icons">
+                        <a href="#"><div class="header-nav-left-icons-ic ic2"></div></a>
 
                         <div class="tooltiptext" style="margin-top: 25px;">
                             <a class="" href="#">ورود</a>/
                             <a class="" href="#">ثبت نام</a>
                         </div>
                     </div>
-                    <div style="width:40px; height: 40px;margin: 0px 8%;">
+                    <div class="header-nav-left-icons">
                         <a href="./cart.html">
-                            <img style="width: 30px; height: 30px;" src="./asset/icons/icon-20.png" alt="">
+                            <div class="header-nav-left-icons-ic ic3" ></div>
                         </a>
                     </div>
-                    <div style="width:40px; height: 40px;margin: 0px 8%;">
+                    <div class="header-nav-left-icons" >
                         <a href="./cart.html">
-                            <img style="width: 30px; height: 30px;" src="./asset/icons/icon-22.png" alt="">
+                            <div class="header-nav-left-icons-ic ic4" ></div>
                         </a>
                     </div>
                 </div>
@@ -78,25 +71,23 @@
             <!--------------------------------------------list ----------------------->
             <div id="menu-list" class="menu-list" style="z-index: 10;direction: rtl;margin-top: -5px;width: 100%; height: auto; position: absolute;display: none; ">
 
-                <div class="tabs" style="width: 15%;height: auto ;text-align: -webkit-center;">
-                    <li class="nav-item style " style=" width: 100% ;  display: grid   ">
-                        <button style="border: none ;background-color: white;" class=" tablinks active " data-valuetxt="first">
-                            <p style="font-family: 'sansfont';" data-title="محصولات">محصولات</p>
+                <div class="tabs">
+                    <li class="nav-item style ">
+                        <button  class=" tablinks active " data-valuetxt="first">
+                            <p  data-title="محصولات">محصولات</p>
                         </button>
-                        <button style="border: none;background-color: white;   " class=" tablinks " data-valuetxt="second">
-                            <p style="font-family: 'sansfont';"  data-title="خدمات "> خدمات</p>
+                        <button class=" tablinks " data-valuetxt="second">
+                            <p  data-title="خدمات "> خدمات</p>
                         </button>
                     </li>
                 </div>
 
+                <div class="wrapper_tabcontent" >
 
-
-                <div class="wrapper_tabcontent" style="width: 100%;">
-
-                    <div id="first" class=" tabcontent active" style=" width: 100%; height: auto ;margin-right: 10px; ;">
-                        <div class="" style="width: 25% ;height: auto;padding-right: 10px ;border-right: 1px solid #b1adad ;">
-                            <a href="#" style=" border-right: 3px solid red; font-weight: bold;margin-right: 10px;padding-right: 5px;" class="">پوشاک</a>
-                            <div style="display: grid ;padding-right: 10px;" class="">
+                    <div id="first" class=" tabcontent active" >
+                        <div class="header-nav-lists">
+                            <a href="#" class="header-nav-lists-a">پوشاک</a>
+                            <div class="header-nav-lists-content">
 
                                 <ul>
                                     <li>
@@ -110,7 +101,7 @@
                                         <input type="checkbox" checked>
                                         <i></i>
                                         <a href="#">کفش  مردانه</a>
-                                        <p style="display: grid ">
+                                        <p class="header-nav-lists-content-li">
                                             <a href="#" class="">کفش  روزمره</a>
                                             <a href="#" class=" ">کفش رسمی</a>
                                         </p>
@@ -124,9 +115,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="" style="width: 25% ;height: auto;">
-                            <a href="#" class="nav-link alfa" style="font-weight: bold; border-right: 3px solid red;padding-right: 5px">آشپزخانه</a>
-                            <div style="display: grid;" class="">
+                        <div class="header-nav-lists">
+                            <a href="#" class="nav-link alfa header-nav-lists-a" >آشپزخانه</a>
+                            <div class="header-nav-lists-content">
                                 <ul>
                                     <li>
                                         <input type="checkbox" checked>
@@ -139,7 +130,7 @@
                                         <input type="checkbox" checked>
                                         <i></i>
                                         <a href="#"> دکراتیو </a>
-                                        <p style="display: grid ">
+                                        <p class="header-nav-lists-content-li">
                                             <a href="#" class="">آینه</a>
                                             <a href="#" class=" ">پرده</a>
                                         </p>
@@ -155,9 +146,9 @@
 
                             </div>
                         </div>
-                        <div class="" style="width: 25% ;height: auto">
-                            <a href="#" class="nav-link alfa" style=" border-right: 3px solid red ;font-weight: bold;padding-right: 5px">الکترونیک  </a>
-                            <div style="display: grid;" class="">
+                        <div class="header-nav-lists" >
+                            <a href="#" class="nav-link alfa header-nav-lists-a" >الکترونیک  </a>
+                            <div class="header-nav-lists-content">
 
 
                                 <ul>
@@ -172,7 +163,7 @@
                                         <input type="checkbox" checked>
                                         <i></i>
                                         <a href="#"> گوشی </a>
-                                        <p style="display: grid ">
+                                        <p class="header-nav-lists-content-li">
 
                                         </p>
                                     </li>
@@ -180,7 +171,7 @@
                                         <input type="checkbox" checked>
                                         <i></i>
                                         <a href="#">دوربین</a>
-                                        <p style="display: grid ">
+                                        <p class="header-nav-lists-content-li">
                                             <a href="#" class="">دوربین چاپ فوری</a>
                                             <a href="#" class=" "> دوربین دیجیتال</a>
                                         </p>
@@ -189,9 +180,9 @@
 
                             </div>
                         </div>
-                        <div class="" style="width: 25% ;height: auto">
-                            <a href="#" class="nav-link alfa" style=" border-right: 3px solid red;font-weight: bold;padding-right: 5px">الکترونیک  </a>
-                            <div style="display: grid;" class="">
+                        <div class="header-nav-lists" >
+                            <a href="#" class="nav-link alfa header-nav-lists-a">الکترونیک  </a>
+                            <div class="header-nav-lists-content">
 
 
                                 <ul>
@@ -206,7 +197,7 @@
                                         <input type="checkbox" checked>
                                         <i></i>
                                         <a href="#"> گوشی </a>
-                                        <p style="display: grid ">
+                                        <p class="header-nav-lists-content-li">
 
                                         </p>
                                     </li>
@@ -214,7 +205,7 @@
                                         <input type="checkbox" checked>
                                         <i></i>
                                         <a href="#">دوربین</a>
-                                        <p style="display: grid ">
+                                        <p class="header-nav-lists-content-li">
                                             <a href="#" class="">دوربین چاپ فوری</a>
                                             <a href="#" class=" "> دوربین دیجیتال</a>
                                         </p>
@@ -226,9 +217,9 @@
                     </div>
 
                     <div id="second" class="tabcontent">
-                        <div class="" style="width: 20% ;height: auto ;padding-right: 10px ;border-right: 1px solid #b1adad ;">
-                            <a href="#" class="nav-link alfa" style=" margin-right: 10px ;  border-right: 3px solid red ;font-weight: bold;padding-right: 5px">الکترونیک  </a>
-                            <div style="display: grid;padding-right:10px ;" class="">
+                        <div class=" header-nav-lists  right-one" >
+                            <a href="#" class="nav-link alfa header-nav-lists-a" >الکترونیک  </a>
+                            <div class="header-nav-lists-content">
                                 <ul>
                                     <li>
                                         <input type="checkbox" checked>
@@ -240,7 +231,7 @@
                                         <input type="checkbox" checked>
                                         <i></i>
                                         <a href="#"> گوشی </a>
-                                        <p style="display: grid ">
+                                        <p class="header-nav-lists-content-li">
 
                                         </p>
                                     </li>
@@ -248,7 +239,7 @@
                                         <input type="checkbox" checked>
                                         <i></i>
                                         <a href="#">دوربین</a>
-                                        <p style="display: grid ">
+                                        <p class="header-nav-lists-content-li" >
                                             <a href="#" class="">دوربین چاپ فوری</a>
                                             <a href="#" class=" "> دوربین دیجیتال</a>
                                         </p>
