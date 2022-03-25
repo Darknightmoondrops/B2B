@@ -341,12 +341,12 @@
                     <div class="price-filter">
                         <div class="filter-titles">
                             <p>محدوده قیمت</p>
-                            <img src="./asset/icons/icon-30.png" alt="">
+                            <img class="filter-title-img" src="./asset/icons/icon-30.png" alt="">
                         </div>
                         <div class="center">
                             <div class="price text-violet">
-                                <p>از</p><input class="show-price" type="number" value="2500">
-                                <p>تا</p><input class="show-price" type="number" value="7500">
+                                <p>از</p><input class="show-price" type="number" value="0">
+                                <p>تا</p><input class="show-price" type="number" value="7500000">
                             </div>
                             <div class="slider">
                                 <div class="progress"></div>
@@ -357,11 +357,11 @@
                             </div>
                         </div>
                         <div class="brand">
-                            <div class="filter-titles">
+                            <div class="filter-titles" onclick="numberplus(1)">
                                 <p>برند</p>
-                                <img src="./asset/icons/icon-30.png" alt="">
+                                <img class="filter-title-img" src="./asset/icons/icon-30.png" alt="">
                             </div>
-                            <div class="brand-searchbox">
+                            <div class="brand-searchbox brand-off">
                                 <form class="brand-searchbox-all" action="">
                                     <input class="brand-searchbox-in" type="text" id="myInput" placeholder="جستوجو" onkeyup="searchBrand()">
                                     <button class="brand-searchbox-btn"><img src="./asset/icons/icon-27.png" alt=""></button>

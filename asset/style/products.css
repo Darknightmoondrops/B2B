@@ -287,7 +287,7 @@
     position: relative;
     height: 40px;
     direction: ltr;
-    width: 80%;
+    width: 82%;
     margin: auto;
 }
 
@@ -326,12 +326,13 @@ input[type="range"]::-moz-range-thumb {
 .text-violet {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    width: 82%;
     font-size: 27px;
+    margin: auto;
 }
 
 .text-violet p {
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .show-price {
@@ -362,8 +363,8 @@ input[type="range"]::-moz-range-thumb {
 
 .slider .progress {
     height: 100%;
-    left: 25%;
-    right: 25%;
+    left: 0;
+    right: 0;
     position: absolute;
     border-radius: 5px;
     background: #F26A4F;
@@ -371,10 +372,12 @@ input[type="range"]::-moz-range-thumb {
 
 .filter-titles {
     display: block;
+    cursor: pointer;
+    transition: height .5s
 }
 
-.filter-titles {
-    display: block;
+.filter-titles:hover {
+    background-color: #eeeeee;
 }
 
 .filter-titles h4,
@@ -396,6 +399,16 @@ p {
     display: inline-block;
     width: 25px;
     height: 25px;
+}
+
+.brand-off {
+    display: none;
+    height: 0;
+    transition: height .5s;
+}
+
+.rotate-img {
+    transform: rotate(180deg);
 }
 
 .color-back {
@@ -515,8 +528,8 @@ p {
     display: inline-block;
     font-size: 25px;
     margin: auto;
-    margin-left: 4%;
-    margin-top: 2%;
+    margin-top: 1%;
+    margin-right: 3%;
 }
 
 .color-select-all {
@@ -526,8 +539,8 @@ p {
 
 .checkbox-inp {
     margin-right: 5px !important;
-    width: 25px !important;
-    height: 25px !important;
+    width: 50px !important;
+    height: 50px !important;
     border-radius: 5px 5px !important;
     position: relative !important;
     z-index: 0 !important;
@@ -562,8 +575,12 @@ p {
     border-radius: 5px;
     position: absolute;
     width: 600px;
-    height: 400px;
+    height: 390px;
     z-index: 16;
+    margin-top: -8px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #F99687 #C6C6C6;
 }
 
 .color-select-all:hover .all-colors {
@@ -793,4 +810,8 @@ p {
 .splide__slide img {
     width: 100%;
     height: auto;
+}
+
+.brand-searchbox {
+    margin-top: 4%;
 }

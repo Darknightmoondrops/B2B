@@ -7,6 +7,7 @@ function colorSelector(n) {
     }
     colorBox[n - 1].style.display = "block";
 }
+
 //======================================== change page horiz ==============================================
 
 var pagenumber = 1;
@@ -161,5 +162,25 @@ function searchBrand() {
         } else {
             li[i].style.display = "none";
         }
+    }
+}
+//==================================== filter box ============================
+var indexnumber = 0;
+
+function numberplus(n) {
+    boxcover(indexnumber += n)
+}
+
+function boxcover(n) {
+    var detailBox = document.getElementsByClassName("brand-searchbox");
+    var img = document.getElementsByClassName("filter-title-img");
+    if (n == 1) {
+        detailBox[0].classList.remove("brand-off");
+        img[1].classList.add("rotate-img");
+    }
+    if (n == 2) {
+        detailBox[0].classList.add("brand-off");
+        img[1].classList.remove("rotate-img");
+        indexnumber = 0;
     }
 }

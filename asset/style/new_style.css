@@ -8,70 +8,88 @@ body {
     overflow-x: hidden;
 }
 
+li {
+    list-style-type: none;
+}
+
 
 /* *******************menu********* */
-.header-nav{
+
+.header-nav {
     direction: rtl;
     width: 100%;
     height: 80px;
     background-color: whitex;
 }
-.header-nav-div{
-    height: 80px ;
+
+.header-nav-div {
+    height: 80px;
     margin: 5px;
-    direction: rtl; 
+    direction: rtl;
     margin-right: 20px;
     display: flex;
     border-radius: 2px;
 }
-.header-nav-icon{
-    width: 20% ;
+
+.header-nav-icon {
+    width: 20%;
     display: inline-block;
-    margin:25px 5% 25px 5%;
+    margin: 25px 5% 25px 5%;
 }
-.header-nav-icon-img{
+
+.header-nav-icon-img {
     width: 50px;
     height: 50px;
     background-image: url(../icons/menu-icon);
 }
-.header-nav-logo{
+
+.header-nav-logo {
     display: inline-block;
     margin: -25px 30% 0px 20%;
     width: 77%;
 }
-.header-nav-logo-img{
-    width: 220px; 
+
+.header-nav-logo-img {
+    width: 220px;
     height: 140px;
 }
-.header-nav-left-icon{
+
+.header-nav-left-icon {
     width: 20%;
     display: flex;
-    margin-top:25px ;
+    margin-top: 25px;
     margin-left: 20;
     flex-direction: row-reverse;
     float: left;
 }
-.header-nav-left-icons{
-    width:40px; 
-    height: 40px; 
+
+.header-nav-left-icons {
+    width: 40px;
+    height: 40px;
     margin: 0px 8%;
 }
-.header-nav-left-icons-ic{
-    width:40px; 
-    height: 40px;   
+
+.header-nav-left-icons-ic {
+    width: 40px;
+    height: 40px;
 }
-.ic1{
+
+.ic1 {
     background-image: url(../icons/icon-19.png);
 }
-.ic2{
+
+.ic2 {
     background-image: url(../icons/icon-21.png);
 }
-.ic3{
+
+.ic3 {
     background-image: url(../icons/icon-20.png);
 }
-.ic4{
+
+.ic4 {
     background-image: url(../icons/icon-22.png);
 }
+
 p {
     margin-right: 20px;
 }
@@ -131,7 +149,7 @@ a:hover {
 .tablinks {
     outline: none;
     cursor: pointer;
-    display: flex;  
+    display: flex;
     justify-content: end;
     align-items: flex-end;
     font-size: 24px;
@@ -182,36 +200,42 @@ a:hover {
 
 .tabcontent {
     display: none;
-    width: 100%; 
-    height: auto ;
-    margin-right: 10px; 
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
 }
 
 .tabcontent.active {
     transition: all 1s ease;
     display: flex;
 }
-.header-nav-lists{
-    width: 25% ;
+
+.header-nav-lists {
+    width: 25%;
     height: auto;
 }
+
 .header-nav-lists .right-one {
-    padding-right: 10px ;
-    border-right: 1px solid #b1adad ;
+    padding-right: 10px;
+    border-right: 1px solid #b1adad;
 }
-.header-nav-lists-a{
-    border-right: 3px solid red; 
+
+.header-nav-lists-a {
+    border-right: 3px solid red;
     font-weight: bold;
     margin-right: 10px;
     padding-right: 5px;
 }
-.header-nav-lists-content{
-    display: grid ;
+
+.header-nav-lists-content {
+    display: grid;
     padding-right: 10px;
 }
-.header-nav-lists-content-li{
-    display: grid 
+
+.header-nav-lists-content-li {
+    display: grid
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -233,7 +257,6 @@ a:hover {
 
 .menu-list {
     display: none;
- 
 }
 
 .tooltip {
@@ -472,11 +495,13 @@ a:hover {
 .tabs {
     display: flex;
     color: red;
-    width: 15%;height: auto ;
+    width: 15%;
+    height: auto;
     text-align: -webkit-center;
 }
-.nav-item{
-    width: 100% ;  
+
+.nav-item {
+    width: 100%;
     display: grid
 }
 
@@ -484,7 +509,7 @@ a:hover {
 /* Tab Links */
 
 .tablinks {
-    border: none ;
+    border: none;
     background-color: white;
     outline: none;
     cursor: pointer;
@@ -493,7 +518,8 @@ a:hover {
     align-items: flex-end;
     font-size: 24px;
 }
-.tablinks p{
+
+.tablinks p {
     font-family: 'sansfont';
 }
 
