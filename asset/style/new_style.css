@@ -755,16 +755,45 @@ a:hover {
     position: absolute;
     top: 81%;
     left: 35%;
+<<<<<<< HEAD
     width: 50px;
     height: 50px;
+=======
+    width: 50px !important;
+    height: 50px !important;
+    background-color: #F26A4F;
+    border-radius: 50%;
+}
+
+.icon1 img {
+    width: 30px !important;
+    height: 30px !important;
+    display: block;
+    margin: auto;
+    margin-top: 9px;
+}
+
+.icon2 img {
+    width: 50px !important;
+    height: 50px !important;
+    display: block;
+    margin: auto;
+>>>>>>> f9288099f6f888c4b9b4f5f09eadb4e454eb4e80
 }
 
 .icon2 {
     position: absolute;
     top: 81%;
     right: 35%;
+<<<<<<< HEAD
     width: 50px;
     height: 50px;
+=======
+    width: 50px !important;
+    height: 50px !important;
+    background-color: #F26A4F;
+    border-radius: 50%;
+>>>>>>> f9288099f6f888c4b9b4f5f09eadb4e454eb4e80
 }
 
 .price {

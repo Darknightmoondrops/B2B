@@ -25,13 +25,15 @@ body {
     direction: rtl;
 }
 
-.form-link a,
-.form-link a:active {
-    width: 50%;
+.form-link p {
+    width: 100%;
     color: #444444;
-    text-decoration: none;
-    cursor: pointer;
-    transition: .6 linear;
+    margin-right: 0;
+}
+
+.form-link img {
+    width: 50px;
+    height: 50px;
 }
 
 .head-div {
@@ -114,4 +116,14 @@ body {
     font-family: "sansfont";
     border: none;
     cursor: pointer;
+}
+
+.contact-details {
+    display: block;
+    width: 100%;
+}
+
+.contact-detail {
+    display: flex;
+    width: 100%;
 }

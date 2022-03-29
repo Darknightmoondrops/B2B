@@ -165,7 +165,7 @@ function searchBrand() {
     }
 }
 //==================================== filter box ============================
-var indexnumber = 0;
+let indexnumber = 0;
 
 function numberplus(n) {
     boxcover(indexnumber += n)
@@ -183,4 +183,25 @@ function boxcover(n) {
         img[1].classList.remove("rotate-img");
         indexnumber = 0;
     }
+}
+
+let indexnumberS = 0;
+
+function clickme(n) {
+    boxcover1(indexnumberS += n)
+}
+
+function boxcover1(n) {
+    var detailBox1 = document.getElementsByClassName("center");
+    var img = document.getElementsByClassName("filter-title-img");
+    if (n == 1) {
+        detailBox1[0].classList.remove("brand-off");
+        img[0].classList.add("rotate-img");
+    }
+    if (n == 2) {
+        detailBox1[0].classList.add("brand-off");
+        img[0].classList.remove("rotate-img");
+        indexnumberS = 0;
+    }
+    console.log("1");
 }
