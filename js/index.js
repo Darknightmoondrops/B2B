@@ -26,14 +26,35 @@ function openTabs(el) {
     btnTarget.classList.add("active");
 }
 
+
+
 function menufunc() {
+    var mediaQuery = window.matchMedia("(max-width: 600px)")
+    // var mediaQuery2 = window.matchMedia("(min-width: 600px) and (max-width:900px)")
     var toggeler = document.getElementById("menu-list").style.display
+    // if (mediaQuery2.matches) {
+    //     if (toggeler == "block") document.getElementById("menu-list").style.display = "none";
+    //     if (toggeler == "none") document.getElementById("menu-list").style.display = "block";
+    //   }
+    
+    if (mediaQuery.matches) {
+        if (toggeler == "block") document.getElementById("menu-list").style.display = "none";
+        if (toggeler == "none") document.getElementById("menu-list").style.display = "block";
+      }
+      else{
     if (toggeler == "none") document.getElementById("menu-list").style.display = "flex";
     if (toggeler == "flex") document.getElementById("menu-list").style.display = "none";
+      }
 
 }
+// window.addEventListener('resize',function(){
+    
+//  menufunc()
+
+// })
+
 // =====================Responsive Menu===========
-function myFunction() {
+function myResFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";

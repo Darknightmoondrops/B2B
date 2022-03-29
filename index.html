@@ -47,8 +47,10 @@
             <!-- responsive top menu -->
 
             <div class="header-nav-div" >
-                <div class="header-nav-icon" onclick="menufunc()">
+                <div class="header-nav-icon" onclick="menufunc()">  
+                    
                     <a href="#" aria-expanded="false">
+                       
                         <div class="header-nav-icon-img"></div>
                         <em class="droopmenu-topanim"></em>
                     </a>
@@ -61,10 +63,12 @@
 
                 <div class="header-nav-left-icon">
 
-                    <div onclick="myFunction()" class="header-nav-left-icons">
+                    <div onclick="myFunction()" class="header-nav-left-icons search-box-responsiv">
                         <a href="#"><div class="header-nav-left-icons-ic ic1" ></div></a>
                     </div>
                     <div class="tooltip header-nav-left-icons">
+                        <div class="menu-cover">
+                        </div>
                         <a href="#"><div class="header-nav-left-icons-ic ic2"></div></a>
 
                         <div class="tooltiptext" style="margin-top: 25px;">
@@ -73,11 +77,15 @@
                         </div>
                     </div>
                     <div class="header-nav-left-icons">
+                        <div class="menu-cover">
+                        </div>
                         <a href="./cart.html">
                             <div class="header-nav-left-icons-ic ic3" ></div>
                         </a>
                     </div>
                     <div class="header-nav-left-icons" >
+                        <div class="menu-cover">
+                        </div>
                         <a href="./cart.html">
                             <div class="header-nav-left-icons-ic ic4" ></div>
                         </a>
@@ -93,7 +101,7 @@
                             <div class="menu-titr-icon titr-icon1"></div>
                             <p  data-title="محصولات">محصولات</p>
                         </button>
-                        <button class=" tablinks " data-valuetxt="second">
+                        <button class=" tablinks second-menu-btn-f " data-valuetxt="second">
                             <div class="menu-titr-icon titr-icon2"></div>
                             <p  data-title="خدمات "> خدمات</p>
                         </button>
@@ -102,6 +110,8 @@
                 <div class="wrapper_tabcontent" >
 
                     <div id="first" class=" tabcontent active" >
+                        <div class="block-div">
+
                         <div class="header-nav-lists">
                             <a href="#" class="header-nav-lists-a">پوشاک</a>
                             <div class="header-nav-lists-content">
@@ -163,6 +173,8 @@
 
                             </div>
                         </div>
+                    </div>
+                    <div class="block-div">
                         <div class="header-nav-lists" >
                             <a href="#" class="nav-link alfa header-nav-lists-a" >الکترونیک  </a>
                             <div class="header-nav-lists-content">
@@ -232,6 +244,16 @@
                             </div>
                         </div>
                     </div>
+                    </div>
+
+                    <div class="tabs">
+                        <button class=" tablinks second-menu-btn " data-valuetxt="second">
+                            <div class="menu-titr-icon titr-icon2"></div>
+                            <p  data-title="خدمات "> خدمات</p>
+                        </button>
+                    </div>
+
+
 
                     <div id="second" class="tabcontent">
                         <div class=" header-nav-lists  right-one" >
@@ -269,6 +291,7 @@
 
                 </div>
             </div>
+
         </nav>
         <!--  MENU -->
 
