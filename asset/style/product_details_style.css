@@ -208,22 +208,12 @@ h1 {
     text-align: center;
 }
 .cunt-div{
+    direction: ltr;
     width: 70px ;
     background-color: #F26A4F;
     margin: auto 1px;
     color: white;
     cursor: pointer;
-    font-family: "sansfont";
-    font-weight: bolder;
-    font-size: 20px;
-    text-align: center;
-}
-.cunt-div2{
-    width: 210px ;
-    height: 70px;
-    background-color:white;
-    margin: auto 5px;
-    color: white;
     font-family: "sansfont";
     font-weight: bolder;
     font-size: 20px;
@@ -256,18 +246,24 @@ h1 {
 /* Tab Alert */
 
 .sucsses {
-
-    background-color: #2ACB34;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    /* background-color: #2ACB34;
+    border: 5px solid green    ; */
 
   }
   
   .error {
-    background-color: rgb(235, 26, 3);
-  }
+    /* background-color: rgb(235, 26, 3); */
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
   #snackbar{
     width: 20%;
     height: 60px;
-    color: #fff;
+    /* color: #fff; */
     text-align: center;
     border-radius: 10px;
     padding-top: 20px;
