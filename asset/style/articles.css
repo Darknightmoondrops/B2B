@@ -313,3 +313,7 @@ h3 {
 .comment1 {
     margin-top: 170px;
 }
+
+.prof-pic {
+    border-radius: 50%;
+}

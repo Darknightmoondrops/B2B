@@ -677,6 +677,23 @@ a:hover {
     left: 35%;
     width: 50px !important;
     height: 50px !important;
+    background-color: #F26A4F;
+    border-radius: 50%;
+}
+
+.icon1 img {
+    width: 30px !important;
+    height: 30px !important;
+    display: block;
+    margin: auto;
+    margin-top: 9px;
+}
+
+.icon2 img {
+    width: 50px !important;
+    height: 50px !important;
+    display: block;
+    margin: auto;
 }
 
 .icon2 {
@@ -685,6 +702,8 @@ a:hover {
     right: 35%;
     width: 50px !important;
     height: 50px !important;
+    background-color: #F26A4F;
+    border-radius: 50%;
 }
 
 .price {

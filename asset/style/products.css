@@ -521,6 +521,7 @@ p {
     display: flex;
     justify-content: space-around;
     width: 96%;
+    margin-top: 4%;
 }
 
 .color-selector-title {
@@ -813,5 +814,9 @@ p {
 }
 
 .brand-searchbox {
+    margin-top: 4%;
+}
+
+.center {
     margin-top: 4%;
 }
