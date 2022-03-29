@@ -221,7 +221,7 @@
 
 .splide__pagination__page.is-active {
     background: #1368AA;
-    transform: scale(1.4);
+    /*transform: scale(1.4);*/
     width: 25px;
     height: 25px;
 }

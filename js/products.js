@@ -203,5 +203,4 @@ function boxcover1(n) {
         img[0].classList.remove("rotate-img");
         indexnumberS = 0;
     }
-    console.log("1");
 }

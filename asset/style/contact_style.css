@@ -126,4 +126,27 @@ body {
 .contact-detail {
     display: flex;
     width: 100%;
+    justify-content: right;
+}
+
+.contact-detail p {
+    width: 51%;
+    height: 50px;
+    margin-right: 9%;
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.mobile-number {
+    width: 51%;
+    margin-right: 9%;
+}
+
+.mobile-number p {
+    width: 100%;
+    margin-right: 0;
+}
+
+.media-contact {
+    margin-right: 5%;
 }

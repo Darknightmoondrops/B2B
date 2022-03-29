@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    direction: ltr;
 }
 
 .article2 {
@@ -20,12 +21,13 @@
 }
 
 .bar-articles {
-    width: 460px;
+    width: 18%;
     height: 1200px;
     border-radius: 20px;
     box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     margin-top: 30px;
     position: relative;
+    direction: rtl;
 }
 
 .tab-articles {}
@@ -45,7 +47,7 @@
 }
 
 .search-sml-articles {
-    width: 400px;
+    width: 80%;
     height: 60px;
     background-color: #efefef;
     border-radius: 30px;
@@ -82,6 +84,9 @@
 
 .articles-text {
     padding-top: 7px;
+    width: 90%;
+    display: block;
+    margin: auto;
 }
 
 
@@ -316,4 +321,110 @@ h3 {
 
 .prof-pic {
     border-radius: 50%;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    direction: rtl;
+}
+
+.article-card {
+    margin-bottom: 30%;
+}
+
+.search-articles {
+    width: 100%;
+}
+
+
+/* resp articles */
+
+@media screen and (max-width: 768px) {
+    .articles {
+        display: grid;
+        grid-template-columns: auto;
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+    .all-articles {
+        display: block;
+    }
+    .bar-articles {
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    .articles-text p {
+        direction: rtl;
+    }
+    .search-articles {
+        margin-top: 10px;
+    }
+    .btn-search-sml-articles {
+        top: 1.5%;
+        left: 10%;
+    }
+    .article-info {
+        width: 80%;
+        height: auto;
+        left: 10%;
+    }
+    .product-thumb {
+        width: 85%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .author-data {
+        width: 69%;
+        margin-right: 1%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .articles {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+    .article-card {
+        margin-bottom: 75%;
+    }
+    .all-articles {
+        display: block;
+    }
+    .bar-articles {
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    .articles-text p {
+        direction: rtl;
+    }
+    .search-articles {
+        margin-top: 10px;
+    }
+    .btn-search-sml-articles {
+        top: 1.5%;
+        left: 10%;
+    }
+    .product-thumb {
+        width: 85%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .article-info {
+        width: 80%;
+        height: auto;
+        left: 10%;
+    }
+    .author-data {
+        width: 69%;
+        margin-right: 1%;
+    }
 }
