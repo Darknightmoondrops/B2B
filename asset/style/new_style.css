@@ -69,7 +69,6 @@ body {
     flex-direction: row-reverse;
     float: left;
 }
-<<<<<<< HEAD
 
 .header-nav-left-icons {
     width: 40px;
@@ -80,18 +79,6 @@ body {
 .header-nav-left-icons-ic {
     width: 40px;
     height: 40px;
-=======
-.header-nav-left-icons{
-    width:40px; 
-    height: 40px; 
-    margin: 5px 12%;
-}
-.header-nav-left-icons-ic{
-    width:40px; 
-    height: 40px;   
-    z-index: 11;
-    position: relative;
->>>>>>> 94ed53988d4f674a17fb242990af14b8588d09d2
 }
 
 .ic1 {
@@ -539,13 +526,8 @@ h1 {
     width: 70%;
     height: 40px;
     color: #eee7e7;
-<<<<<<< HEAD
     border-radius: 5px;
     background-color: rgb(138, 132, 132);
-=======
-    border-radius:5px ;
-    background-color:#EFEFEF;
->>>>>>> 94ed53988d4f674a17fb242990af14b8588d09d2
     border: none;
 }
 
@@ -586,17 +568,14 @@ h1 {
 p {
     margin-right: 20px;
 }
-
 ul {
     direction: rtl;
     list-style: none;
 }
-
 ul li {
     position: relative;
     margin-left: auto;
 }
-
 ul li i {
     float: left;
     transform: translate(-6px, 0);
@@ -604,7 +583,6 @@ ul li i {
     margin-left: 50px;
     right: 0;
 }
-
 ul li i:before,
 ul li i:after {
     content: "";
@@ -614,15 +592,12 @@ ul li i:after {
     width: 3px;
     height: 9px;
 }
-
 ul li i:before {
     transform: translate(-2px, 0) rotate(45deg);
 }
-
 ul li i:after {
     transform: translate(2px, 0) rotate(-45deg);
 }
-
 ul li input[type=checkbox] {
     position: absolute;
     cursor: pointer;
@@ -631,18 +606,15 @@ ul li input[type=checkbox] {
     z-index: 1;
     opacity: 0;
 }
-
 ul li input[type=checkbox]:checked~p {
     margin-top: 0;
     max-height: 0;
     opacity: 0;
     transform: translate(0, 50%);
 }
-
 ul li input[type=checkbox]:checked~i:before {
     transform: translate(2px, 0) rotate(45deg);
 }
-
 ul li input[type=checkbox]:checked~i:after {
     transform: translate(-2px, 0) rotate(-45deg);
 } */
@@ -848,10 +820,6 @@ a:hover {
     height: 50px !important;
     background-color: #F26A4F;
     border-radius: 50%;
-<<<<<<< HEAD
-=======
-
->>>>>>> 94ed53988d4f674a17fb242990af14b8588d09d2
 }
 
 .price {
@@ -1789,61 +1757,9 @@ ol {
 .titr-icon2 {
     background-image: url(../icons/icon-53.png);
 }
-<<<<<<< HEAD
 
 @media screen and (max-width: 600px) {
     .menu-titr-icon {
-=======
-.second-menu-btn{
-    display: none;
-}
-.content-menu-list{
-    display: flex;
-}
-.menu-cover{
-    display: none;
-    width: 60px;
-    height: 60px;
-    background-image: linear-gradient(#FFFCFB,#FEE1D7);
-    transform: rotate(46deg);
-    border-radius: 5px;
-    position: absolute;
-    z-index: 10;
-    margin-top: -10px;
-    margin-right: -7px;
-
-}
-@media screen and (max-width: 600px) {
-    /* .menu-list{
-        display: block;
-    } */
-    .header-nav-icon{
-        width: 20% ;
-        display: inline-block;
-        margin:25px 11% 25px -10%;
-    }
-    .header-nav-left-icon{
-        
-        width: 70%;
-    }
-    .header-nav-left-icons:hover .menu-cover{
-        display: block;
-    }
-
-    .search-box-responsiv{
-        display: none;
-    }
-    .wrapper_tabcontent{
-        background-color:#F9F9F9
-    }
-    .second-menu-btn-f{
-        display: none;
-    }
-    .second-menu-btn{
-        display: flex;
-    }
-    .menu-titr-icon{
->>>>>>> 94ed53988d4f674a17fb242990af14b8588d09d2
         display: block;
     }
     .menu-list {
@@ -1853,45 +1769,22 @@ ol {
         position: relative;
         background-color: #F9F9F9
     }
-<<<<<<< HEAD
     .tabcontent.active {
         display: grid !important;
         position: relative !important;
-=======
-    .tabcontent.active{
-        display: block !important;
-        position: relative !important;   
-        margin-right: 50px;     
-        width: 80%;
-    
->>>>>>> 94ed53988d4f674a17fb242990af14b8588d09d2
     }
     .tablinks {
         width: 150px;
-<<<<<<< HEAD
         height: 100px;
         background-color: #F9F9F9
     }
     .header-nav-lists {
         width: 100% !important;
-=======
-        height: 100px ;
-        background-color:#F9F9F9
-
-    }
-    .header-nav-lists{
-        width: 80% !important;
->>>>>>> 94ed53988d4f674a17fb242990af14b8588d09d2
         margin: auto;
         background-color: #F9F9F9
     }
-<<<<<<< HEAD
     .header-nav {}
     .header-nav-logo {
-=======
-
-    .header-nav-logo{
->>>>>>> 94ed53988d4f674a17fb242990af14b8588d09d2
         display: none;
     }
     .header-nav-div {
@@ -1916,140 +1809,14 @@ ol {
     }
     .tabs {
         width: 30%;
-        height: 90px;
+        height: 200px;
     }
-  }
-  
-  .block-div{
-
-      width: 100%;
-  }
-
-  @media screen and (min-width: 600px) and (max-width:900px){
-
-    .header-nav-icon{
-        width: 20% ;
-        display: inline-block;
-        margin:25px 11% 25px -10%;
-    }
-    .block-div{
-        display: flex;
-    }
-    .tabcontent .header-nav-lists{
-        width: 50%;
-
-    }
-
-
-    .header-nav-left-icon{
-        width: 70%;
-    }
-    .header-nav-left-icons:hover .menu-cover{
-        display: block;
-    }
-
-    .search-box-responsiv{
-        display: none;
-    }
-    .wrapper_tabcontent{
-        background-color:#F9F9F9
-    }
-    .second-menu-btn-f{
-        display: none;
-    }
-    .second-menu-btn{
-        display: flex;
-    }
-    .menu-titr-icon{
-        display: block;
-    }
-<<<<<<< HEAD
     .menu-list {
         background-color: #F9F9F9
-=======
-    .menu-list{
-        top: 15%;
-        height: auto;
-        width: 100%;
-        position: relative;
-        background-color:#F9F9F9;
-        /* display: block; */
-
-    }
-    .tabcontent.active{
-        display: block ;
-        /* position: relative !important;    */
-        margin-right: 50px;     
-        width: 80%;
-    
-    }
-    .tablinks{
-        width: 150px;
-        height: 100px ;
-        background-color:#F9F9F9
-
-    }
-    .header-nav-lists{
-        width: 80% !important;
-        margin: auto;
-        background-color:#F9F9F9
-
->>>>>>> 94ed53988d4f674a17fb242990af14b8588d09d2
     }
 }
 
-<<<<<<< HEAD
-=======
-    .header-nav-logo{
-        display: none;
-    }
-    .header-nav-div{
-        background-color: white;
-        height: 80px;
-        direction: rtl;
-        z-index: 11;
-        width: 100%;
-        bottom: 0;
-        margin: auto;
-        display: block;
-        position: fixed;
 
-    }
-    .responsive-menu-top{
-        display: flex;
-        position: fixed;
-        top: 0;
-        z-index: 12;
-    }
-    .header-nav-logo-resp{
-        margin-top:-30px ;
-    }
-    .tabs{
-        width: 30%;
-        height: 90px;
-    }
-  
-  }
-  @media screen and (min-width: 900px) {
-    .menu-list{
-        display: flex;
-    }
-    .tabcontent.active{
-        display: flex !important;
-        position: relative !important;   
-        margin-right: 50px;     
-        width: 100%;
-    
-    }
-    .block-div{
-        display: flex;
-    }
-    .tabcontent .header-nav-lists{
-        width: 50%;
->>>>>>> 94ed53988d4f674a17fb242990af14b8588d09d2
-
-    }
-  }
 /* responsine menu  */
 
 
