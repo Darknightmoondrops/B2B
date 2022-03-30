@@ -204,3 +204,23 @@ function boxcover1(n) {
         indexnumberS = 0;
     }
 }
+
+let indexnumberSS = 0;
+
+function clickmepls(n) {
+    boxcover2(indexnumberSS += n)
+}
+
+function boxcover2(n) {
+    var detailBox2 = document.getElementsByClassName("type-seller");
+    var img = document.getElementsByClassName("filter-title-img");
+    if (n == 1) {
+        detailBox2[0].classList.remove("brand-off");
+        img[2].classList.add("rotate-img");
+    }
+    if (n == 2) {
+        detailBox2[0].classList.add("brand-off");
+        img[2].classList.remove("rotate-img");
+        indexnumberSS = 0;
+    }
+}

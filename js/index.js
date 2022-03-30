@@ -36,11 +36,11 @@ function menufunc() {
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
-      x.className += " responsive";
+        x.className += " responsive";
     } else {
-      x.className = "topnav";
+        x.className = "topnav";
     }
-  } 
+}
 // ======================MENU=====================
 // ======================SEARCH_MENU==============
 function myFunction() {
@@ -84,6 +84,7 @@ setInterval(function() {
 
 //===================================== sliders =========================
 //=============================================== sliders ==========================================
+
 var elms = document.getElementsByClassName('splide');
 
 for (var i = 0; i < elms.length; i++) {

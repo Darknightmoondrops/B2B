@@ -307,3 +307,39 @@ function boxcover1(n) {
         indexnumberS = 0;
     }
 }
+let indexnumberSS = 0;
+
+function clickmepls(n) {
+    boxcover2(indexnumberSS += n)
+}
+
+function boxcover2(n) {
+    var detailBox2 = document.getElementsByClassName("type-seller");
+    var img = document.getElementsByClassName("filter-title-img");
+    if (n == 1) {
+        detailBox2[0].classList.remove("brand-off");
+        img[2].classList.add("rotate-img");
+    }
+    if (n == 2) {
+        detailBox2[0].classList.add("brand-off");
+        img[2].classList.remove("rotate-img");
+        indexnumberSS = 0;
+    }
+}
+//================================= search brand =====================
+function searchBrand() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("p")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}

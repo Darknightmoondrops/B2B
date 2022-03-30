@@ -339,6 +339,20 @@ a:hover {
     z-index: 11;
 }
 
+.tooltiptext-login {
+    display: none;
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(255, 253, 253);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    left: -25%;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 11;
+}
+
 
 /* Show the tooltip text when you mouse over the tooltip container */
 
@@ -347,7 +361,23 @@ a:hover {
     visibility: visible;
 }
 
+.tooltip:hover .tooltiptext-login {
+    z-index: 12;
+    visibility: visible;
+}
+
 .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    /* At the top of the tooltip */
+    left: 10%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
+}
+
+.tooltip .tooltiptext-login::after {
     content: " ";
     position: absolute;
     bottom: 100%;
@@ -1013,7 +1043,7 @@ a:hover {
 
 .button {
     display: block;
-    width: 400px;
+    width: 24%;
     height: 70px;
     margin: auto;
     margin-top: 2%;
@@ -1024,6 +1054,7 @@ a:hover {
     cursor: pointer;
     transition: .6s linear;
     font-weight: bold;
+    border: 1px;
 }
 
 .button:hover {
@@ -1136,9 +1167,10 @@ a:hover {
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    width: 55%;
+    width: 95%;
     margin: auto;
     margin-top: 30px;
+    direction: ltr;
 }
 
 .img-grid {
@@ -1493,14 +1525,14 @@ ol {
     width: 30%;
     height: 94px;
     margin: auto;
-    padding-bottom: 110px;
+    padding-bottom: 40px;
     text-align: center;
 }
 
 .text-center {
     text-align: center;
     color: #F26A4F;
-    font-size: 27px;
+    font-size: 24px;
     margin-bottom: 0;
 }
 
@@ -1861,9 +1893,8 @@ ol {
     .botlane-txt {
         display: block;
         width: 100%;
-        margin-bottom: 80px;
         text-align: center;
-        padding-bottom: 110px;
+        padding-bottom: 1س40px;
     }
     .filter-titles h4,
     p {
@@ -1886,6 +1917,101 @@ ol {
     }
     .article-container {
         display: block;
+    }
+    /**/
+    .splide__pagination {
+        display: none !important;
+    }
+    .grid-card {
+        display: block;
+    }
+    .box-grid-p3 {
+        width: 100%;
+        display: block;
+        margin: auto;
+        height: auto;
+    }
+    .box-grid-p3 a {
+        width: 100%;
+        height: auto;
+    }
+    .img-grid {
+        width: 100%;
+        height: auto;
+    }
+    .box-grid-p1 {
+        width: 100%;
+        display: block;
+        margin: auto;
+        height: auto;
+    }
+    .box-grid-a2 {
+        width: 100%;
+        height: auto;
+    }
+    .grid-col1 {
+        width: 100%;
+        height: auto;
+    }
+    .txt-grid-p1 {
+        font-size: 22px;
+    }
+    .txt-grid-p2 {
+        font-size: 22px;
+        left: 12%;
+        top: 33%;
+    }
+    .viewed-all-p2 {
+        font-size: 22px;
+    }
+    .viewed-all {
+        font-size: 22px;
+    }
+    .button {
+        width: 80%;
+    }
+    .all-dot-btn {
+        display: none;
+    }
+    .articles {
+        display: grid;
+        grid-template-columns: auto;
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+    .all-articles {
+        display: block;
+    }
+    .bar-articles {
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    .articles-text p {
+        direction: rtl;
+    }
+    .search-articles {
+        margin-top: 10px;
+    }
+    .btn-search-sml-articles {
+        top: 1.5%;
+        left: 10%;
+    }
+    .article-info {
+        width: 80%;
+        height: auto;
+        left: 10%;
+    }
+    .product-thumb {
+        width: 85%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .author-data {
+        width: 69%;
+        margin-right: 1%;
     }
 }
 
@@ -1950,9 +2076,8 @@ ol {
     .botlane-txt {
         display: block;
         width: 100%;
-        margin-bottom: 80px;
         text-align: center;
-        padding-bottom: 110px;
+        padding-bottom: 40px;
     }
     .filter-titles h4,
     p {
@@ -1979,7 +2104,110 @@ ol {
     .article-container {
         display: block;
     }
+    .splide__pagination {
+        display: none !important;
+    }
+    .grid-card {
+        display: block;
+    }
+    .box-grid-p3 {
+        width: 100%;
+        display: block;
+        margin: auto;
+        height: auto;
+    }
+    .box-grid-p3 a {
+        width: 100%;
+        height: auto;
+    }
+    .img-grid {
+        width: 100%;
+        height: auto;
+    }
+    .box-grid-p1 {
+        width: 100%;
+        display: block;
+        margin: auto;
+        height: auto;
+    }
+    .box-grid-a2 {
+        width: 100%;
+        height: auto;
+    }
+    .grid-col1 {
+        width: 100%;
+        height: auto;
+    }
+    .txt-grid-p1 {
+        font-size: 30px;
+    }
+    .txt-grid-p2 {
+        font-size: 30px;
+        left: 12%;
+        top: 33%;
+    }
+    .viewed-all-p2 {
+        font-size: 22px;
+    }
+    .viewed-all {
+        font-size: 22px;
+    }
+    .button {
+        width: 50%;
+    }
+    .all-dot-btn {
+        display: none;
+    }
+    .articles {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+    .article-card {
+        margin-bottom: 20%;
+    }
+    .all-articles {
+        display: block;
+    }
+    .bar-articles {
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    .articles-text p {
+        direction: rtl;
+    }
+    .search-articles {
+        margin-top: 10px;
+    }
+    .btn-search-sml-articles {
+        top: 1.5%;
+        left: 10%;
+    }
+    .product-thumb {
+        width: 85%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .article-info {
+        width: 80%;
+        height: auto;
+        left: 10%;
+    }
+    .author-data {
+        width: 69%;
+        margin-right: 1%;
+    }
 }
 
 
 /* res footer */
+
+.splide__track {
+    width: 80%;
+    display: block;
+    margin: auto;
+}

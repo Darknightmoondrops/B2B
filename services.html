@@ -349,9 +349,9 @@
                         <img class="filter-products-img" src="./asset/icons/icon-29.png" alt="" onclick="filterbox(2)">
                     </div>
                     <div class="price-filter">
-                        <div class="filter-titles">
+                        <div class="filter-titles" onclick="clickme(1)">
                             <p>محدوده قیمت</p>
-                            <img src="./asset/icons/icon-30.png" alt="">
+                            <img class="filter-title-img" src="./asset/icons/icon-30.png" alt="">
                         </div>
                         <div class="center brand-off">
                             <div class="price text-violet">
@@ -367,29 +367,36 @@
                             </div>
                         </div>
                         <div class="brand">
-                            <div class="filter-titles">
+                            <div class="filter-titles" onclick="numberplus(1)">
                                 <p>شرکت</p>
-                                <img src="./asset/icons/icon-30.png" alt="">
+                                <img class="filter-title-img" src="./asset/icons/icon-30.png" alt="">
                             </div>
-                            <div class="brand-searchbox">
+                            <div class="brand-searchbox brand-off">
                                 <form class="brand-searchbox-all" action="">
-                                    <input class="brand-searchbox-in" type="text" placeholder="جستوجو">
-                                    <button class="brand-searchbox-btn" type="submit"><img src="./asset/icons/icon-27.png" alt=""></button>
+                                    <input class="brand-searchbox-in" type="text" id="myInput" placeholder="جستوجو" onkeyup="searchBrand()">
+                                    <button class="brand-searchbox-btn"><img src="./asset/icons/icon-27.png" alt=""></button>
                                 </form>
-                                <div>
-                                    <div class="brand-checkbox">
-                                        <input class="checkbox-inp" type="checkbox" id="brand1">
-                                        <label for="brand1"><p class="brand-checkbox-p1">کارواش مهدی</p><p class="brand-checkbox-p2"></p></label>
-                                    </div>
-                                    <div class="brand-checkbox">
-                                        <input class="checkbox-inp" type="checkbox" id="brand2">
-                                        <label for="brand2"><p class="brand-checkbox-p1">کارواش پر خوب</p><p class="brand-checkbox-p2"></p></label>
-                                    </div>
-                                    <div class="brand-checkbox">
-                                        <input class="checkbox-inp" type="checkbox" id="brand3">
-                                        <label for="brand3"><p class="brand-checkbox-p1">هوم کت</p><p class="brand-checkbox-p2"></p></label>
-                                    </div>
-                                </div>
+                                <ul class="ul-search" id="myUL">
+                                    <li>
+                                        <div class="brand-checkbox">
+                                            <div class="tik-box"><input class="checkbox-inp" type="checkbox" id="brand1"></div>
+                                            <div class="textBar-search"><label for="brand1"><p class="brand-checkbox-p1">کارواش مهدی</p></label></div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="brand-checkbox">
+                                            <div class="tik-box"><input class="checkbox-inp" type="checkbox" id="brand1"></div>
+                                            <div class="textBar-search"><label for="brand1"><p class="brand-checkbox-p1">کارواش پسر خوب</p></label></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="brand-checkbox">
+                                            <div class="tik-box"><input class="checkbox-inp" type="checkbox" id="brand1"></div>
+                                            <div class="textBar-search"><label for="brand1"><p class="brand-checkbox-p1">هوم کت</p></label></div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
@@ -455,42 +462,40 @@
                             </symbol>
                         </svg>
                     </div>
-                    <ul class="filter-titles">
-                        <li>
-                            <input type="checkbox" checked>
-                            <i></i>
-                            <h4>نوع فروشنده</h4>
-                            <p style="display: grid ">
-                            </p>
-                        </li>
-                    </ul>
-                    <ul class="filter-titles">
-                        <li>
-                            <input type="checkbox" checked>
-                            <i></i>
-                            <h4>نوع فروشنده</h4>
-                            <p style="display: grid ">
-                            </p>
-                        </li>
-                    </ul>
-                    <ul class="filter-titles">
-                        <li>
-                            <input type="checkbox" checked>
-                            <i></i>
-                            <h4>نوع فروشنده</h4>
-                            <p style="display: grid ">
-                            </p>
-                        </li>
-                    </ul>
-                    <ul class="filter-titles">
-                        <li>
-                            <input type="checkbox" checked>
-                            <i></i>
-                            <h4>نوع فروشنده</h4>
-                            <p style="display: grid ">
-                            </p>
-                        </li>
-                    </ul>
+                    <div class="brand">
+                        <div class="filter-titles" onclick="clickmepls(1)">
+                            <p>نوع فروشنده</p>
+                            <img class="filter-title-img" src="./asset/icons/icon-30.png" alt="">
+                        </div>
+                        <div class="type-seller brand-off">
+                            <form class="brand-searchbox-all" action="">
+                                <input class="brand-searchbox-in" type="text" id="myInput" placeholder="جستوجو" onkeyup="searchBrand()">
+                                <button class="brand-searchbox-btn"><img src="./asset/icons/icon-27.png" alt=""></button>
+                            </form>
+                            <ul class="ul-search" id="myUL">
+                                <li>
+                                    <div class="brand-checkbox">
+                                        <div class="tik-box"><input class="checkbox-inp" type="checkbox" id="brand1"></div>
+                                        <div class="textBar-search"><label for="brand1"><p class="brand-checkbox-p1">کارواش مهدی</p></label></div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="brand-checkbox">
+                                        <div class="tik-box"><input class="checkbox-inp" type="checkbox" id="brand1"></div>
+                                        <div class="textBar-search"><label for="brand1"><p class="brand-checkbox-p1">کارواش پسر خوب</p></label></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="brand-checkbox">
+                                        <div class="tik-box"><input class="checkbox-inp" type="checkbox" id="brand1"></div>
+                                        <div class="textBar-search"><label for="brand1"><p class="brand-checkbox-p1">هوم کت</p></label></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <div class="filter-btn-all">
                         <button class="filter-btn" type="submit">اعمال فیلتر</button>
                     </div>

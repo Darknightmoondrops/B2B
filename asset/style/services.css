@@ -166,13 +166,9 @@
 
 .select1 select:focus {
     outline: none;
-    border-color: #F26A4F;
-    box-shadow: 0 0 0 2px #F26A4F;
 }
 
-.select1 select:hover+svg {
-    stroke: #F26A4F;
-}
+.select1 select:hover+svg {}
 
 .title-space-selector1 {
     display: inline-block;
@@ -256,6 +252,7 @@
 
 .text-violet p {
     margin-top: 15px;
+    color: #585858;
 }
 
 .show-price {
@@ -311,3 +308,14 @@
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+
+.ul-search {
+    display: block;
+    margin: auto;
+}
+
+.ul-search li {
+    list-style: none;
+}
+
+.type-seller {}
