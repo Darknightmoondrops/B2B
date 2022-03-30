@@ -65,7 +65,7 @@ body {
 .header-nav-left-icons{
     width:40px; 
     height: 40px; 
-    margin: 0px 8%;
+    margin: 5px 12%;
 }
 .header-nav-left-icons-ic{
     width:40px; 
@@ -1731,7 +1731,13 @@ ol {
     /* .menu-list{
         display: block;
     } */
+    .header-nav-icon{
+        width: 20% ;
+        display: inline-block;
+        margin:25px 11% 25px -10%;
+    }
     .header-nav-left-icon{
+        
         width: 70%;
     }
     .header-nav-left-icons:hover .menu-cover{
@@ -1762,7 +1768,7 @@ ol {
 
     }
     .tabcontent.active{
-        display: grid !important;
+        display: block !important;
         position: relative !important;   
         margin-right: 50px;     
         width: 80%;
@@ -1775,14 +1781,12 @@ ol {
 
     }
     .header-nav-lists{
-        width: 100% !important;
+        width: 80% !important;
         margin: auto;
         background-color:#F9F9F9
 
     }
-    .header-nav{
 
-    }
     .header-nav-logo{
         display: none;
     }
@@ -1814,26 +1818,22 @@ ol {
   }
   
   .block-div{
-      /* display: flex; */
-      /* border: 1px solid red; */
+
       width: 100%;
   }
 
   @media screen and (min-width: 600px) and (max-width:900px){
-/* 
-    .tabcontent.active{
-        display: block !important;
-        position: relative !important;   
-        margin-right: 50px;     
-        width: 100%;
-    
-    } */
+
+    .header-nav-icon{
+        width: 20% ;
+        display: inline-block;
+        margin:25px 11% 25px -10%;
+    }
     .block-div{
         display: flex;
     }
     .tabcontent .header-nav-lists{
         width: 50%;
-        /* border: 1px solid; */
 
     }
 
@@ -1865,12 +1865,13 @@ ol {
         height: auto;
         width: 100%;
         position: relative;
-        background-color:#F9F9F9
+        background-color:#F9F9F9;
+        /* display: block; */
 
     }
     .tabcontent.active{
-        display: grid !important;
-        position: relative !important;   
+        display: block ;
+        /* position: relative !important;    */
         margin-right: 50px;     
         width: 80%;
     
@@ -1882,14 +1883,12 @@ ol {
 
     }
     .header-nav-lists{
-        width: 100% !important;
+        width: 80% !important;
         margin: auto;
         background-color:#F9F9F9
 
     }
-    .header-nav{
 
-    }
     .header-nav-logo{
         display: none;
     }
@@ -1921,7 +1920,9 @@ ol {
   
   }
   @media screen and (min-width: 900px) {
-
+    .menu-list{
+        display: flex;
+    }
     .tabcontent.active{
         display: flex !important;
         position: relative !important;   

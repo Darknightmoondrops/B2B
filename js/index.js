@@ -26,32 +26,53 @@ function openTabs(el) {
     btnTarget.classList.add("active");
 }
 
+// function resMenuMobile (){
+//     var toggeler = document.getElementById("menu-list").style.display
+//     if (toggeler == "block") document.getElementById("menu-list").style.display = "none";
+//     if (toggeler == "none") document.getElementById("menu-list").style.display = "block";
+  
+// }
+// function resMenuTablet(){
+   
 
-
+// }
 function menufunc() {
-    var mediaQuery = window.matchMedia("(max-width: 600px)")
-    // var mediaQuery2 = window.matchMedia("(min-width: 600px) and (max-width:900px)")
-    var toggeler = document.getElementById("menu-list").style.display
-    // if (mediaQuery2.matches) {
-    //     if (toggeler == "block") document.getElementById("menu-list").style.display = "none";
-    //     if (toggeler == "none") document.getElementById("menu-list").style.display = "block";
-    //   }
-    
-    if (mediaQuery.matches) {
+        var toggeler = document.getElementById("menu-list").style.display
+
+    // var mediaQuery = window.matchMedia("(max-width: 600px)")
+    var mediaQuery2 = window.matchMedia("(max-width:900px)")
+    if (mediaQuery2.matches) {
         if (toggeler == "block") document.getElementById("menu-list").style.display = "none";
         if (toggeler == "none") document.getElementById("menu-list").style.display = "block";
+      
       }
-      else{
-    if (toggeler == "none") document.getElementById("menu-list").style.display = "flex";
-    if (toggeler == "flex") document.getElementById("menu-list").style.display = "none";
-      }
+      else {
+        if (toggeler == "none") document.getElementById("menu-list").style.display = "flex";
+        if (toggeler == "flex") document.getElementById("menu-list").style.display = "none";
+          }
+    
+    // if (mediaQuery.matches) resMenuMobile()
+       
+    //   else{
+    // if (toggeler == "none") document.getElementById("menu-list").style.display = "flex";
+    // if (toggeler == "flex") document.getElementById("menu-list").style.display = "none";
+    //   }
 
 }
-// window.addEventListener('resize',function(){
-    
-//  menufunc()
+window.addEventListener('resize',function(){
+    var toggeler = document.getElementById("menu-list").style.display
 
-// })
+    // var mediaQuery = window.matchMedia("(max-width: 600px)")
+        if (toggeler == "block") document.getElementById("menu-list").style.display = "none";
+        if (toggeler == "flex") document.getElementById("menu-list").style.display = "none";
+      
+      
+    //   else {
+    //     if (toggeler == "none") document.getElementById("menu-list").style.display = "flex";
+    //     if (toggeler == "flex") document.getElementById("menu-list").style.display = "none";
+    //       }
+
+})
 
 // =====================Responsive Menu===========
 function myResFunction() {
