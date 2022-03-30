@@ -126,20 +126,16 @@ body {
 .contact-detail {
     display: flex;
     width: 100%;
-<<<<<<< HEAD
     justify-content: right;
 }
 
 .contact-detail p {
-    width: 51%;
-    height: 50px;
-    margin-right: 9%;
+    margin-right: 5%;
     line-height: 28px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .mobile-number {
-    width: 51%;
     margin-right: 9%;
 }
 
@@ -150,8 +146,7 @@ body {
 
 .media-contact {
     margin-right: 5%;
-}
-=======
+
 }
 .tablet-res{
     display: block;
@@ -196,7 +191,6 @@ body {
     .media-logo{
         display: block;
     } */
-    
 .contact-details {
     display: block;
     width: 85%;
@@ -226,9 +220,11 @@ body {
     .media-logo-ic{
         width: 30px !important;
         height: 30px !important;
+        margin: -37px 148px 6px -154px;
+        
     }
     .media-logo{
-        margin: -90px 268px -2px -170px;
+        margin: -21px 137px 38px -22px;
 
     }
 }
@@ -250,4 +246,3 @@ body {
     display: none
 } */
   }
->>>>>>> 94ed53988d4f674a17fb242990af14b8588d09d2

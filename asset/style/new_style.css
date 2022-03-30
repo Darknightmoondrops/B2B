@@ -52,7 +52,7 @@ body {
 
 .header-nav-logo {
     display: inline-block;
-    margin: -25px 30% 0px 20%;
+    margin: -25px 18% 0px 20%;
     width: 77%;
 }
 
@@ -73,12 +73,14 @@ body {
 .header-nav-left-icons {
     width: 40px;
     height: 40px;
-    margin: 0px 8%;
+    margin: 5px 12%;
 }
 
 .header-nav-left-icons-ic {
     width: 40px;
     height: 40px;
+    z-index: 11;
+    position: relative;
 }
 
 .ic1 {
@@ -199,7 +201,6 @@ a:hover {
     color: red;
 }
 
-#wrapper {}
 
 .content {
     transition: 0.3s ease;
@@ -527,7 +528,7 @@ h1 {
     height: 40px;
     color: #eee7e7;
     border-radius: 5px;
-    background-color: rgb(138, 132, 132);
+    background-color:#EFEFEF;
     border: none;
 }
 
@@ -1758,64 +1759,235 @@ ol {
     background-image: url(../icons/icon-53.png);
 }
 
-@media screen and (max-width: 600px) {
-    .menu-titr-icon {
-        display: block;
-    }
-    .menu-list {
-        top: 15%;
-        height: auto;
-        width: 100%;
-        position: relative;
-        background-color: #F9F9F9
-    }
-    .tabcontent.active {
-        display: grid !important;
-        position: relative !important;
-    }
-    .tablinks {
-        width: 150px;
-        height: 100px;
-        background-color: #F9F9F9
-    }
-    .header-nav-lists {
-        width: 100% !important;
-        margin: auto;
-        background-color: #F9F9F9
-    }
-    .header-nav {}
-    .header-nav-logo {
-        display: none;
-    }
-    .header-nav-div {
-        background-color: white;
-        height: 80px;
-        direction: rtl;
-        z-index: 11;
-        width: 100%;
-        bottom: 0;
-        margin: auto;
-        display: block;
-        position: fixed;
-    }
-    .responsive-menu-top {
+
+@media screen and (max-width: 600px) {    
+    .content-menu-list{
         display: flex;
-        position: fixed;
-        top: 0;
-        z-index: 12;
     }
-    .header-nav-logo-resp {
-        margin-top: -30px;
+    .menu-cover{
+        display: none;
+        width: 60px;
+        height: 60px;
+        background-image: linear-gradient(#FFFCFB,#FEE1D7);
+        transform: rotate(46deg);
+        border-radius: 5px;
+        position: absolute;
+        z-index: 10;
+        margin-top: -10px;
+        margin-right: -7px;
+    
     }
-    .tabs {
-        width: 30%;
-        height: 200px;
-    }
-    .menu-list {
-        background-color: #F9F9F9
-    }
+        .header-nav-icon{
+            width: 20% ;
+            display: inline-block;
+            margin:25px 11% 25px -10%;
+        }
+        .header-nav-left-icon{
+            
+            width: 70%;
+        }
+        .header-nav-left-icons:hover .menu-cover{
+            display: block;
+        }
+    
+        .search-box-responsiv{
+            display: none;
+        }
+        .wrapper_tabcontent{
+            background-color:#F9F9F9
+        }
+        .second-menu-btn-f{
+            display: none;
+        }
+        .second-menu-btn{
+            display: flex;
+        }
+        .menu-titr-icon{
+            display: block;
+        }
+        .menu-list {
+            top: 15%;
+            height: auto;
+            width: 100%;
+            position: relative;
+            background-color: #F9F9F9
+        }
+        .tabcontent.active{
+            display: block !important;
+            position: relative !important;   
+            margin-right: 50px;     
+            width: 80%;
+        
+        }
+        .tablinks {
+            width: 150px;
+            height: 100px;
+            background-color: #F9F9F9
+        }
+    
+        .header-nav-lists{
+            width: 80% !important;
+            margin: auto;
+            background-color: #F9F9F9
+        }
+    
+        .header-nav-logo{
+            display: none;
+        }
+        .header-nav-div {
+            background-color: white;
+            height: 80px;
+            direction: rtl;
+            z-index: 11;
+            width: 100%;
+            bottom: 0;
+            margin: auto;
+            display: block;
+            position: fixed;
+        }
+        .responsive-menu-top {
+            display: flex;
+            position: fixed;
+            top: 0;
+            z-index: 12;
+        }
+        .header-nav-logo-resp {
+            margin-top: -30px;
+        }
+        .tabs {
+            width: 30%;
+            height: 90px;
+        }
+      }
+       
+  .block-div{
+
+    width: 100%;
 }
 
+@media screen and (min-width: 600px) and (max-width:900px){
+
+  .header-nav-icon{
+      width: 20% ;
+      display: inline-block;
+      margin:25px 11% 25px -10%;
+  }
+  .block-div{
+      display: flex;
+  }
+  .tabcontent .header-nav-lists{
+      width: 50%;
+
+  }
+
+
+  .header-nav-left-icon{
+      width: 70%;
+  }
+  .header-nav-left-icons:hover .menu-cover{
+      display: block;
+  }
+
+  .search-box-responsiv{
+      display: none;
+  }
+  .wrapper_tabcontent{
+      background-color:#F9F9F9
+  }
+  .second-menu-btn-f{
+      display: none;
+  }
+  .second-menu-btn{
+      display: flex;
+  }
+  .menu-titr-icon{
+      display: block;
+  }
+
+      .menu-list{
+      top: 15%;
+      height: auto;
+      width: 100%;
+      position: relative;
+      background-color:#F9F9F9;
+      /* display: block; */
+  }
+  .tabcontent.active{
+      display: block ;
+      /* position: relative !important;    */
+      margin-right: 50px;     
+      width: 80%;
+  
+  }
+  .tablinks{
+      width: 150px;
+      height: 100px ;
+      background-color:#F9F9F9
+
+  }
+  .header-nav-lists{
+      width: 80% !important;
+      margin: auto;
+      background-color:#F9F9F9
+
+  }
+
+
+  .header-nav-logo{
+      display: none;
+  }
+  .header-nav-div{
+      background-color: white;
+      height: 80px;
+      direction: rtl;
+      z-index: 11;
+      width: 100%;
+      bottom: 0;
+      margin: auto;
+      display: block;
+      position: fixed;
+
+  }
+  .responsive-menu-top{
+      display: flex;
+      position: fixed;
+      top: 0;
+      z-index: 12;
+  }
+  .header-nav-logo-resp{
+      margin-top:-30px ;
+  }
+  .tabs{
+      width: 30%;
+      height: 90px;
+  }
+
+}
+@media screen and (min-width: 900px) {
+  .menu-list{
+      display: flex;
+  }
+  .tabcontent.active{
+      display: flex !important;
+      position: relative !important;   
+      margin-right: 50px;     
+      width: 100%;
+  
+  }
+  .block-div{
+      display: flex;
+  }
+  .tabcontent .header-nav-lists{
+      width: 45%;
+
+  }
+  .second-menu-btn{
+      display: none;
+  }
+  .header-nav-left-icon{
+      margin: 22px -10% 8px 3px;
+  }
+}
 
 /* responsine menu  */
 
