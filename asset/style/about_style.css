@@ -63,13 +63,12 @@ body {
     width: 70%;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .intro-img {
     display: flex;
     justify-content: space-evenly;
-    width: 1300px;
+    width: 80%;
     margin: auto;
 }
 
@@ -87,8 +86,8 @@ body {
 
 .content-text2-text {
     width: 63%;
-    height: 760px;
-    font-size: 30px;
+    height: auto;
+    font-size: 25px;
     display: block;
 }
 
@@ -139,8 +138,8 @@ body {
 
 .avatar-card {
     text-align: center;
-    width: 570px;
-    height: 680px;
+    width: 30%;
+    height: auto;
     display: block;
     box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     border-radius: 20px;
@@ -156,7 +155,7 @@ body {
 }
 
 .all-media {
-    width: 400px;
+    width: 100%;
     display: block;
     margin: auto;
     margin-top: 30px;
@@ -173,6 +172,11 @@ body {
     color: #3F4BE8;
     text-align: center;
     margin-right: 0;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 50%;
 }
 
 .intro-img-box img {
