@@ -74,6 +74,7 @@ body {
     width: 40px;
     height: 40px;
     margin: 5px 12%;
+    position: relative;
 }
 
 .header-nav-left-icons-ic {
@@ -96,6 +97,7 @@ body {
 .ic3 {
     background-image: url(../icons/icon-20.png);
     background-repeat: round;
+    position: relative;
 }
 
 .ic4 {
@@ -2346,4 +2348,24 @@ ol {
     width: 80%;
     display: block;
     margin: auto;
+}
+
+.cart-basket {
+    font-size: 15px;
+    position: absolute;
+    top: 13px;
+    right: -4px;
+    width: 12px;
+    height: 19px;
+    color: #fff;
+    background-color: #F99687;
+    border-radius: 50%;
+    padding: 3px;
+    padding-top: 0;
+    padding-right: 7px;
+    z-index: 14;
+}
+
+.shapping-cart-number {
+    position: relative;
 }
