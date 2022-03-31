@@ -92,6 +92,40 @@ function myFunction2() {
     document.getElementById("search-box").style.display = "none";
 }
 // ======================SEARCH_MENU==============
+//=============================================== sliders ==========================================
+var width = window.innerWidth;
+console.log(width);
+if (width > 1024) {
+    var elms = document.getElementsByClassName('splide');
+
+    for (var i = 0; i < elms.length; i++) {
+        new Splide(elms[i], {
+            type: 'loop',
+            perPage: 3,
+            perMove: 1,
+        }).mount();
+    }
+} else if (width <= 768) {
+    var elms = document.getElementsByClassName('splide');
+
+    for (var i = 0; i < elms.length; i++) {
+        new Splide(elms[i], {
+            type: 'loop',
+            padding: '15%',
+        }).mount();
+    }
+
+} else if (768 < width <= 1024) {
+    var elms = document.getElementsByClassName('splide');
+
+    for (var i = 0; i < elms.length; i++) {
+        new Splide(elms[i], {
+            type: 'loop',
+            perPage: 2,
+            perMove: 1,
+        }).mount();
+    }
+}
 //===========================slider=========================
 var slideIndex = 1;
 showSliders(slideIndex);
@@ -124,37 +158,3 @@ setInterval(function() {
 }, 3000);
 
 //===================================== sliders =========================
-//=============================================== sliders ==========================================
-var width = window.innerWidth;
-console.log(width);
-if (width > 1024) {
-    var elms = document.getElementsByClassName('splide');
-
-    for (var i = 0; i < elms.length; i++) {
-        new Splide(elms[i], {
-            type: 'loop',
-            perPage: 3,
-            perMove: 1,
-        }).mount();
-    }
-} else if (width <= 768) {
-    var elms = document.getElementsByClassName('splide');
-
-    for (var i = 0; i < elms.length; i++) {
-        new Splide(elms[i], {
-            type: 'loop',
-            padding: '5rem',
-        }).mount();
-    }
-
-} else if (768 < width <= 1024) {
-    var elms = document.getElementsByClassName('splide');
-
-    for (var i = 0; i < elms.length; i++) {
-        new Splide(elms[i], {
-            type: 'loop',
-            perPage: 2,
-            perMove: 1,
-        }).mount();
-    }
-}
