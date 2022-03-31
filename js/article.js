@@ -9,72 +9,49 @@ button.addEventListener("click", () => {
 });
 
 
+
+
+//============ copy ============
 const shareBtn = document.querySelector('.share-btn');
 const shareOptions = document.querySelector('.share-options');
+var link = document.getElementsByClassName("link");
+link[0].innerHTML = window.location.href;
 
 shareBtn.addEventListener('click', () => {
     shareOptions.classList.toggle('active');
 })
 
+function _handleClick(event) {
+    event.preventDefault();
 
-//============ copy ============
-// cache dom
-var $shareBtn = $(".share-btn");
-var $shareUrl = $(".share-url");
-var $shareContainer = $(".share-container");
-var $notificationButton = $(".notification-button");
+    var textarea = document.createElement("textarea");
 
-// set data
-var $url = window.location.href;
-var $shared = false;
+    textarea.style.position = 'fixed';
+    textarea.style.top = '-1px';
+    textarea.style.left = '-1px';
+    textarea.style.width = '1px';
+    textarea.style.height = '1px';
+    textarea.style.opacity = 0;
+    textarea.style.pointerEvents = 'none';
 
-/**
- *
- */
-function shareLink(e) {
-    // set active class
-    $shareBtn.toggleClass("active");
-    $shareUrl.toggleClass("active");
-    $shareContainer.toggleClass("active");
+    textarea.value = window.location.href;
 
-    if ($shared === false) {
-        // trigger notification alert
-        $notificationButton.toggleClass("active");
-        $shared = true;
-        $shareBtn.text("Unshare");
-        $shareUrl.text($url);
+    document.body.appendChild(textarea);
 
-        var range = document.createRange();
-        range.selectNode($(this).next()[0]);
-        window.getSelection().addRange(range);
+    textarea.select();
 
-        try {
-            // Now that we've selected the anchor text, execute the copy command
-            var successful = document.execCommand("copy");
-            var msg = successful ? "successful" : "unsuccessful";
-            console.log("Copy email command was " + msg);
-        } catch (err) {
-            console.log("Oops, unable to copy");
+    try {
+        var copiedURL = document.execCommand('copy');
+        if (copiedURL) {
+            alert('URL Copied');
+        } else {
+            console.log('Copy failed');
         }
-
-        // Remove the selections - NOTE: Should use
-        // removeRange(range) when it is supported
-        window.getSelection().removeAllRanges();
-    } else {
-        $shared = false;
-        $shareBtn.text("Share");
+    } catch (err) {
+        console.log('Copy failed', err);
     }
+
+    document.body.removeChild(textarea);
 }
 
-/**
- * removes the active class after a set period of time
- */
-function fadeOutNotification() {
-    setTimeout(function() {
-        $notificationButton.removeClass("active");
-    }, 2000);
-}
-
-// bind events
-$shareBtn.on("click", shareLink);
-$notificationButton.on("transitionend", fadeOutNotification);
+document.getElementById('copy').addEventListener('click', _handleClick, false);

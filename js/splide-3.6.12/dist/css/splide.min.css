@@ -66,7 +66,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    height: 900px;
+    height: 1100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -249,7 +249,7 @@
 }
 
 .splide__arrow--prev {
-    left: 1em
+    left: 3%;
 }
 
 .splide__arrow--prev svg {
@@ -257,7 +257,7 @@
 }
 
 .splide__arrow--next {
-    right: 1em
+    right: 3%;
 }
 
 .splide__pagination {
