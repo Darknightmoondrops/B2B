@@ -30,43 +30,42 @@ function openTabs(el) {
 //     var toggeler = document.getElementById("menu-list").style.display
 //     if (toggeler == "block") document.getElementById("menu-list").style.display = "none";
 //     if (toggeler == "none") document.getElementById("menu-list").style.display = "block";
-  
+
 // }
 // function resMenuTablet(){
-   
+
 
 // }
 function menufunc() {
-        var toggeler = document.getElementById("menu-list").style.display
+    var toggeler = document.getElementById("menu-list").style.display
 
     // var mediaQuery = window.matchMedia("(max-width: 600px)")
     var mediaQuery2 = window.matchMedia("(max-width:900px)")
     if (mediaQuery2.matches) {
         if (toggeler == "block") document.getElementById("menu-list").style.display = "none";
         if (toggeler == "none") document.getElementById("menu-list").style.display = "block";
-      
-      }
-      else {
+
+    } else {
         if (toggeler == "none") document.getElementById("menu-list").style.display = "flex";
         if (toggeler == "flex") document.getElementById("menu-list").style.display = "none";
-          }
-    
+    }
+
     // if (mediaQuery.matches) resMenuMobile()
-       
+
     //   else{
     // if (toggeler == "none") document.getElementById("menu-list").style.display = "flex";
     // if (toggeler == "flex") document.getElementById("menu-list").style.display = "none";
     //   }
 
 }
-window.addEventListener('resize',function(){
+window.addEventListener('resize', function() {
     var toggeler = document.getElementById("menu-list").style.display
 
     // var mediaQuery = window.matchMedia("(max-width: 600px)")
-        if (toggeler == "block") document.getElementById("menu-list").style.display = "none";
-        if (toggeler == "flex") document.getElementById("menu-list").style.display = "none";
-      
-      
+    if (toggeler == "block") document.getElementById("menu-list").style.display = "none";
+    if (toggeler == "flex") document.getElementById("menu-list").style.display = "none";
+
+
     //   else {
     //     if (toggeler == "none") document.getElementById("menu-list").style.display = "flex";
     //     if (toggeler == "flex") document.getElementById("menu-list").style.display = "none";
@@ -126,13 +125,36 @@ setInterval(function() {
 
 //===================================== sliders =========================
 //=============================================== sliders ==========================================
+var width = window.innerWidth;
+console.log(width);
+if (width > 1024) {
+    var elms = document.getElementsByClassName('splide');
 
-var elms = document.getElementsByClassName('splide');
+    for (var i = 0; i < elms.length; i++) {
+        new Splide(elms[i], {
+            type: 'loop',
+            perPage: 3,
+            perMove: 1,
+        }).mount();
+    }
+} else if (width <= 768) {
+    var elms = document.getElementsByClassName('splide');
 
-for (var i = 0; i < elms.length; i++) {
-    new Splide(elms[i], {
-        type: 'loop',
-        perPage: 3,
-        perMove: 1,
-    }).mount();
+    for (var i = 0; i < elms.length; i++) {
+        new Splide(elms[i], {
+            type: 'loop',
+            padding: '5rem',
+        }).mount();
+    }
+
+} else if (768 < width <= 1024) {
+    var elms = document.getElementsByClassName('splide');
+
+    for (var i = 0; i < elms.length; i++) {
+        new Splide(elms[i], {
+            type: 'loop',
+            perPage: 2,
+            perMove: 1,
+        }).mount();
+    }
 }

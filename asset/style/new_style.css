@@ -201,7 +201,6 @@ a:hover {
     color: red;
 }
 
-
 .content {
     transition: 0.3s ease;
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.3);
@@ -469,7 +468,7 @@ a:hover {
 h1 {
     font-size: 30px;
     display: block;
-    width: 700px;
+    width: 70%;
     height: 100fpx;
     padding: 20px;
     margin: auto;
@@ -528,7 +527,7 @@ h1 {
     height: 40px;
     color: #eee7e7;
     border-radius: 5px;
-    background-color:#EFEFEF;
+    background-color: #EFEFEF;
     border: none;
 }
 
@@ -787,7 +786,7 @@ a:hover {
 .icon1 {
     position: absolute;
     top: 81%;
-    left: 35%;
+    left: 32%;
     width: 50px;
     height: 50px;
     width: 50px !important;
@@ -814,7 +813,7 @@ a:hover {
 .icon2 {
     position: absolute;
     top: 81%;
-    right: 35%;
+    right: 32%;
     width: 50px;
     height: 50px;
     width: 50px !important;
@@ -848,8 +847,7 @@ a:hover {
     font-style: normal;
     text-decoration: none;
     text-align: center;
-    padding: 5px;
-    width: 470px;
+    width: 100%;
     height: 120px;
 }
 
@@ -1759,235 +1757,214 @@ ol {
     background-image: url(../icons/icon-53.png);
 }
 
-
-@media screen and (max-width: 600px) {    
-    .content-menu-list{
+@media screen and (max-width: 600px) {
+    .content-menu-list {
         display: flex;
     }
-    .menu-cover{
+    .menu-cover {
         display: none;
         width: 60px;
         height: 60px;
-        background-image: linear-gradient(#FFFCFB,#FEE1D7);
+        background-image: linear-gradient(#FFFCFB, #FEE1D7);
         transform: rotate(46deg);
         border-radius: 5px;
         position: absolute;
         z-index: 10;
         margin-top: -10px;
         margin-right: -7px;
-    
     }
-        .header-nav-icon{
-            width: 20% ;
-            display: inline-block;
-            margin:25px 11% 25px -10%;
-        }
-        .header-nav-left-icon{
-            
-            width: 70%;
-        }
-        .header-nav-left-icons:hover .menu-cover{
-            display: block;
-        }
-    
-        .search-box-responsiv{
-            display: none;
-        }
-        .wrapper_tabcontent{
-            background-color:#F9F9F9
-        }
-        .second-menu-btn-f{
-            display: none;
-        }
-        .second-menu-btn{
-            display: flex;
-        }
-        .menu-titr-icon{
-            display: block;
-        }
-        .menu-list {
-            top: 15%;
-            height: auto;
-            width: 100%;
-            position: relative;
-            background-color: #F9F9F9
-        }
-        .tabcontent.active{
-            display: block !important;
-            position: relative !important;   
-            margin-right: 50px;     
-            width: 80%;
-        
-        }
-        .tablinks {
-            width: 150px;
-            height: 100px;
-            background-color: #F9F9F9
-        }
-    
-        .header-nav-lists{
-            width: 80% !important;
-            margin: auto;
-            background-color: #F9F9F9
-        }
-    
-        .header-nav-logo{
-            display: none;
-        }
-        .header-nav-div {
-            background-color: white;
-            height: 80px;
-            direction: rtl;
-            z-index: 11;
-            width: 100%;
-            bottom: 0;
-            margin: auto;
-            display: block;
-            position: fixed;
-        }
-        .responsive-menu-top {
-            display: flex;
-            position: fixed;
-            top: 0;
-            z-index: 12;
-        }
-        .header-nav-logo-resp {
-            margin-top: -30px;
-        }
-        .tabs {
-            width: 30%;
-            height: 90px;
-        }
-      }
-       
-  .block-div{
+    .header-nav-icon {
+        width: 20%;
+        display: inline-block;
+        margin: 25px 11% 25px -10%;
+    }
+    .header-nav-left-icon {
+        width: 70%;
+    }
+    .header-nav-left-icons:hover .menu-cover {
+        display: block;
+    }
+    .search-box-responsiv {
+        display: none;
+    }
+    .wrapper_tabcontent {
+        background-color: #F9F9F9
+    }
+    .second-menu-btn-f {
+        display: none;
+    }
+    .second-menu-btn {
+        display: flex;
+    }
+    .menu-titr-icon {
+        display: block;
+    }
+    .menu-list {
+        top: 15%;
+        height: auto;
+        width: 100%;
+        position: relative;
+        background-color: #F9F9F9
+    }
+    .tabcontent.active {
+        display: block !important;
+        position: relative !important;
+        margin-right: 50px;
+        width: 80%;
+    }
+    .tablinks {
+        width: 150px;
+        height: 100px;
+        background-color: #F9F9F9
+    }
+    .header-nav-lists {
+        width: 80% !important;
+        margin: auto;
+        background-color: #F9F9F9
+    }
+    .header-nav-logo {
+        display: none;
+    }
+    .header-nav-div {
+        background-color: white;
+        height: 80px;
+        direction: rtl;
+        z-index: 11;
+        width: 100%;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        position: fixed;
+    }
+    .responsive-menu-top {
+        display: flex;
+        position: fixed;
+        top: 0;
+        z-index: 12;
+    }
+    .header-nav-logo-resp {
+        margin-top: -30px;
+    }
+    .tabs {
+        width: 30%;
+        height: 90px;
+    }
+}
 
+.block-div {
     width: 100%;
 }
 
-@media screen and (min-width: 600px) and (max-width:900px){
-
-  .header-nav-icon{
-      width: 20% ;
-      display: inline-block;
-      margin:25px 11% 25px -10%;
-  }
-  .block-div{
-      display: flex;
-  }
-  .tabcontent .header-nav-lists{
-      width: 50%;
-
-  }
-
-
-  .header-nav-left-icon{
-      width: 70%;
-  }
-  .header-nav-left-icons:hover .menu-cover{
-      display: block;
-  }
-
-  .search-box-responsiv{
-      display: none;
-  }
-  .wrapper_tabcontent{
-      background-color:#F9F9F9
-  }
-  .second-menu-btn-f{
-      display: none;
-  }
-  .second-menu-btn{
-      display: flex;
-  }
-  .menu-titr-icon{
-      display: block;
-  }
-
-      .menu-list{
-      top: 15%;
-      height: auto;
-      width: 100%;
-      position: relative;
-      background-color:#F9F9F9;
-      /* display: block; */
-  }
-  .tabcontent.active{
-      display: block ;
-      /* position: relative !important;    */
-      margin-right: 50px;     
-      width: 80%;
-  
-  }
-  .tablinks{
-      width: 150px;
-      height: 100px ;
-      background-color:#F9F9F9
-
-  }
-  .header-nav-lists{
-      width: 80% !important;
-      margin: auto;
-      background-color:#F9F9F9
-
-  }
-
-
-  .header-nav-logo{
-      display: none;
-  }
-  .header-nav-div{
-      background-color: white;
-      height: 80px;
-      direction: rtl;
-      z-index: 11;
-      width: 100%;
-      bottom: 0;
-      margin: auto;
-      display: block;
-      position: fixed;
-
-  }
-  .responsive-menu-top{
-      display: flex;
-      position: fixed;
-      top: 0;
-      z-index: 12;
-  }
-  .header-nav-logo-resp{
-      margin-top:-30px ;
-  }
-  .tabs{
-      width: 30%;
-      height: 90px;
-  }
-
+@media screen and (min-width: 600px) and (max-width:900px) {
+    .header-nav-icon {
+        width: 20%;
+        display: inline-block;
+        margin: 25px 11% 25px -10%;
+    }
+    .block-div {
+        display: flex;
+    }
+    .tabcontent .header-nav-lists {
+        width: 50%;
+    }
+    .header-nav-left-icon {
+        width: 70%;
+    }
+    .header-nav-left-icons:hover .menu-cover {
+        display: block;
+    }
+    .search-box-responsiv {
+        display: none;
+    }
+    .wrapper_tabcontent {
+        background-color: #F9F9F9
+    }
+    .second-menu-btn-f {
+        display: none;
+    }
+    .second-menu-btn {
+        display: flex;
+    }
+    .menu-titr-icon {
+        display: block;
+    }
+    .menu-list {
+        top: 15%;
+        height: auto;
+        width: 100%;
+        position: relative;
+        background-color: #F9F9F9;
+        /* display: block; */
+    }
+    .tabcontent.active {
+        display: block;
+        /* position: relative !important;    */
+        margin-right: 50px;
+        width: 80%;
+    }
+    .tablinks {
+        width: 150px;
+        height: 100px;
+        background-color: #F9F9F9
+    }
+    .header-nav-lists {
+        width: 80% !important;
+        margin: auto;
+        background-color: #F9F9F9
+    }
+    .header-nav-logo {
+        display: none;
+    }
+    .header-nav-div {
+        background-color: white;
+        height: 80px;
+        direction: rtl;
+        z-index: 11;
+        width: 100%;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        position: fixed;
+    }
+    .responsive-menu-top {
+        display: flex;
+        position: fixed;
+        top: 0;
+        z-index: 12;
+    }
+    .header-nav-logo-resp {
+        margin-top: -30px;
+    }
+    .tabs {
+        width: 30%;
+        height: 90px;
+    }
 }
+
 @media screen and (min-width: 900px) {
-  .menu-list{
-      display: flex;
-  }
-  .tabcontent.active{
-      display: flex !important;
-      position: relative !important;   
-      margin-right: 50px;     
-      width: 100%;
-  
-  }
-  .block-div{
-      display: flex;
-  }
-  .tabcontent .header-nav-lists{
-      width: 45%;
-
-  }
-  .second-menu-btn{
-      display: none;
-  }
-  .header-nav-left-icon{
-      margin: 22px -10% 8px 3px;
-  }
+    .menu-list {
+        display: flex;
+    }
+    .tabcontent.active {
+        display: flex !important;
+        position: relative !important;
+        margin-right: 50px;
+        width: 100%;
+    }
+    .block-div {
+        display: flex;
+    }
+    .tabcontent .header-nav-lists {
+        width: 45%;
+    }
+    .second-menu-btn {
+        display: none;
+    }
+    .header-nav-left-icon {
+        margin: 22px -10% 8px 3px;
+    }
 }
+
 
 /* responsine menu  */
 
@@ -2056,7 +2033,7 @@ ol {
         display: block;
         width: 100%;
         text-align: center;
-        padding-bottom: 1س40px;
+        padding-bottom: 140px;
     }
     .filter-titles h4,
     p {
@@ -2075,7 +2052,7 @@ ol {
         display: block;
         width: 100%;
         margin: auto;
-        margin-bottom: 35%;
+        margin-bottom: 75%;
     }
     .article-container {
         display: block;
@@ -2326,9 +2303,6 @@ ol {
         width: 95%;
         height: auto;
         margin: auto;
-    }
-    .article-card {
-        margin-bottom: 20%;
     }
     .all-articles {
         display: block;
