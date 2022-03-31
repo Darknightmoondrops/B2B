@@ -97,6 +97,10 @@
     .title1 {
         font-size: 30px;
     }
+    .splide__track {
+        padding-left: 15% !important;
+        padding-right: 15% !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -123,6 +127,9 @@
     }
     .title1 {
         font-size: 30px;
+    }
+    .splide__slide {
+        width: calc(50%) !important;
     }
 }
 
