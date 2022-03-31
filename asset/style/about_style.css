@@ -349,3 +349,18 @@ body {
     position: relative;
     margin: auto;
 }
+
+.intro-icon1 {
+    background-image: url(../icons/icon-65.png);
+    background-repeat: no-repeat;
+}
+
+.intro-icon2 {
+    background-image: url(../icons/icon-64.png);
+    background-repeat: no-repeat;
+}
+
+.intro-icon3 {
+    background-image: url(../icons/icon-63.png);
+    background-repeat: no-repeat;
+}
