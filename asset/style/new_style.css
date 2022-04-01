@@ -1803,6 +1803,10 @@ ul li input[type=checkbox]:checked~i:after {
         background-repeat: no-repeat;
         object-fit: cover;
         background-size: contain;
+        width: 45px;
+        height: 45px;
+        background-size: contain;
+        padding: 2px;
     }
     
     .whatsapp-icon {
@@ -1810,6 +1814,10 @@ ul li input[type=checkbox]:checked~i:after {
         background-repeat: no-repeat;
         object-fit: cover;
         background-size: contain;
+        width: 45px;
+        height: 45px;
+        background-size: contain;
+        padding: 2px;
     }
     
     .telegram-icon {
@@ -1817,6 +1825,10 @@ ul li input[type=checkbox]:checked~i:after {
         background-repeat: no-repeat;
         object-fit: cover;
         background-size: contain;
+        width: 45px;
+        height: 45px;
+        background-size: contain;
+        padding: 2px;
     }
     
     .instagram-icon {
@@ -1824,6 +1836,10 @@ ul li input[type=checkbox]:checked~i:after {
         background-repeat: no-repeat;
         object-fit: cover;
         background-size: contain;
+        width: 45px;
+        height: 45px;
+        background-size: contain;
+        padding: 2px;
     }
     
     .facebook-icon {
@@ -1831,6 +1847,10 @@ ul li input[type=checkbox]:checked~i:after {
         background-repeat: no-repeat;
         object-fit: cover;
         background-size: contain;
+        width: 45px;
+        height: 45px;
+        background-size: contain;
+        padding: 2px;
     }
     
     @media screen and (max-width: 600px) {
@@ -2071,6 +2091,9 @@ ul li input[type=checkbox]:checked~i:after {
         .lorem {
             font-size: 20px;
             text-align: justify;
+            width: 90%;
+            display: block;
+            margin: auto;
         }
         .botlane {
             display: block;
@@ -2396,6 +2419,9 @@ ul li input[type=checkbox]:checked~i:after {
         .lorem {
             font-size: 20px;
             text-align: justify;
+            width: 90%;
+            display: block;
+            margin: auto;
         }
         .botlane {
             display: block;

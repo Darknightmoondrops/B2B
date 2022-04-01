@@ -156,9 +156,10 @@ body {
 
 .all-media {
     width: 100%;
-    display: block;
+    display: flex;
     margin: auto;
     margin-top: 30px;
+    justify-content: center;
 }
 
 .intro-text {
@@ -278,6 +279,29 @@ body {
     }
     .all-media {
         width: 90%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 380px) {
+    .avatar-card h4 {
+        font-size: 20px;
+    }
+    .avatar-media-icons {
+        width: 35px;
+        height: 35px;
+    }
+    .content-text {
+        font-size: 15px !important;
+    }
+    .content-title {
+        font-size: 20px !important;
+    }
+    .content-text2-text {
+        font-size: 15px !important;
+        margin-top: 50px !important;
+    }
+    .avatar-card p {
+        font-size: 20px;
     }
 }
 
