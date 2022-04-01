@@ -1137,24 +1137,28 @@ ul li input[type=checkbox]:checked~i:after {
     .grid-card {
         display: flex;
         justify-content: space-evenly;
-        position: relative;
         width: 95%;
         margin: auto;
         margin-top: 30px;
         direction: ltr;
     }
     
-    .img-grid {
+    .box-grid-a2 .img-grid {
         position: relative;
+    }
+    
+    .img-grid {
+        width: 100%;
     }
     
     .img-grid-p1 {
         border-radius: 5px;
+        width: 100%;
     }
     
     .box-grid-a2 {
-        width: 1000px;
-        height: 495px;
+        width: 100%;
+        height: auto;
         position: relative;
         display: flex;
     }
@@ -1168,8 +1172,8 @@ ul li input[type=checkbox]:checked~i:after {
     }
     
     .box-grid-a1 {
-        width: 628px;
-        height: 329px;
+        width: 100%;
+        height: auto;
         position: relative;
         display: flex;
     }
@@ -1187,7 +1191,7 @@ ul li input[type=checkbox]:checked~i:after {
     }
     
     .viewed-all {
-        font-size: 30px;
+        font-size: 23px;
         display: block;
         position: absolute;
         top: 75%;
@@ -1195,7 +1199,7 @@ ul li input[type=checkbox]:checked~i:after {
     }
     
     .viewed-all-p2 {
-        font-size: 30px;
+        font-size: 23px;
         display: block;
         position: absolute;
         top: 79%;
@@ -1203,7 +1207,7 @@ ul li input[type=checkbox]:checked~i:after {
     }
     
     .txt-grid-p1 {
-        font-size: 40px;
+        font-size: 27px;
         text-align: right;
         position: absolute;
         right: 6%;
@@ -1211,7 +1215,7 @@ ul li input[type=checkbox]:checked~i:after {
     }
     
     .txt-grid-p2 {
-        font-size: 40px;
+        font-size: 27px;
         text-align: right;
         position: absolute;
         left: 9%;
@@ -1259,8 +1263,9 @@ ul li input[type=checkbox]:checked~i:after {
     
     .article-info-txt {
         color: #7B7B7B;
-        font-size: 22px;
+        font-size: 17px;
         text-align: center;
+        margin-right: 0;
     }
     
     .bot-article-info {
@@ -1279,7 +1284,7 @@ ul li input[type=checkbox]:checked~i:after {
         color: #7B7B7B;
         width: 90%;
         height: 44px;
-        display: inline;
+        display: block;
         margin-top: 0%;
         font-size: 20px;
         margin-right: 0;
@@ -1288,7 +1293,7 @@ ul li input[type=checkbox]:checked~i:after {
     .bot-article-info-img {
         width: 35px;
         height: 35px;
-        display: inline;
+        display: block;
     }
     
     .read-more {
@@ -1328,6 +1333,28 @@ ul li input[type=checkbox]:checked~i:after {
         cursor: pointer;
         transition: .6s linear;
         border: 0;
+    }
+    
+    .grid-col1 {
+        width: 56%;
+        display: block;
+    }
+    
+    .grid-col2 {
+        width: 35%;
+        display: block;
+    }
+    
+    .box-grid-p1 {
+        width: 95%;
+        display: block;
+        margin: auto;
+    }
+    
+    .box-grid-p3 {
+        width: 95%;
+        display: block;
+        margin: auto;
     }
     /***********Footer**************/
     

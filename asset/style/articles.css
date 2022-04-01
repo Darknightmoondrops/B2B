@@ -21,7 +21,7 @@
 }
 
 .bar-articles {
-    width: 18%;
+    width: 25%;
     height: 1200px;
     border-radius: 20px;
     box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
@@ -38,12 +38,17 @@
 
 .sml-article {
     display: flex;
+    margin-top: 10%;
 }
 
 .article-sml-img {
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
+}
+
+.article-sml-img {
+    width: 100%;
 }
 
 .search-sml-articles {
@@ -62,10 +67,23 @@
 
 .btn-search-sml-articles {
     position: absolute;
-    left: 57px;
+    left: 9%;
     top: 47px;
     border: 1px;
     background-color: #EFEFEF;
+}
+
+.article-title {
+    margin-bottom: 0;
+    font-size: 25px;
+}
+
+.read-more-in {
+    font-size: 23px;
+}
+
+.author-data {
+    font-size: 15px;
 }
 
 .articles-title {
@@ -87,6 +105,7 @@
     width: 90%;
     display: block;
     margin: auto;
+    text-align: justify;
 }
 
 
@@ -330,14 +349,34 @@ h3 {
     display: grid;
     grid-template-columns: auto auto auto;
     direction: rtl;
+    width: 75%;
 }
 
 .article-card {
-    margin-bottom: 30%;
+    margin-bottom: 300px;
 }
 
 .search-articles {
     width: 100%;
+}
+
+.sml-article-img {
+    width: 20%;
+}
+
+.articles-text p {
+    width: 90%;
+    margin: auto;
+}
+
+.author-data {
+    width: 77%;
+}
+
+.bot-article-info-img {
+    width: 25px;
+    height: 25px;
+    display: block;
 }
 
 
@@ -359,6 +398,7 @@ h3 {
         display: block;
         margin: auto;
         margin-bottom: 5%;
+        height: auto;
     }
     .articles-text p {
         direction: rtl;
@@ -409,9 +449,11 @@ h3 {
         display: block;
         margin: auto;
         margin-bottom: 5%;
+        height: auto;
     }
     .articles-text p {
         direction: rtl;
+        text-align: justify;
     }
     .search-articles {
         margin-top: 10px;
