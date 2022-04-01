@@ -1471,8 +1471,8 @@ ul li input[type=checkbox]:checked~i:after {
     }
     
     .applogo {
-        width: 280px;
-        height: 75px;
+        width: 90%;
+        height: auto;
         border-radius: 5px;
     }
     
@@ -1508,11 +1508,12 @@ ul li input[type=checkbox]:checked~i:after {
     }
     
     .media {
-        display: block;
+        display: flex;
+        justify-content: center;
     }
     
     .medialogo {
-        display: inline;
+        display: block;
     }
     
     .botlane-txt {
@@ -1762,6 +1763,7 @@ ul li input[type=checkbox]:checked~i:after {
     .phone {
         background-image: url(../icons/icon-8.png);
         background-repeat: no-repeat;
+        background-size: contain;
         padding: 1px;
         width: 60px;
         height: 60px;
@@ -1771,6 +1773,7 @@ ul li input[type=checkbox]:checked~i:after {
     .location {
         background-image: url(../icons/icon-7.png);
         background-repeat: no-repeat;
+        background-size: contain;
         padding: 1px;
         width: 60px;
         height: 60px;
@@ -1780,6 +1783,7 @@ ul li input[type=checkbox]:checked~i:after {
     .message {
         background-image: url(../icons/icon-6.png);
         background-repeat: no-repeat;
+        background-size: contain;
         padding: 1px;
         width: 70px;
         height: 60px;
@@ -2081,8 +2085,8 @@ ul li input[type=checkbox]:checked~i:after {
         }
         .applogo {
             border-radius: 20px;
-            width: 200px;
-            height: 58px;
+            width: 90%;
+            height: auto;
         }
         .application {
             width: 100%;
@@ -2147,6 +2151,11 @@ ul li input[type=checkbox]:checked~i:after {
             width: 100%;
             height: auto;
         }
+        .grid-col2 {
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
         .box-grid-p1 {
             width: 100%;
             display: block;
@@ -2176,7 +2185,9 @@ ul li input[type=checkbox]:checked~i:after {
             font-size: 22px;
         }
         .button {
-            width: 80%;
+            width: 75%;
+            height: 53px;
+            font-size: 19px;
         }
         .all-dot-btn {
             display: none;
@@ -2258,6 +2269,88 @@ ul li input[type=checkbox]:checked~i:after {
         }
     }
     
+    @media (min-width: 300px) and (max-width: 450px) {
+        .div-p {
+            font-size: 17px;
+        }
+        .div {
+            margin-top: 0;
+        }
+        .lorem {
+            font-size: 15px;
+            width: 90%;
+            display: block;
+            margin: auto;
+        }
+        .application-text {
+            font-size: 20px;
+        }
+        .section-p1 button {
+            height: 27px;
+            font-size: 11px;
+        }
+        .section-p1-txt {
+            font-size: 11px;
+            line-height: 25px;
+        }
+        .title1 {
+            font-size: 15px;
+        }
+        .author-data {
+            font-size: 11px;
+            padding-top: 3%;
+            height: 44px;
+        }
+        .article-info-txt {
+            font-size: 14px;
+        }
+        .bot-article-info-img {
+            width: 25px;
+            height: 25px;
+        }
+        .article-card {
+            margin-bottom: 77%;
+        }
+        .read-more-in {
+            font-size: 20px;
+        }
+        .read-more {
+            height: 55px;
+        }
+        .button-article {
+            font-size: 19px;
+            height: 53px;
+            width: 75%;
+        }
+        .title1 {
+            font-size: 15px !important;
+        }
+        .viewed-all {
+            font-size: 14px;
+        }
+        .txt-grid-p2 {
+            font-size: 14px;
+        }
+        .txt-grid-p1 {
+            font-size: 14px;
+        }
+        .viewed-all-p2 {
+            font-size: 14px;
+        }
+        .buy-web ol {
+            padding: 1px;
+        }
+        .sell-web ol {
+            padding: 1px;
+        }
+        .company-name ol {
+            padding: 1px;
+        }
+        .links {
+            font-size: 15px;
+        }
+    }
+    
     @media (min-width: 1024px) and (max-width: 1327px) {
         .section-p1 button {
             height: 65px;
@@ -2270,6 +2363,9 @@ ul li input[type=checkbox]:checked~i:after {
     }
     
     @media (min-width: 768px) and (max-width: 1024px) {
+        .grid-col2 {
+            width: 100%;
+        }
         .links {
             width: 80%;
         }
@@ -2314,8 +2410,8 @@ ul li input[type=checkbox]:checked~i:after {
         }
         .applogo {
             border-radius: 20px;
-            width: 200px;
-            height: 58px;
+            width: 90%;
+            height: auto;
         }
         .application {
             width: 100%;
@@ -2335,7 +2431,7 @@ ul li input[type=checkbox]:checked~i:after {
             display: block;
             width: 100%;
             text-align: center;
-            padding-bottom: 40px;
+            padding-bottom: 100px;
         }
         .filter-titles h4,
         p {
