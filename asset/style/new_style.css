@@ -1410,7 +1410,7 @@ ul li input[type=checkbox]:checked~i:after {
         justify-content: space-around;
         font-size: 1.5rem;
         text-align: center;
-        width: 63%;
+        width: 90%;
         margin: auto;
     }
     
@@ -1724,10 +1724,82 @@ ul li input[type=checkbox]:checked~i:after {
     
     .titr-icon1 {
         background-image: url(../icons/icon-43.png);
+        object-fit: cover;
     }
     
     .titr-icon2 {
         background-image: url(../icons/icon-53.png);
+        object-fit: cover;
+    }
+    
+    .phone {
+        background-image: url(../icons/icon-8.png);
+        background-repeat: no-repeat;
+        padding: 1px;
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+    }
+    
+    .location {
+        background-image: url(../icons/icon-7.png);
+        background-repeat: no-repeat;
+        padding: 1px;
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+    }
+    
+    .message {
+        background-image: url(../icons/icon-6.png);
+        background-repeat: no-repeat;
+        padding: 1px;
+        width: 70px;
+        height: 60px;
+        object-fit: cover;
+    }
+    
+    .main-logo-footer-img {
+        background-image: url(../img/logo-removebg-preview.png);
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: contain;
+        padding: 1px;
+    }
+    
+    .youtube-icon {
+        background-image: url(../icons/icon-14.png);
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: contain;
+    }
+    
+    .whatsapp-icon {
+        background-image: url(../icons/icon-13.png);
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: contain;
+    }
+    
+    .telegram-icon {
+        background-image: url(../icons/icon-12.png);
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: contain;
+    }
+    
+    .instagram-icon {
+        background-image: url(../icons/icon-11.png);
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: contain;
+    }
+    
+    .facebook-icon {
+        background-image: url(../icons/icon-10.png);
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: contain;
     }
     
     @media screen and (max-width: 600px) {
