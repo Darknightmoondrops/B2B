@@ -66,7 +66,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    height: 1100px;
+    height: 800px;
 }
 
 @media screen and (max-width: 768px) {
@@ -83,19 +83,19 @@
         top: 35% !important;
     }
     .splide__arrow--prev {
-        left: 10% !important;
+        left: 11% !important;
     }
     .splide__arrow--next {
-        right: 10% !important;
+        right: 11% !important;
     }
     .details {
-        font-size: 25px !important;
+        font-size: 20px !important;
     }
     .splide__slide {
-        height: 590px;
+        height: auto;
     }
     .title1 {
-        font-size: 30px;
+        font-size: 23px;
     }
     .splide__track {
         padding-left: 15% !important;
@@ -123,7 +123,7 @@
         font-size: 20px !important;
     }
     .splide__slide {
-        height: 450px;
+        height: 590px;
     }
     .title1 {
         font-size: 30px;

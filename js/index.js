@@ -1,3 +1,7 @@
+var hib = window.innerWidth;
+console.log(hib);
+
+
 // ======================MENU=====================
 
 var tabLinks = document.querySelectorAll(".tablinks");
