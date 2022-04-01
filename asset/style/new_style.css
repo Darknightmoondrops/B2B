@@ -1764,7 +1764,7 @@ ul li input[type=checkbox]:checked~i:after {
         background-image: url(../icons/icon-8.png);
         background-repeat: no-repeat;
         background-size: contain;
-        padding: 1px;
+        padding: 2px;
         width: 60px;
         height: 60px;
         object-fit: cover;
@@ -1774,7 +1774,7 @@ ul li input[type=checkbox]:checked~i:after {
         background-image: url(../icons/icon-7.png);
         background-repeat: no-repeat;
         background-size: contain;
-        padding: 1px;
+        padding: 2px;
         width: 60px;
         height: 60px;
         object-fit: cover;
@@ -1784,7 +1784,7 @@ ul li input[type=checkbox]:checked~i:after {
         background-image: url(../icons/icon-6.png);
         background-repeat: no-repeat;
         background-size: contain;
-        padding: 1px;
+        padding: 2px;
         width: 70px;
         height: 60px;
         object-fit: cover;
@@ -1795,7 +1795,7 @@ ul li input[type=checkbox]:checked~i:after {
         background-repeat: no-repeat;
         object-fit: cover;
         background-size: contain;
-        padding: 1px;
+        padding: 2px;
     }
     
     .youtube-icon {
