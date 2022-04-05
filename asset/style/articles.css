@@ -197,9 +197,11 @@ h3 {
 .article-text-md1 {
     width: 90%;
 }
-.article-text-md1-p{
+
+.article-text-md1-p {
     width: auto;
 }
+
 .article-tags {
     width: 50%;
     display: flex;
@@ -215,7 +217,6 @@ h3 {
 
 .article-bott {
     align-items: center;
-
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -351,26 +352,31 @@ h3 {
 .search-articles {
     width: 100%;
 }
+
+
 /* responsev articel  */
+
 .article-left-icon {
     width: 35px;
     height: 35px;
 }
-.article-p{
+
+.article-p {
     width: 100%;
     color: #7B7B7B;
     margin-top: 13px;
-
 }
-.share-ic{
+
+.share-ic {
     background-image: url(../icons/icon-38.png);
     background-repeat: round;
 }
-.chat-ic{
+
+.chat-ic {
     background-image: url(../icons/icon-40.png);
     background-repeat: round;
-
 }
+
 @media screen and (max-width: 600px) {
     .header-text-d p {
         width: 70%;
@@ -382,7 +388,6 @@ h3 {
         width: 90%;
         display: block;
     }
-    
     .header-article p {
         color: #7B7B7B;
         margin-right: 0;
@@ -400,56 +405,55 @@ h3 {
         top: 80%;
         left: 0;
     }
-    
-.article-box1 {
-    display: block;
-    justify-content: space-evenly;
-}
-.article-img-md2 {
-    width:94%;
-    margin: auto;
-}
-.all-name {
-    display: block;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 15px;
-}
-.name-comm input {
-    width: 85%;
-    height: 90px;
-    font-size: 27px;
-    padding-right: 32px;
-    margin-top: 15px;
-    border-radius: 9px;
-    border: 1px solid #707070;
-}
-.name-comm2 input {
-    width: 87%;
-    height: 90px;
-    display: block;
-    margin: 0;
-    margin-top: 41px;
-    font-size: 27px;
-    padding-right: 32px;
-    border-radius: 9px;
-    border: 1px solid #707070;
-    padding-bottom: 210px;
-}
-.comments-btn {
-    width: 95%;
-    height: 90px;
-    display: block;
-    margin: 0;
-    border-radius: 15px;
-    background-color: #F26A4F;
-    border: 1px;
-    color: #fff;
-    font-size: 35px;
-    margin-top: 50px;
+    .article-box1 {
+        display: block;
+        justify-content: space-evenly;
+    }
+    .article-img-md2 {
+        width: 94%;
+        margin: auto;
+    }
+    .all-name {
+        display: block;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .name-comm input {
+        width: 85%;
+        height: 90px;
+        font-size: 27px;
+        padding-right: 32px;
+        margin-top: 15px;
+        border-radius: 9px;
+        border: 1px solid #707070;
+    }
+    .name-comm2 input {
+        width: 87%;
+        height: 90px;
+        display: block;
+        margin: 0;
+        margin-top: 41px;
+        font-size: 27px;
+        padding-right: 32px;
+        border-radius: 9px;
+        border: 1px solid #707070;
+        padding-bottom: 210px;
+    }
+    .comments-btn {
+        width: 95%;
+        height: 90px;
+        display: block;
+        margin: 0;
+        border-radius: 15px;
+        background-color: #F26A4F;
+        border: 1px;
+        color: #fff;
+        font-size: 35px;
+        margin-top: 50px;
+    }
 }
 
-}
 @media screen and (min-width: 600px) and (max-width:900px) {
     .article-img-md {
         width: 90%;
@@ -461,7 +465,7 @@ h3 {
     }
     .article-img-md2 {
         width: 95%;
-        margin:0;
+        margin: 0;
     }
     .all-name {
         display: block;
@@ -482,7 +486,7 @@ h3 {
         width: 87%;
         height: 90px;
         display: block;
-        margin:0;
+        margin: 0;
         margin-top: 41px;
         font-size: 27px;
         padding-right: 32px;
@@ -502,8 +506,8 @@ h3 {
         font-size: 35px;
         margin-top: 50px;
     }
-    
 }
+
 @media screen and (min-width: 900px) and (max-width:1025px) {
     .article-img-md {
         width: 90%;
@@ -516,9 +520,7 @@ h3 {
     .article-text-md1-p {
         width: 90%;
     }
-    
 }
-
 
 
 /* resp articles */
@@ -831,4 +833,37 @@ h3 {
     opacity: 1;
     transition: .5s;
     transition-delay: .5s;
+}
+
+.container-heart {
+    text-align: center;
+    font-size: 20pt;
+    font-family: 'arial';
+    margin-top: 200px;
+}
+
+.far {}
+
+.fas {
+    color: red;
+}
+
+.heart {
+    cursor: pointer;
+}
+
+.pulse {
+    animation: pulse .5s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
