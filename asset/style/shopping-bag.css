@@ -31,8 +31,8 @@
 }
 
 .factor-product-img {
-    width: 135px;
-    height: 135px;
+    width: 30%;
+    height: auto;
     border-radius: 50%;
 }
 
@@ -84,8 +84,8 @@
 
 .color-size {
     display: flex;
-    width: 50%;
-    margin-top: 6%;
+    width: 100%;
+    margin-top: 27%;
 }
 
 .factor-product-detail a {
@@ -112,6 +112,7 @@
 
 .price-detail p {
     display: inline-block;
+    width: 1%;
 }
 
 .kidd-price {
@@ -284,4 +285,198 @@
     font-size: 25px;
     margin: auto;
     margin-top: 5%;
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+    .shopping-bag-title {
+        font-size: 35px;
+    }
+    .price-product {
+        font-size: 15px;
+    }
+    .factor-product-detail a {
+        font-size: 15px;
+    }
+    .size p {
+        margin-top: 0;
+        margin-right: 6%;
+    }
+    .size {
+        width: 50px;
+        height: 25px;
+        font-size: 13px;
+    }
+    .product-color {
+        width: 25px;
+        height: 25px;
+    }
+    .factor-title {
+        font-size: 20px;
+    }
+    .kidd-price-title {
+        font-size: 15px;
+    }
+    .price-detail p {
+        direction: rtl;
+    }
+    .kidd-price-title {
+        font-size: 12px;
+    }
+    .offer-box-title {
+        font-size: 20px;
+    }
+    .offer-box-title {
+        font-size: 20px;
+    }
+    .address-info-title {
+        font-size: 20px;
+    }
+    .address-info-p p {
+        font-size: 12px !important;
+        margin-top: 11%;
+    }
+    .current-address {
+        width: 60%;
+        direction: rtl;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .all-factors {
+        display: block;
+    }
+    .factor {
+        width: 95%;
+        margin: auto;
+    }
+    .short-offer {
+        width: 95%;
+        display: block;
+        margin: auto;
+        margin-top: 5%;
+    }
+    .factor-title {
+        text-align: right;
+    }
+    .color-size {
+        margin-top: 14%;
+    }
+    .price-detail {
+        width: 46%;
+        height: 50px;
+        font-size: 18px;
+    }
+    .price-detail p {
+        width: 30%;
+    }
+    .kidd-price-title {
+        direction: rtl;
+        text-align: center;
+    }
+    .offer-box-title {
+        direction: rtl;
+    }
+    .address-info-title {
+        direction: rtl;
+    }
+    .payment-btn {
+        width: 70%;
+        margin-bottom: 3%;
+    }
+    .current-address {
+        width: 70%;
+        direction: rtl;
+    }
+    .address-info-p p {
+        font-size: 20px;
+    }
+    .address-p-one {
+        width: 20%;
+    }
+    .address-info-checkbox {
+        width: 25px;
+        height: 25px;
+    }
+    .address-info-detail {
+        margin-bottom: 100px;
+    }
+    .factor-product-detail a {
+        font-size: 20px;
+    }
+    .price-product {
+        font-size: 20px;
+    }
+    .add-address {
+        width: 80%;
+        margin: auto !important;
+        margin-top: 20px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .all-factors {
+        display: block;
+    }
+    .factor {
+        width: 95%;
+        margin: auto;
+    }
+    .factor-title {
+        text-align: right;
+    }
+    .color-size {
+        margin-top: 14%;
+    }
+    .short-offer {
+        width: 95%;
+        display: block;
+        margin: auto;
+        margin-top: 5%;
+    }
+    .price-detail {
+        width: 46%;
+        height: 50px;
+        font-size: 18px;
+    }
+    .price-detail p {
+        width: 26%;
+    }
+    .kidd-price-title {
+        direction: rtl;
+        text-align: center;
+    }
+    .offer-box-title {
+        direction: rtl;
+    }
+    .address-info-title {
+        direction: rtl;
+    }
+    .payment-btn {
+        width: 70%;
+        margin-bottom: 3%;
+    }
+    .current-address {
+        width: 70%;
+        direction: rtl;
+    }
+    .address-info-p p {
+        font-size: 20px;
+    }
+    .address-p-one {
+        width: 20%;
+    }
+    .address-info-detail {
+        margin-bottom: 100px;
+    }
+    .add-address {
+        width: 80%;
+        margin: auto !important;
+        margin-top: 20px !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1345px) {
+    .price-detail p {
+        margin-right: 6px;
+    }
 }

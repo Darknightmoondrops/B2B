@@ -765,8 +765,8 @@ ul li input[type=checkbox]:checked~i:after {
         position: absolute;
         top: 80%;
         left: 32%;
-        width: 15% !important;
-        height: 14% !important;
+        width: 12% !important;
+        height: 13% !important;
         background-color: #F26A4F;
         border-radius: 50%;
     }
@@ -794,8 +794,8 @@ ul li input[type=checkbox]:checked~i:after {
         position: absolute;
         top: 80%;
         right: 32%;
-        width: 15% !important;
-        height: 14% !important;
+        width: 12% !important;
+        height: 13% !important;
         background-color: #F26A4F;
         border-radius: 50%;
     }
@@ -1045,11 +1045,25 @@ ul li input[type=checkbox]:checked~i:after {
         position: relative;
     }
     
+    .section-p1-service img {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+    }
+    
     .section-text {
         position: absolute;
         top: 16%;
         right: 35%;
         left: 35%;
+    }
+    
+    .section-p1-txt-service {
+        position: absolute;
+        top: 16%;
+        right: 35%;
+        left: 0;
     }
     
     .section-p1-service {
@@ -1060,10 +1074,9 @@ ul li input[type=checkbox]:checked~i:after {
         width: 100%;
         margin: auto;
         margin-top: 50px;
-        background-image: url('../img/pic-24.png');
-        height: 630px;
+        height: auto;
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: round;
     }
     
     .section-p1>div {
@@ -1086,14 +1099,14 @@ ul li input[type=checkbox]:checked~i:after {
     }
     
     .section-p1-txt-service {
-        font-size: 50px;
+        font-size: 40px;
         color: #F26A4F;
         display: block;
         text-align: center;
         line-height: 80px;
-        width: 26%;
+        width: 25%;
         margin: auto;
-        margin-left: 21%;
+        margin-left: 19%;
     }
     
     .section-p1 button {
@@ -1107,22 +1120,26 @@ ul li input[type=checkbox]:checked~i:after {
         color: #fff;
         cursor: pointer;
         transition: .6s linear;
-        border: 0;
+        border: 1px;
     }
     
     .section-p1-service button {
         display: block;
-        width: 400px;
+        width: 25%;
         height: 75px;
         margin: auto;
         margin-top: 1%;
-        margin-left: 25%;
+        margin-left: 19%;
         border-radius: 20px;
         background-color: #F26A4F;
         font-size: 27px;
         color: #fff;
         cursor: pointer;
         transition: .6s linear;
+        border: 1px;
+        position: absolute;
+        left: 0;
+        top: 60%;
     }
     
     .section-p1 button:hover {
@@ -1538,7 +1555,7 @@ ul li input[type=checkbox]:checked~i:after {
     /****** type of company *********/
     
     .title-space-selector {
-        display: inline-block;
+        display: block;
         font-size: 20px;
         color: #F26A4F;
         width: 273px;
@@ -1547,6 +1564,7 @@ ul li input[type=checkbox]:checked~i:after {
     .select {
         position: relative;
         min-width: 420px;
+        display: block;
     }
     
     .select svg {
@@ -2361,6 +2379,7 @@ ul li input[type=checkbox]:checked~i:after {
             border-radius: 20px 0 !important;
             width: 90px !important;
             height: 30px !important;
+            right: 6% !important;
         }
     }
     
@@ -2370,6 +2389,7 @@ ul li input[type=checkbox]:checked~i:after {
             border-radius: 15px 0 !important;
             width: 60px !important;
             height: 25px !important;
+            right: 6% !important;
         }
         .valid-logo {
             width: 90px;
@@ -2454,6 +2474,14 @@ ul li input[type=checkbox]:checked~i:after {
         .links {
             font-size: 15px;
         }
+        .section-p1-txt-service {
+            font-size: 9px;
+            line-height: 19px;
+        }
+        .section-p1-service button {
+            font-size: 7px;
+            height: 19px;
+        }
     }
     
     @media (min-width: 1024px) and (max-width: 1327px) {
@@ -2473,6 +2501,7 @@ ul li input[type=checkbox]:checked~i:after {
             border-radius: 20px 0 !important;
             width: 90px !important;
             height: 30px !important;
+            right: -14% !important;
         }
         .grid-col2 {
             width: 100%;
