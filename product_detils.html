@@ -9,7 +9,9 @@
     <!--styles-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
     <link rel="stylesheet" href="./asset/style/new_style.css" />
+    <link rel="stylesheet" href="./js/splide-3.6.12/dist/css/splide.min.css">
     <link rel="stylesheet" href="./asset/style/product_details_style.css" />
+    <link rel="stylesheet" href="./asset/style/products.css">
     <!-- <link rel="stylesheet" href="./asset/style/contact_style.css" /> -->
 
     <link rel="stylesheet" href="./asset/plugins/fontawesome/css/all.min.css">
@@ -460,7 +462,7 @@
 
         <div class="tabs-main">
             <input type="radio" name="tabs-main" id="tabone" checked="checked">
-            <label for="tabone">
+            <label class="tabs-main-part" for="tabone">
                 
                 <div class="tabs-main-res-label">          معرفی
                 </div></label>
@@ -471,7 +473,7 @@
                 </p>
             </div>
             <input type="radio" name="tabs-main" id="tabtwo">
-            <label for="tabtwo">
+            <label class="tabs-main-part" for="tabtwo">
                 <div class="tabs-main-res-label">جزئیات
                 </div>
             </label>
@@ -498,7 +500,7 @@
                 </div>
             </div>
             <input type="radio" name="tabs-main" id="tabthree">
-            <label for="tabthree">
+            <label class="tabs-main-part" for="tabthree">
               <div class="tabs-main-res-label">فرشنده
               </div>
             </label>
@@ -516,7 +518,7 @@
 
             </div>
             <input type="radio" name="tabs-main" id="tabfour">
-            <label for="tabfour">
+            <label class="tabs-main-part" for="tabfour">
               <div class="tabs-main-res-label">          نظرات
         </div>
 
@@ -538,6 +540,7 @@
                 </div>
                 <p class="detailstabdiv22-p">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
 
+
                 <div class="tab-div-m">
                     <h4 style="color: #F26A4F;">ثبت دیدگاه جدید</h4>
                     <p>شما هم درباره این کالا دیدگاه ثب کنید</p>
@@ -558,13 +561,18 @@
                         <div class="detailstabdiv3">
                             <p>ثبت امتیاز شما :</p>
                             <div class="detailsrate2">
-
-                                <i class=""><img src="./asset/icons/starr.png"/></i>
-                                <i class=""><img src="./asset/icons/starr.png"/></i>
-                                <i class=""><img src="./asset/icons/starr.png"/></i>
-                                <i class=""><img src="./asset/icons/starr.png"/></i>
-                                <i class=""><img src="./asset/icons/starr.png"/></i>
-
+                                <div class="star-rating">
+                                    <input type="radio" id="5-stars" name="rating" value="5" />
+                                    <label for="5-stars" class="star">&#9733;</label>
+                                    <input type="radio" id="4-stars" name="rating" value="4" />
+                                    <label for="4-stars" class="star">&#9733;</label>
+                                    <input type="radio" id="3-stars" name="rating" value="3" />
+                                    <label for="3-stars" class="star">&#9733;</label>
+                                    <input type="radio" id="2-stars" name="rating" value="2" />
+                                    <label for="2-stars" class="star">&#9733;</label>
+                                    <input type="radio" id="1-star" name="rating" value="1" />
+                                    <label for="1-star" class="star">&#9733;</label>
+                                </div>
                             </div>
                         </div>
                         <div class="pro-btn22">
@@ -578,6 +586,147 @@
 
         </div>
     </section>
+    <h1 class="title1">محصولات مشابه</h1>
+    <div class="splide" dir="ltr">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                                <span class="token-hori">20%</span>
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                                <span class="token-hori">20%</span>
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="product-box">
+                        <div class="image-parent">
+                            <a href="#">
+                                <img class="image" src="./asset/img/pic-12.png" alt="">
+                            </a>
+                            <div>
+                                <a href="#">
+                                    <img class="icon1" src="./asset/icons/icon-9.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon2" src="./asset/icons/icon-23.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="details">
+
+                            <a href="#">
+                                <h2>میز چوبی</h2>
+                            </a>
+                            <div class="rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">2.000.000T</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div id="snackbar" class=""></div>
 
 
@@ -693,12 +842,7 @@
         </div>
     </footer>
     <!-- footer -->
-
-
-
-
-
-
+    <script src="./js/splide-3.6.12/dist/js/splide.min.js"></script>
     <script src="./js/details-product.js"></script>
     <script src="./js/index.js"></script>
 
