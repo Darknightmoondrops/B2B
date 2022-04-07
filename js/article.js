@@ -29,9 +29,12 @@ heartDOM.addEventListener('animationend', (event) => {
 
 //============ copy ============
 const shareBtn = document.querySelector('.share-btn');
-const shareOptions = document.querySelector('.share-options');
+const shareOptions = document.getElementById('share-options');
 var link = document.getElementsByClassName("link");
 link[0].innerHTML = window.location.href;
+
+
+
 
 shareBtn.addEventListener('click', () => {
     shareOptions.classList.toggle('active');
