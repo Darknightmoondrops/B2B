@@ -765,10 +765,13 @@ ul li input[type=checkbox]:checked~i:after {
         position: absolute;
         top: 80%;
         left: 32%;
-        width: 12% !important;
+        width: 11% !important;
         height: 13% !important;
         background-color: #F26A4F;
         border-radius: 50%;
+        background-image: url(../icons/icon-9.png);
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     
     .icon1 img {
@@ -794,10 +797,17 @@ ul li input[type=checkbox]:checked~i:after {
         position: absolute;
         top: 80%;
         right: 32%;
-        width: 12% !important;
+        width: 11% !important;
         height: 13% !important;
         background-color: #F26A4F;
         border-radius: 50%;
+        background-image: url(../icons/icon-62.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .fix-icon-vert {
+        height: 11% !important;
     }
     
     .price {
@@ -1025,6 +1035,10 @@ ul li input[type=checkbox]:checked~i:after {
     
     .button:hover {
         opacity: .6;
+    }
+    
+    .product-fix {
+        margin-bottom: 50px !important;
     }
     /************baner*******************/
     
@@ -1525,7 +1539,8 @@ ul li input[type=checkbox]:checked~i:after {
     }
     
     .media {
-        display: block;
+        display: flex;
+        justify-content: center;
     }
     
     .medialogo {

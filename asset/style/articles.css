@@ -343,10 +343,11 @@ h3 {
     display: grid;
     grid-template-columns: auto auto auto;
     direction: rtl;
+    width: 69%;
 }
 
 .article-card {
-    margin-bottom: 30%;
+    margin-bottom: 260px;
 }
 
 .search-articles {
@@ -354,7 +355,7 @@ h3 {
 }
 
 
-/* responsev articel  */
+/* responsiv articel  */
 
 .article-left-icon {
     width: 35px;
@@ -540,6 +541,8 @@ h3 {
         width: 90%;
         display: block;
         margin: auto;
+        height: auto;
+        margin-bottom: 20px;
     }
     .articles-text p {
         direction: rtl;
@@ -586,6 +589,8 @@ h3 {
         width: 90%;
         display: block;
         margin: auto;
+        height: auto;
+        margin-bottom: 20px;
     }
     .articles-text p {
         direction: rtl;
@@ -842,8 +847,6 @@ h3 {
     margin-top: 200px;
 }
 
-.far {}
-
 .fas {
     color: red;
 }
@@ -865,5 +868,35 @@ h3 {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+.articles-text p {
+    text-align: justify;
+}
+
+@media (min-width: 1024px) and (max-width: 1345px) {
+    .article-title {
+        font-size: 25px;
+    }
+    .article-info-txt {
+        font-size: 14px;
+    }
+    .author-data {
+        font-size: 12px;
+    }
+    .bot-article-info-img {
+        width: 20px;
+        height: 20px;
+    }
+    .bar-articles {
+        width: 30%;
+    }
+    .btn-search-sml-articles {
+        left: 34px;
+    }
+    .read-more-in,
+    .read-more-in:active {
+        font-size: 20px;
     }
 }
