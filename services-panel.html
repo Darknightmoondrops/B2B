@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./asset/style/products.css">
     
     <link rel="stylesheet" href="./asset/plugins/fontawesome/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
     <!--/styles-->
     <title>wellcome to C2|Home</title>
@@ -341,6 +342,10 @@
             <div class="panels-details" onclick="SelectPanel(7)">
                 <div class="clientele-icon"></div>
                 <p>خدمات انجام شده</p>
+            </div>
+            <div class="panels-details" onclick="SelectPanel(8)">
+                <div class="chart-icon"></div>
+                <p>  انتخاب نمودار</p>
             </div>
             <div class="panels-details" onclick="exit(1)">
                 <div class="exit-icon"></div>
@@ -1068,6 +1073,79 @@ s
                     </div>
                 </div>
             </div>
+
+
+
+            <div class="services-panel-lengh clientele-page">
+
+                <div class="list-products-header chart-main">
+                    <!-- <div class="services-panel-title">
+                        <p>  انتخاب نمودار</p>
+                    </div>
+                    <div class="chart-serch">
+                        <div class="search-list chart-serch-div">
+                            <form class="chart-serch-inp" action="">
+                                <input class="filter-part4-btn-input chart-serch-inp2" type="text" placeholder="جستوجو" name="search">
+                                <button class="filter-part4-btn" type="submit"><img src="./asset/icons/icon-27.png" alt=""></button>
+                            </form>
+                        </div>
+                    </div>
+
+                   <div class="chart-heder">
+                        <div class="list-filters chart-filter">
+                            <div class="filter-part2 filter-part22 filter">
+                                <span class="filter-part2-btn"> خدمات<img src="./asset/icons/icon-28.png" alt=""></span>
+                                <div class="filter-part2-dropdown">
+                                    <span class="filter-dropdown-txt">گرانترین</span>
+                                    <span class="filter-dropdown-txt">ارزانترین</span>
+                                    <span class="filter-dropdown-txt">پرفروش ترین</span>
+                                    <span class="filter-dropdown-txt">پرطرفدارترین</span>
+                                    <span class="filter-dropdown-txt">مرتبط ترین</span>
+                                    <span class="filter-dropdown-txt">جدید ترین</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-filters chart-filter">
+                            <div class="filter-part2 filter-part22 filter">
+                                <span class="filter-part2-btn"> بازه زمانی<img src="./asset/icons/icon-28.png" alt=""></span>
+                                <div class="filter-part2-dropdown">
+                                    <span class="filter-dropdown-txt">گرانترین</span>
+                                    <span class="filter-dropdown-txt">ارزانترین</span>
+                                    <span class="filter-dropdown-txt">پرفروش ترین</span>
+                                    <span class="filter-dropdown-txt">پرطرفدارترین</span>
+                                    <span class="filter-dropdown-txt">مرتبط ترین</span>
+                                    <span class="filter-dropdown-txt">جدید ترین</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="chart-stye">
+                    <div class="services-panel-title">
+                        <p> نمودار ارایه خدمات</p>
+                    </div>
+                    <p class="chart-txt">نمودار ارائه خدمات در 6 ماه گذشته در 6 ماهه دوم سال</p>
+                    <canvas id="myChart" style="width:100%;"></canvas>
+                    <div class="chart-bottom">
+                        <div class="chart-div">
+                            <p>نظافت</p>
+                            <div class="chart-color color-red"></div>
+                        </div>
+                        <div class="chart-div">
+                            <p>کارواش</p>
+                            <div class="chart-color color-blue"></div>
+                        </div>
+                        <div class="chart-div">
+                            <p>اداری</p>
+                            <div class="chart-color color-light-blue"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
     <div class="background"></div>

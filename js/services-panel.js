@@ -40,3 +40,37 @@ function exit(n) {
         shadowBox1[0].style.display = "none";
     }
 }
+// ============================CHART ==========================
+var xValues =  ["مهر","آبان","آذر","دی","بهمن","اسفند"] ;
+// xValues.classList.add('chart-text-style')
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      lineTension: 0,
+      data:[0,500,0,500,750],
+      borderColor: "#EC6666",
+      fill: false
+    },{
+      lineTension: 0,
+      data: [375,390,350,0,250,],
+      borderColor: "#79D2DE",
+      fill: false
+    },{
+     lineTension: 0,
+      data: [520,250,190,150,0,],
+      borderColor: "#147AD6",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 0, max:750}}],
+   
+    }
+  }
+});
+
