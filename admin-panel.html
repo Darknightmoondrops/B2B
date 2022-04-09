@@ -30,276 +30,25 @@
         </div>
         <!-- ------------------------------------------------------------------------>
 
-        <nav class="header-nav">
-            <!-- responsive top menu -->
-            <div class="responsive-menu-top">
-                <div class="main-div2">
-                    <button class="search-btn2"><div class="search-btn-icon"></div>
-                    </button>
+        <div class="top-navbar">
+            <div class="search-profile">
+                <div class="admin-prof">
 
-                    <input type="search" class="search-input2" placeholder="جستجو..." />
-                </div>
-                <div class="header-nav-logo-resp">
-                    <a href="./index.html">
-                        <img class="header-nav-logo-img" src="./asset/img/main-logo.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <!-- responsive top menu -->
+                    <img src="./asset/img/pic-50.png" alt="">
+                    <div class="admin-prof-name">
+                        <p>سلام</p>
+                        <p>مهران</p>
+                    </div>
 
-            <div class="header-nav-div">
-                <div class="header-nav-icon" onclick="menufunc()">
-
-                    <a href="#" aria-expanded="false">
-
-                        <div class="header-nav-icon-img"></div>
-                        <em class="droopmenu-topanim"></em>
-                    </a>
-                </div>
-                <div class="header-nav-logo">
-                    <a href="./index.html">
-                        <img class="header-nav-logo-img" src="./asset/img/main-logo.png" alt="">
-                    </a>
                 </div>
 
-                <div class="header-nav-left-icon">
-
-                    <div onclick="myFunction()" class="header-nav-left-icons search-box-responsiv">
-                        <a href="#">
-                            <div class="header-nav-left-icons-ic ic1"></div>
-                        </a>
-                    </div>
-                    <div class="tooltip header-nav-left-icons">
-                        <div class="menu-cover">
-                        </div>
-                        <a href="#">
-                            <div class="header-nav-left-icons-ic ic2"></div>
-                        </a>
-                        <div class="tooltiptext" style="margin-top: 25px;">
-                            <a class="" href="#">ورود</a>/
-                            <a class="" href="#">ثبت نام</a>
-                        </div>
-                    </div>
-                    <div class="header-nav-left-icons">
-                        <div class="menu-cover">
-                        </div>
-                        <a href="./cart.html">
-                            <div class="header-nav-left-icons-ic ic3"></div>
-                            <span class="cart-basket">
-                                0
-                              </span>
-                        </a>
-                    </div>
-                    <div class="header-nav-left-icons">
-                        <div class="menu-cover">
-                        </div>
-                        <a href="./cart.html">
-                            <div class="header-nav-left-icons-ic ic4"></div>
-                        </a>
-                    </div>
+                <div class="container">
+                    <input type="text" placeholder="Search...">
+                    <div class="search"></div>
                 </div>
 
             </div>
-            <!--------------------------------------------list ----------------------->
-            <div id="menu-list" class="menu-list" style="z-index: 10;direction: rtl;margin-top: -5px;width: 100%; height: auto; position: absolute;display: none; ">
-
-                <div class="tabs">
-                    <button class=" tablinks active " data-valuetxt="first">
-                            <div class="menu-titr-icon titr-icon1"></div>
-                            <p  data-title="محصولات">محصولات</p>
-                        </button>
-                    <button class=" tablinks second-menu-btn-f " data-valuetxt="second">
-                            <div class="menu-titr-icon titr-icon2"></div>
-                            <p  data-title="خدمات "> خدمات</p>
-                        </button>
-                </div>
-
-                <div class="wrapper_tabcontent">
-
-                    <div id="first" class=" tabcontent active">
-                        <div class="block-div">
-
-                            <div class="header-nav-lists">
-                                <a href="#" class="header-nav-lists-a">پوشاک</a>
-                                <div class="header-nav-lists-content">
-
-                                    <ul class="nav-ul">
-                                        <li class="nav-ul-li">
-                                            <input type="checkbox" checked>
-                                            <i class="nav-ul-li-i"></i>
-                                            <a href="#">لباس مردانه</a>
-                                            <p></p>
-                                        </li>
-
-                                        <li class="nav-ul-li">
-                                            <input type="checkbox" checked>
-                                            <i class="nav-ul-li-i"></i>
-                                            <a href="#">کفش  مردانه</a>
-                                            <p class="header-nav-lists-content-li">
-                                                <a href="#" class="">کفش  روزمره</a>
-                                                <a href="#" class=" ">کفش رسمی</a>
-                                            </p>
-                                        </li>
-                                        <li class="nav-ul-li">
-                                            <input type="checkbox" checked>
-                                            <i class="nav-ul-li-i"></i>
-                                            <a href="#">اکسسوری مردانه</a>
-                                            <p></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="header-nav-lists">
-                                <a href="#" class="nav-link alfa header-nav-lists-a">آشپزخانه</a>
-                                <div class="header-nav-lists-content">
-                                    <ul class="nav-ul">
-                                        <li class="nav-ul-li">
-                                            <input type="checkbox" checked>
-                                            <i class="nav-ul-li-i"></i>
-                                            <a href="#">  صوتی تصویری</a>
-                                            <p></p>
-                                        </li>
-
-                                        <li class="nav-ul-li">
-                                            <input type="checkbox" checked>
-                                            <i class="nav-ul-li-i"></i>
-                                            <a href="#"> دکراتیو </a>
-                                            <p class="header-nav-lists-content-li">
-                                                <a href="#" class="">آینه</a>
-                                                <a href="#" class=" ">پرده</a>
-                                            </p>
-                                        </li>
-                                        <li class="nav-ul-li">
-                                            <input type="checkbox" checked>
-                                            <i class="nav-ul-li-i"></i>
-                                            <a href="#">موادشوینده</a>
-                                            <p></p>
-                                        </li>
-                                    </ul>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-div">
-                            <div class="header-nav-lists">
-                                <a href="#" class="nav-link alfa header-nav-lists-a">الکترونیک  </a>
-                                <div class="header-nav-lists-content">
-
-
-                                    <ul class="nav-ul">
-                                        <li class="nav-ul-li">
-                                            <input type="checkbox" checked>
-                                            <i class="nav-ul-li-i"></i>
-                                            <a href="#">  لپتاپ</a>
-                                            <p></p>
-                                        </li>
-
-                                        <li class="nav-ul-li">
-                                            <input type="checkbox" checked>
-                                            <i class="nav-ul-li-i"></i>
-                                            <a href="#"> گوشی </a>
-                                            <p class="header-nav-lists-content-li">
-
-                                            </p>
-                                        </li>
-                                        <li class="nav-ul-li">
-                                            <input type="checkbox" checked>
-                                            <i class="nav-ul-li-i"></i>
-                                            <a href="#">دوربین</a>
-                                            <p class="header-nav-lists-content-li">
-                                                <a href="#" class="">دوربین چاپ فوری</a>
-                                                <a href="#" class=" "> دوربین دیجیتال</a>
-                                            </p>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div class="header-nav-lists">
-                                <a href="#" class="nav-link alfa header-nav-lists-a">الکترونیک  </a>
-                                <div class="header-nav-lists-content">
-
-
-                                    <ul class="nav-ul">
-                                        <li class="nav-ul-li">
-                                            <input type="checkbox" checked>
-                                            <i class="nav-ul-li-i"></i>
-                                            <a href="#">  لپتاپ</a>
-                                            <p></p>
-                                        </li>
-
-                                        <li class="nav-ul-li">
-                                            <input type="checkbox" checked>
-                                            <i class="nav-ul-li-i"></i>
-                                            <a href="#"> گوشی </a>
-                                            <p class="header-nav-lists-content-li">
-
-                                            </p>
-                                        </li>
-                                        <li class="nav-ul-li">
-                                            <input type="checkbox" checked>
-                                            <i class="nav-ul-li-i"></i>
-                                            <a href="#">دوربین</a>
-                                            <p class="header-nav-lists-content-li">
-                                                <a href="#" class="">دوربین چاپ فوری</a>
-                                                <a href="#" class=" "> دوربین دیجیتال</a>
-                                            </p>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tabs">
-                        <button class=" tablinks second-menu-btn " data-valuetxt="second">
-                            <div class="menu-titr-icon titr-icon2"></div>
-                            <p  data-title="خدمات "> خدمات</p>
-                        </button>
-                    </div>
-
-
-
-                    <div id="second" class="tabcontent">
-                        <div class=" header-nav-lists  right-one">
-                            <a href="#" class="nav-link alfa header-nav-lists-a">الکترونیک  </a>
-                            <div class="header-nav-lists-content">
-                                <ul class="nav-ul">
-                                    <li class="nav-ul-li">
-                                        <input type="checkbox" checked>
-                                        <i class="nav-ul-li-i"></i>
-                                        <a href="#">  لپتاپ</a>
-                                        <p></p>
-                                    </li>
-                                    <li class="nav-ul-li">
-                                        <input type="checkbox" checked>
-                                        <i class="nav-ul-li-i"></i>
-                                        <a href="#"> گوشی </a>
-                                        <p class="header-nav-lists-content-li">
-
-                                        </p>
-                                    </li>
-                                    <li class="nav-ul-li">
-                                        <input type="checkbox" checked>
-                                        <i class="nav-ul-li-i"></i>
-                                        <a href="#">دوربین</a>
-                                        <p class="header-nav-lists-content-li">
-                                            <a href="#" class="">دوربین چاپ فوری</a>
-                                            <a href="#" class=" "> دوربین دیجیتال</a>
-                                        </p>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </nav>
+        </div>
         <!--  MENU -->
 
     </section>
@@ -312,7 +61,7 @@
         <div class="panel">
             <div class="panels">
 
-                <p>پنل ادمین</p>
+                <p>پنل فروش</p>
                 <div class="panels-icon"></div>
 
             </div>
@@ -328,18 +77,15 @@
                 <div class="stores-icon"></div>
                 <p>فروشگاه ها</p>
             </div>
-            <div class="panels-details" onclick="SelectPanel(3)">
+            <div class="panels-details" onclick="SelectPanel(4)">
                 <div class="services-conducted-icon"></div>
                 <p>خدمات انجام شده</p>
             </div>
-            <div class="panels-details" onclick="SelectPanel(4)">
+            <div class="panels-details" onclick="SelectPanel(5)">
                 <div class="accounting-icon"></div>
                 <p>حسابداری</p>
             </div>
-            <div class="panels-details" onclick="SelectPanel(5)">
-                <div class="users-icon"></div>
-                <p>کاربران</p>
-            </div>
+
             <div class="panels-details" onclick="SelectPanel(6)">
                 <div class="customer-satisfaction-icon"></div>
                 <p>رضایت مشتری</p>
@@ -377,63 +123,356 @@
                 </div>
                 <div class="acc-btn"><button type="submit">ویرایش</button></div>
             </div>
-            <div class="panel-page add-products">
+            <div class="panel-page clientele-page">
                 <div class="seller-account-title">
-                    <p>افزودن محصول</p>
+                    <p>فروش</p>
                 </div>
-                <div class="add-details">
-                    <div>
-                        <p>افزودن تصویر </p>
+                <div class="list-products-header">
+                    <div class="list-filters">
+                        <div class="filter-part2 filter">
+                            <span class="filter-part2-btn">مرتب سازی<img src="./asset/icons/icon-28.png" alt=""></span>
+                            <div class="filter-part2-dropdown">
+                                <span class="filter-dropdown-txt">گرانترین</span>
+                                <span class="filter-dropdown-txt">ارزانترین</span>
+                                <span class="filter-dropdown-txt">پرفروش ترین</span>
+                                <span class="filter-dropdown-txt">پرطرفدارترین</span>
+                                <span class="filter-dropdown-txt">مرتبط ترین</span>
+                                <span class="filter-dropdown-txt">جدید ترین</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="add-icons">
-                        <div class="add-icon"></div>
-                        <div class="add-icon"></div>
-                        <div class="add-icon"></div>
-                        <div class="add-icon"></div>
-                        <div class="add-icon"></div>
-                        <div class="add-icon"></div>
-                        <div class="add-icon"></div>
+                    <div class="search-list">
+                        <form action="">
+                            <input class="filter-part4-btn-input" type="text" placeholder="جستوجو" name="search">
+                            <button class="filter-part4-btn" type="submit"><img src="./asset/icons/icon-27.png" alt=""></button>
+                        </form>
                     </div>
-                    <div class="acc-inputs">
-                        <div><input type="text" placeholder="نام محصول"></div>
-                    </div>
-                    <div class="acc-inputs">
-                        <div><input type="text" placeholder="کد محصول"></div>
-                    </div>
-                    <div class="acc-inputs">
-                        <div><input type="text" placeholder="دسته بندی"></div>
-                    </div>
-                    <div class="acc-inputs">
-                        <div><input type="text" placeholder="زیر دسته"></div>
-                    </div>
-                    <div class="property">
-                        <label class="property-select" for="slct">
-                              <select id="slct" required="required">
-                                    <option value="" disabled="disabled" selected="selected">تعیین ویژگی</option>
-                                    <option value="#">رنگ</option>
-                                    <option value="#">سایز</option>
-                                </select>
-                                <svg>
-                                   <use xlink:href="#select-arrow-down"></use>
-                                </svg>
-                        </label>
-                        <!-- SVG Sprites-->
-                        <svg class="sprites">
-                            <symbol id="select-arrow-down" viewbox="0 0 10 6">
-                            <polyline points="1 1 5 5 9 1"></polyline>
-                            </symbol>
-                        </svg>
-                    </div>
-                    <div class="acc-inputs">
-                        <div><input type="number" placeholder="قیمت"></div>
-                    </div>
-                    <div class="add-btn"><button type="submit">افزودن</button></div>
                 </div>
-
+                <div>
+                    <div class="top-table">
+                        <div>
+                            <p>#</p>
+                        </div>
+                        <div>
+                            <p>تصویر</p>
+                        </div>
+                        <div>
+                            <p>نام مشتری</p>
+                        </div>
+                        <div>
+                            <p>کد مشتری</p>
+                        </div>
+                        <div>
+                            <p>دفعات خرید</p>
+                        </div>
+                        <div>
+                            <p>ویرایش</p>
+                        </div>
+                    </div>
+                    <div class="mid-table-cli">
+                        <div>
+                            <p>1</p>
+                        </div>
+                        <div class="mid-table-img">
+                            <img src="./asset/img/pic-47.png" alt="">
+                        </div>
+                        <div>
+                            <p>علی</p>
+                        </div>
+                        <div>
+                            <p>c2-23rq34</p>
+                        </div>
+                        <div>
+                            <p>2</p>
+                        </div>
+                        <div>
+                            <div class="edit-icons">
+                                <div class="edit-icon"></div>
+                                <div class="trash-icon" onclick="trash(1)"></div>
+                            </div>
+                        </div>
+                        <div class="client-icon">
+                        </div>
+                    </div>
+                    <div class="mid-table-cli">
+                        <div>
+                            <p>2</p>
+                        </div>
+                        <div class="mid-table-img">
+                            <img src="./asset/img/pic-47.png" alt="">
+                        </div>
+                        <div>
+                            <p>تقی</p>
+                        </div>
+                        <div>
+                            <p>c2-23rq34</p>
+                        </div>
+                        <div>
+                            <p>5</p>
+                        </div>
+                        <div>
+                            <div class="edit-icons">
+                                <div class="edit-icon"></div>
+                                <div class="trash-icon" onclick="trash(1)"></div>
+                            </div>
+                        </div>
+                        <div class="client-icon">
+                        </div>
+                    </div>
+                    <div class="mid-table-cli">
+                        <div>
+                            <p>3</p>
+                        </div>
+                        <div class="mid-table-img">
+                            <img src="./asset/img/pic-47.png" alt="">
+                        </div>
+                        <div>
+                            <p>نقی</p>
+                        </div>
+                        <div>
+                            <p>c2-23rq34</p>
+                        </div>
+                        <div>
+                            <p>15</p>
+                        </div>
+                        <div>
+                            <div class="edit-icons">
+                                <div class="edit-icon"></div>
+                                <div class="trash-icon" onclick="trash(1)"></div>
+                            </div>
+                        </div>
+                        <div class="client-icon">
+                        </div>
+                    </div>
+                    <div class="mid-table-cli">
+                        <div>
+                            <p>4</p>
+                        </div>
+                        <div class="mid-table-img">
+                            <img src="./asset/img/pic-47.png" alt="">
+                        </div>
+                        <div>
+                            <p>رضا</p>
+                        </div>
+                        <div>
+                            <p>c2-23rq34</p>
+                        </div>
+                        <div>
+                            <p>11</p>
+                        </div>
+                        <div>
+                            <div class="edit-icons">
+                                <div class="edit-icon"></div>
+                                <div class="trash-icon" onclick="trash(1)"></div>
+                            </div>
+                        </div>
+                        <div class="client-icon">
+                        </div>
+                    </div>
+                    <div class="mid-table-cli">
+                        <div>
+                            <p>5</p>
+                        </div>
+                        <div class="mid-table-img">
+                            <img src="./asset/img/pic-47.png" alt="">
+                        </div>
+                        <div>
+                            <p>ممد</p>
+                        </div>
+                        <div>
+                            <p>c2-23rq34</p>
+                        </div>
+                        <div>
+                            <p>1</p>
+                        </div>
+                        <div>
+                            <div class="edit-icons">
+                                <div class="edit-icon"></div>
+                                <div class="trash-icon" onclick="trash(1)"></div>
+                            </div>
+                        </div>
+                        <div class="client-icon">
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="panel-page clientele-page">
+                <div class="seller-account-title">
+                    <p>فروشگاه ها</p>
+                </div>
+                <div class="list-products-header">
+                    <div class="list-filters">
+                        <div class="filter-part2 filter">
+                            <span class="filter-part2-btn">مرتب سازی<img src="./asset/icons/icon-28.png" alt=""></span>
+                            <div class="filter-part2-dropdown">
+                                <span class="filter-dropdown-txt">گرانترین</span>
+                                <span class="filter-dropdown-txt">ارزانترین</span>
+                                <span class="filter-dropdown-txt">پرفروش ترین</span>
+                                <span class="filter-dropdown-txt">پرطرفدارترین</span>
+                                <span class="filter-dropdown-txt">مرتبط ترین</span>
+                                <span class="filter-dropdown-txt">جدید ترین</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-list">
+                        <form action="">
+                            <input class="filter-part4-btn-input" type="text" placeholder="جستوجو" name="search">
+                            <button class="filter-part4-btn" type="submit"><img src="./asset/icons/icon-27.png" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <div class="top-table">
+                        <div>
+                            <p>#</p>
+                        </div>
+                        <div>
+                            <p>تصویر</p>
+                        </div>
+                        <div>
+                            <p>نام مشتری</p>
+                        </div>
+                        <div>
+                            <p>کد مشتری</p>
+                        </div>
+                        <div>
+                            <p>دفعات خرید</p>
+                        </div>
+                        <div>
+                            <p>ویرایش</p>
+                        </div>
+                    </div>
+                    <div class="mid-table-cli">
+                        <div>
+                            <p>1</p>
+                        </div>
+                        <div class="mid-table-img">
+                            <img src="./asset/img/pic-47.png" alt="">
+                        </div>
+                        <div>
+                            <p>علی</p>
+                        </div>
+                        <div>
+                            <p>c2-23rq34</p>
+                        </div>
+                        <div>
+                            <p>2</p>
+                        </div>
+                        <div>
+                            <div class="edit-icons">
+                                <div class="edit-icon"></div>
+                                <div class="trash-icon" onclick="trash(1)"></div>
+                            </div>
+                        </div>
+                        <div class="client-icon">
+                        </div>
+                    </div>
+                    <div class="mid-table-cli">
+                        <div>
+                            <p>2</p>
+                        </div>
+                        <div class="mid-table-img">
+                            <img src="./asset/img/pic-47.png" alt="">
+                        </div>
+                        <div>
+                            <p>تقی</p>
+                        </div>
+                        <div>
+                            <p>c2-23rq34</p>
+                        </div>
+                        <div>
+                            <p>5</p>
+                        </div>
+                        <div>
+                            <div class="edit-icons">
+                                <div class="edit-icon"></div>
+                                <div class="trash-icon" onclick="trash(1)"></div>
+                            </div>
+                        </div>
+                        <div class="client-icon">
+                        </div>
+                    </div>
+                    <div class="mid-table-cli">
+                        <div>
+                            <p>3</p>
+                        </div>
+                        <div class="mid-table-img">
+                            <img src="./asset/img/pic-47.png" alt="">
+                        </div>
+                        <div>
+                            <p>نقی</p>
+                        </div>
+                        <div>
+                            <p>c2-23rq34</p>
+                        </div>
+                        <div>
+                            <p>15</p>
+                        </div>
+                        <div>
+                            <div class="edit-icons">
+                                <div class="edit-icon"></div>
+                                <div class="trash-icon" onclick="trash(1)"></div>
+                            </div>
+                        </div>
+                        <div class="client-icon">
+                        </div>
+                    </div>
+                    <div class="mid-table-cli">
+                        <div>
+                            <p>4</p>
+                        </div>
+                        <div class="mid-table-img">
+                            <img src="./asset/img/pic-47.png" alt="">
+                        </div>
+                        <div>
+                            <p>رضا</p>
+                        </div>
+                        <div>
+                            <p>c2-23rq34</p>
+                        </div>
+                        <div>
+                            <p>11</p>
+                        </div>
+                        <div>
+                            <div class="edit-icons">
+                                <div class="edit-icon"></div>
+                                <div class="trash-icon" onclick="trash(1)"></div>
+                            </div>
+                        </div>
+                        <div class="client-icon">
+                        </div>
+                    </div>
+                    <div class="mid-table-cli">
+                        <div>
+                            <p>5</p>
+                        </div>
+                        <div class="mid-table-img">
+                            <img src="./asset/img/pic-47.png" alt="">
+                        </div>
+                        <div>
+                            <p>ممد</p>
+                        </div>
+                        <div>
+                            <p>c2-23rq34</p>
+                        </div>
+                        <div>
+                            <p>1</p>
+                        </div>
+                        <div>
+                            <div class="edit-icons">
+                                <div class="edit-icon"></div>
+                                <div class="trash-icon" onclick="trash(1)"></div>
+                            </div>
+                        </div>
+                        <div class="client-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="panel-page list-products">
                 <div class="seller-account-title">
-                    <p>لیست محصول</p>
+                    <p>لیست خدمات انجام شده</p>
                 </div>
                 <div class="list-products-header">
                     <div class="list-filters">
@@ -745,12 +784,9 @@
                     <div class="acc-btn"><button type="submit">پرینت</button></div>
                 </div>
             </div>
-            <div>
-
-            </div>
             <div class="panel-page complaint-page">
                 <div class="seller-account-title">
-                    <p>امتیازات شما</p>
+                    <p>رضایت مشتری</p>
                 </div>
                 <div class="complaint-box">
                     <div class="complaint-div-img"><img class="complaint-img" src="./asset/img/pic-50.png" alt=""></div>
@@ -819,260 +855,8 @@
                     </div>
                 </div>
             </div>
-            <div class="panel-page comment-box">
-                <div class="seller-account-title">
-                    <p>نظرات</p>
-                </div>
-                <div class="comments-box">
-                    <div class="comment-detail-box">
-                        <div class="comment-div-img"><img class="comment-box-img" src="./asset/img/pic-50.png" alt=""></div>
-                        <div>
-                            <div class="top-complaintbox">
-                                <div class="name-complaintbox">
-                                    <p>علی مرادی مطلق اصل</p>
-                                </div>
-                                <div>
-                                    <p>تیر 22</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p>بانکه چوبی</p>
-                            </div>
-                            <div>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btns">
-                        <button class="delete-btn" type="submit" onclick="trash(1)">حذف</button>
-                        <button class="response-btn" type="submit">رد</button>
-                    </div>
-                </div>
-                <div class="comments-box">
-                    <div class="comment-detail-box">
-                        <div class="comment-div-img"><img class="comment-box-img" src="./asset/img/pic-50.png" alt=""></div>
-                        <div>
-                            <div class="top-complaintbox">
-                                <div class="name-complaintbox">
-                                    <p>علی مرادی مطلق اصل</p>
-                                </div>
-                                <div>
-                                    <p>تیر 22</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p>بانکه چوبی</p>
-                            </div>
-                            <div>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btns">
-                        <button class="delete-btn" type="submit" onclick="trash(1)">حذف</button>
-                        <button class="response-btn" type="submit">رد</button>
-                    </div>
-                </div>
-                <div class="comments-box">
-                    <div class="comment-detail-box">
-                        <div class="comment-div-img"><img class="comment-box-img" src="./asset/img/pic-50.png" alt=""></div>
-                        <div>
-                            <div class="top-complaintbox">
-                                <div class="name-complaintbox">
-                                    <p>علی مرادی مطلق اصل</p>
-                                </div>
-                                <div>
-                                    <p>تیر 22</p>
-                                </div>
-                            </div>
-                            <div>
-                                <p>بانکه چوبی</p>
-                            </div>
-                            <div>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btns">
-                        <button class="delete-btn" type="submit" onclick="trash(1)">حذف</button>
-                        <button class="response-btn" type="submit">رد</button>
-                    </div>
-                </div>
 
-            </div>
-            <div class="panel-page clientele-page">
-                <div class="seller-account-title">
-                    <p>مشتریان</p>
-                </div>
-                <div class="list-products-header">
-                    <div class="list-filters">
-                        <div class="filter-part2 filter">
-                            <span class="filter-part2-btn">مرتب سازی<img src="./asset/icons/icon-28.png" alt=""></span>
-                            <div class="filter-part2-dropdown">
-                                <span class="filter-dropdown-txt">گرانترین</span>
-                                <span class="filter-dropdown-txt">ارزانترین</span>
-                                <span class="filter-dropdown-txt">پرفروش ترین</span>
-                                <span class="filter-dropdown-txt">پرطرفدارترین</span>
-                                <span class="filter-dropdown-txt">مرتبط ترین</span>
-                                <span class="filter-dropdown-txt">جدید ترین</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="search-list">
-                        <form action="">
-                            <input class="filter-part4-btn-input" type="text" placeholder="جستوجو" name="search">
-                            <button class="filter-part4-btn" type="submit"><img src="./asset/icons/icon-27.png" alt=""></button>
-                        </form>
-                    </div>
-                </div>
-                <div>
-                    <div class="top-table">
-                        <div>
-                            <p>#</p>
-                        </div>
-                        <div>
-                            <p>تصویر</p>
-                        </div>
-                        <div>
-                            <p>نام مشتری</p>
-                        </div>
-                        <div>
-                            <p>کد مشتری</p>
-                        </div>
-                        <div>
-                            <p>دفعات خرید</p>
-                        </div>
-                        <div>
-                            <p>ویرایش</p>
-                        </div>
-                    </div>
-                    <div class="mid-table-cli">
-                        <div>
-                            <p>1</p>
-                        </div>
-                        <div class="mid-table-img">
-                            <img src="./asset/img/pic-47.png" alt="">
-                        </div>
-                        <div>
-                            <p>علی</p>
-                        </div>
-                        <div>
-                            <p>c2-23rq34</p>
-                        </div>
-                        <div>
-                            <p>2</p>
-                        </div>
-                        <div>
-                            <div class="edit-icons">
-                                <div class="edit-icon"></div>
-                                <div class="trash-icon" onclick="trash(1)"></div>
-                            </div>
-                        </div>
-                        <div class="client-icon">
-                        </div>
-                    </div>
-                    <div class="mid-table-cli">
-                        <div>
-                            <p>2</p>
-                        </div>
-                        <div class="mid-table-img">
-                            <img src="./asset/img/pic-47.png" alt="">
-                        </div>
-                        <div>
-                            <p>تقی</p>
-                        </div>
-                        <div>
-                            <p>c2-23rq34</p>
-                        </div>
-                        <div>
-                            <p>5</p>
-                        </div>
-                        <div>
-                            <div class="edit-icons">
-                                <div class="edit-icon"></div>
-                                <div class="trash-icon" onclick="trash(1)"></div>
-                            </div>
-                        </div>
-                        <div class="client-icon">
-                        </div>
-                    </div>
-                    <div class="mid-table-cli">
-                        <div>
-                            <p>3</p>
-                        </div>
-                        <div class="mid-table-img">
-                            <img src="./asset/img/pic-47.png" alt="">
-                        </div>
-                        <div>
-                            <p>نقی</p>
-                        </div>
-                        <div>
-                            <p>c2-23rq34</p>
-                        </div>
-                        <div>
-                            <p>15</p>
-                        </div>
-                        <div>
-                            <div class="edit-icons">
-                                <div class="edit-icon"></div>
-                                <div class="trash-icon" onclick="trash(1)"></div>
-                            </div>
-                        </div>
-                        <div class="client-icon">
-                        </div>
-                    </div>
-                    <div class="mid-table-cli">
-                        <div>
-                            <p>4</p>
-                        </div>
-                        <div class="mid-table-img">
-                            <img src="./asset/img/pic-47.png" alt="">
-                        </div>
-                        <div>
-                            <p>رضا</p>
-                        </div>
-                        <div>
-                            <p>c2-23rq34</p>
-                        </div>
-                        <div>
-                            <p>11</p>
-                        </div>
-                        <div>
-                            <div class="edit-icons">
-                                <div class="edit-icon"></div>
-                                <div class="trash-icon" onclick="trash(1)"></div>
-                            </div>
-                        </div>
-                        <div class="client-icon">
-                        </div>
-                    </div>
-                    <div class="mid-table-cli">
-                        <div>
-                            <p>5</p>
-                        </div>
-                        <div class="mid-table-img">
-                            <img src="./asset/img/pic-47.png" alt="">
-                        </div>
-                        <div>
-                            <p>ممد</p>
-                        </div>
-                        <div>
-                            <p>c2-23rq34</p>
-                        </div>
-                        <div>
-                            <p>1</p>
-                        </div>
-                        <div>
-                            <div class="edit-icons">
-                                <div class="edit-icon"></div>
-                                <div class="trash-icon" onclick="trash(1)"></div>
-                            </div>
-                        </div>
-                        <div class="client-icon">
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
     <div class="background"></div>
