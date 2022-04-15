@@ -26,12 +26,16 @@
 
 .login-inp {
     width: 82%;
-    height: 30px;
+    height: 60px;
     border-radius: 10px 10px;
     padding-right: 20px;
     display: block;
     margin: auto 7%;
     margin-top: 3%;
+    border: 1px;
+    background-color: #e6e6e6;
+    font-size: 20px;
+    color: #f26a4f;
 }
 
 .all-inp-out {
@@ -68,15 +72,14 @@
 .login-btn {
     display: block;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 50px;
     font-size: 30px;
-    width: 80%;
+    width: 40%;
     padding: 1%;
     border-radius: 10px 10px;
     background-color: #F26A4F;
     color: white;
     border: none;
-
 }
 
 .div-line {
@@ -92,12 +95,13 @@
 }
 
 .login-main-icon {
-    width: 50%;
-    background-repeat: round;
-    height: 152px;
+    width: 238px;
+    height: 160px;
     display: block;
     margin: auto;
-    background-image: url(../img/main-logo.png) ;
+    background-image: url(../img/main-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .bot-login {
@@ -146,7 +150,8 @@
     display: block;
     margin: auto;
 }
-.circle{
+
+.circle {
     width: 65%;
     height: 36%;
     z-index: -1;
@@ -155,8 +160,8 @@
     background-color: #F99687;
     position: absolute;
     margin: auto;
-
 }
+
 .circle-one {
     top: -17%;
     left: -34%;
@@ -182,10 +187,12 @@
     border-radius: 10px;
     border: 1px;
 }
+
 .detailstabcontent {
-    display: none;
+    display: block;
     min-height: 180px;
 }
+
 .detailstabcontent.detailsactive {
     transition: all 1s ease;
     display: block;
@@ -214,12 +221,10 @@
 }
 
 .detailstablinks {
-    background: transparent;
-    background-image: linear-gradient(90deg, transparent 70%, rgba(255, 255, 255, 0.2) 100%);
-    border: none;
+    background-color: #fff;
     outline: none;
-    cursor: pointer;
-    width: 40%;
+    width: 220px;
+    height: 33px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -227,84 +232,14 @@
     font-size: 16px;
     overflow: hidden;
     transition: 0.3s ease;
+    margin: auto;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #F26A4F;
 }
 
 
 /* Tab active */
 
-.detailstablinks.detailsactive p {
-    z-index: 0;
-    bottom: 0px;
-    color: #686868;
-    overflow: hidden;
-    justify-content: center;
-    text-align: center;
-    border-bottom: 3px solid red;
-}
-
-
-/* Tabs text */
-
-.detailstablinks.detailsactive p,
-.detailstablinks.detailsactive:hover p {
-    opacity: 1;
-    background-image: linear-gradient(135deg, #343638 0%, #5b585f 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.detailstablinks p {
-    font-family: "sansfont";
-    opacity: 0.6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    transition: 0.5s ease;
-    padding: 0;
-    margin: 0;
-    color: #686868;
-    backface-visibility: hidden;
-}
-
-.detailstablinks:hover p {
-    opacity: 1;
-}
-
-
-/* Tabs text bigger */
-
-.detailstablinks p:before {
-    content: attr(data-title);
-    position: absolute;
-    height: auto;
-    width: auto;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.1;
-    font-size: 30px;
-    transition: 1s ease-out;
-    z-index: -1;
-    font-weight: 600;
-    top: 110%;
-}
-
-.detailstablinks:hover p:before {
-    opacity: 0.1;
-    top: -80%;
-}
-
-.detailstabs {
-    width: 83%;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    margin: auto;
-}
 @media screen and (max-width: 752px) {
     .all-inp-out {
         width: 90%;
@@ -321,8 +256,7 @@
         padding-right: 20px;
         display: block;
         margin: 5px;
-        }
-        
+    }
     .login-inp {
         width: 90%;
         height: 30px;
@@ -347,32 +281,31 @@
         backface-visibility: hidden;
     }
 }
-@media screen and (min-width: 753px)  {
 
-
-.circle {
-    width: 65%;
-    height: 50%;
-    z-index: -1;
-    display: block;
-    border-radius: 50%;
-    background-color: #F99687;
-    position: absolute;
-    margin: auto;
-}
-.circle-one {
-    top: -25%;
-    left: -34%;
-}
-.circle-two {
-    right: 30%;
-    bottom: -22%;
-}
-.circle-three {
-    background-color: #FEDFD4;
-    opacity: 34%;
-    bottom: -24%;
-    z-index: -1;
-    right: -20%;
-}
+@media screen and (min-width: 753px) {
+    .circle {
+        width: 65%;
+        height: 50%;
+        z-index: -1;
+        display: block;
+        border-radius: 50%;
+        background-color: #F99687;
+        position: absolute;
+        margin: auto;
+    }
+    .circle-one {
+        top: -25%;
+        left: -34%;
+    }
+    .circle-two {
+        right: 30%;
+        bottom: -22%;
+    }
+    .circle-three {
+        background-color: #FEDFD4;
+        opacity: 34%;
+        bottom: -24%;
+        z-index: -1;
+        right: -20%;
+    }
 }

@@ -2,11 +2,12 @@
     font-family: "sansfont";
     src: url("../../asset/fonts/Sans\ a4fran3/Sans a4fran3.woff");
 }
+
 body {
     color: #000000;
     font-family: "sansfont";
-  }
-  
+}
+
 .all-panels {
     width: 100%;
     display: flex;
@@ -15,6 +16,7 @@ body {
 .border {
     border-right: 13px solid #F26A4F;
 }
+
 .panel {
     display: inline-block;
     top: 0;
@@ -22,13 +24,15 @@ body {
     width: 20%;
     box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
-.services-panel-title p{ 
+
+.services-panel-title p {
     color: #000000;
     margin-right: 9%;
     border-right: 5px solid #F26A4F;
     padding-right: 10px;
     font-size: 24px;
 }
+
 .panels-icon {
     background-image: url(../icons/icon-41.png);
     width: 40px;
@@ -109,7 +113,8 @@ body {
     display: block;
     margin: auto;
 }
-.services-panel-inp{
+
+.services-panel-inp {
     padding-right: 20px;
     font-family: "sansfont";
 }
@@ -151,7 +156,6 @@ body {
     height: 60px;
     margin-top: 40px;
     color: black;
-
 }
 
 .panel-details {
@@ -232,16 +236,19 @@ body {
     margin: 0 0 50px 10%;
     direction: ltr;
 }
-.services-add-img{
+
+.services-add-img {
     margin: 55px 7%;
     position: absolute;
 }
+
 .add-image {
     width: 140px;
     height: 140px;
     border-radius: 25px;
 }
-.remove-btn{
+
+.remove-btn {
     width: 100px;
     height: 50px;
     border-radius: 50px;
@@ -251,9 +258,9 @@ body {
     margin: 80px 5 0 20;
     color: white;
     font-family: 'sansfont';
-
 }
-.edit-btn{
+
+.edit-btn {
     color: white;
     width: 100px;
     height: 50px;
@@ -263,9 +270,9 @@ body {
     background-color: #2ACB34;
     margin: 80px 5 0 20;
     font-family: 'sansfont';
-
 }
-.services-inp{
+
+.services-inp {
     padding-right: 20px;
 }
 
@@ -380,6 +387,7 @@ body {
     margin: auto;
     margin-top: 2%;
 }
+
 .top-table p,
 .mid-table p,
 .top-table-acc p,
@@ -387,10 +395,9 @@ body {
 .comment-detail-box p,
 .complaint-box .download-complaintbox,
 .mid-table-cli p,
-.mid-table-acc p{
+.mid-table-acc p {
     color: #000000;
     font-family: "sansfont";
-
 }
 
 .mid-table {
@@ -508,9 +515,11 @@ body {
     margin-top: 5%;
     border-bottom: 4px solid #707070;
 }
-.complaint-box-content{
-    width:90%;
+
+.complaint-box-content {
+    width: 90%;
 }
+
 .complaint-vote i {
     text-align: center;
     color: #ffd700;
@@ -535,10 +544,10 @@ body {
     width: 30%;
 }
 
-.rate{
+.rate {
     margin: auto 10px;
-
 }
+
 .top-complaintbox {
     width: 100%;
     display: flex;
@@ -756,15 +765,17 @@ body {
 
 
 /* ------------------Chart Style------------ */
-#myChart{
+
+#myChart {
     width: 100%;
     font-size: 26px;
 }
-.chart-text-style{
+
+.chart-text-style {
     font-size: 26px;
-   
 }
-.chart-main{
+
+.chart-main {
     display: block !important;
     box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     border-radius: 15px;
@@ -773,7 +784,8 @@ body {
     margin-bottom: 10%;
     width: 90%;
 }
-.chart-stye{
+
+.chart-stye {
     box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     margin: auto;
@@ -783,70 +795,94 @@ body {
     width: 90%;
     margin: auto;
 }
-.chart-heder{
+
+.chart-heder {
     width: 80%;
     display: flex;
     margin: auto;
 }
-.chart-filter{
+
+.chart-filter {
     width: 50%;
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
 }
-.chart-serch{
+
+.chart-serch {
     width: 80%;
     margin: auto;
     display: flex;
     margin-top: 3%;
     padding-top: 5%;
 }
-.filter-part22{
+
+.filter-part22 {
     margin: auto !important;
     width: 50% !important;
-
 }
-.chart-txt{
+
+.chart-txt {
     margin: auto !important;
     font-size: 24px;
     color: #707070;
     width: 50%;
     display: block;
 }
-.chart-serch-div{
+
+.chart-serch-div {
     width: 100% !important;
 }
-.chart-serch-inp{
+
+.chart-serch-inp {
     width: 90% !important;
 }
-.chart-serch-inp2{
+
+.chart-serch-inp2 {
     width: 100% !important;
 }
-.chart-bottom{
+
+.chart-bottom {
     display: flex;
     width: 60%;
     margin: auto;
 }
-.chart-div{
+
+.chart-div {
     align-items: center;
     direction: rtl;
     display: flex;
     width: 33%;
 }
-.chart-div p{
+
+.chart-div p {
     font-size: 20px;
     width: auto;
     margin-left: 20px;
 }
-.chart-color{
+
+.chart-color {
     border-radius: 2px;
     width: 40px;
     height: 40px;
 }
-.color-red{
+
+.color-red {
     background-color: #EC6666;
-}.color-blue{
+}
+
+.color-blue {
     background-color: #147AD6;
-}.color-light-blue{
+}
+
+.color-light-blue {
     background-color: #79D2DE;
 }
+
+@media screen and (max-width: 768px) {}
+
+@media (min-width: 300px) and (max-width: 450px) {}
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+@media (min-width: 1024px) and (max-width: 1345px) {}

@@ -75,6 +75,7 @@
     display: block;
     margin: 15px 15px;
 }
+
 .chart-icon {
     background-image: url(../icons/icon-67.png);
     width: 60px;
@@ -83,6 +84,7 @@
     margin: auto;
     background-repeat: round;
 }
+
 .exit-icon {
     background-image: url(../icons/icon-49.png);
     width: 60px;
@@ -675,16 +677,19 @@
     border-right: 13px solid #F26A4F;
 }
 
+
 /* ------------------Chart Style------------ */
-#myChart{
+
+#myChart {
     width: 100%;
     font-size: 26px;
 }
-.chart-text-style{
+
+.chart-text-style {
     font-size: 26px;
-   
 }
-.chart-main{
+
+.chart-main {
     display: block !important;
     box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     border-radius: 15px;
@@ -693,7 +698,8 @@
     margin-bottom: 10%;
     width: 90%;
 }
-.chart-stye{
+
+.chart-stye {
     box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     margin: auto;
@@ -703,70 +709,94 @@
     width: 90%;
     margin: auto;
 }
-.chart-heder{
+
+.chart-heder {
     width: 80%;
     display: flex;
     margin: auto;
 }
-.chart-filter{
+
+.chart-filter {
     width: 50%;
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
 }
-.chart-serch{
+
+.chart-serch {
     width: 80%;
     margin: auto;
     display: flex;
     margin-top: 3%;
     padding-top: 5%;
 }
-.filter-part22{
+
+.filter-part22 {
     margin: auto !important;
     width: 50% !important;
-
 }
-.chart-txt{
+
+.chart-txt {
     margin: auto !important;
     font-size: 24px;
     color: #707070;
     width: 50%;
     display: block;
 }
-.chart-serch-div{
+
+.chart-serch-div {
     width: 100% !important;
 }
-.chart-serch-inp{
+
+.chart-serch-inp {
     width: 90% !important;
 }
-.chart-serch-inp2{
+
+.chart-serch-inp2 {
     width: 100% !important;
 }
-.chart-bottom{
+
+.chart-bottom {
     display: flex;
     width: 60%;
     margin: auto;
 }
-.chart-div{
+
+.chart-div {
     align-items: center;
     direction: rtl;
     display: flex;
     width: 33%;
 }
-.chart-div p{
+
+.chart-div p {
     font-size: 20px;
     width: auto;
     margin-left: 20px;
 }
-.chart-color{
+
+.chart-color {
     border-radius: 2px;
     width: 40px;
     height: 40px;
 }
-.color-red{
+
+.color-red {
     background-color: #EC6666;
-}.color-blue{
+}
+
+.color-blue {
     background-color: #147AD6;
-}.color-light-blue{
+}
+
+.color-light-blue {
     background-color: #79D2DE;
 }
+
+@media screen and (max-width: 768px) {}
+
+@media (min-width: 300px) and (max-width: 450px) {}
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+@media (min-width: 1024px) and (max-width: 1345px) {}
