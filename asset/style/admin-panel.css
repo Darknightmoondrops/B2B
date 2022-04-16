@@ -1151,7 +1151,64 @@
     display: none;
 }
 
+
+/********** hesabdari ***************/
+
+.accounting-page-tablet {
+    display: block;
+}
+
+.tl-t-ac {
+    font-size: 25px;
+    width: 90%;
+    display: block;
+    color: #F26A4F;
+    margin: auto;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.taraz-card {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tc {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.tc-text-one {
+    direction: rtl;
+    color: #686868;
+    text-align: right;
+}
+
+.tc-text-two {
+    direction: rtl;
+    text-align: center;
+    color: #686868;
+}
+
 @media screen and (max-width: 768px) {
+    .tc {
+        font-size: 12px;
+    }
+    .tl-t-ac {
+        font-size: 20px;
+    }
     .all-forosh-tablet {
         display: block;
     }
@@ -1313,6 +1370,9 @@
     .search-profile {
         margin-left: 14%;
     }
+    .accounting-page-pc {
+        display: none;
+    }
 }
 
 @media (min-width: 300px) and (max-width: 450px) {
@@ -1326,6 +1386,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .accounting-page-pc {
+        display: none;
+    }
     .all-forosh-tablet {
         display: block;
     }
