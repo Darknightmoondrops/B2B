@@ -13,6 +13,7 @@ body {
 }
 
 .panel {
+    margin-bottom: 25% !important;
     display: inline-block;
     top: 0;
     right: 0;
@@ -22,49 +23,53 @@ body {
 
 .panels-icon {
     background-image: url(../icons/icon-41.png);
-    width: 40px;
-    height: 40px;
+    width: 52px;
+    height: 32px;
+    background-repeat: round;
     display: block;
     margin: auto;
-    margin-left: 45px;
+    margin-left: 6%;
 }
 
 .edit-prof-icon {
     background-image: url(../icons/icon-42.png);
-    width: 60px;
-    height: 60px;
+    width: 61px;
+    background-repeat: round;
+    height: 54px;
     display: block;
-    margin: 25px 15px;
+    margin: 25px 8px;
 }
 
 .order-history-icon {
     background-image: url(../icons/icon-52.png);
-    width: 60px;
-    height: 60px;
+    width: 61px;
+    background-repeat: round;
+    height: 54px;
     display: block;
-    margin: 25px 15px;
+    margin: 25px 8px;
 }
 
 .services-received-icon {
     background-image: url(../icons/icon-53.png);
-    width: 60px;
-    height: 60px;
+    width: 61px;
+    background-repeat: round;
+    height: 54px;
     display: block;
-    margin: 25px 15px;
+    margin: 25px 8px;
 }
 
 .discount-icon {
     background-image: url(../icons/icon-54.png);
-    width: 60px;
-    height: 60px;
+    width: 61px;
+    background-repeat: round;
+    height: 54px;
     display: block;
-    margin: 25px 15px;
-    background-repeat: no-repeat;
+    margin: 25px 8px;
 }
 
 .user-discount-btn {
     width: 100px;
-    height: 40px;
+    height: 30px;
     color: white;
     background-color: #F26A4F;
     border: none;
@@ -80,34 +85,38 @@ body {
 
 .score-icon {
     background-image: url(../icons/icon-55.png);
-    width: 60px;
-    height: 60px;
+    width: 61px;
+    background-repeat: round;
+    height: 54px;
     display: block;
-    margin: 25px 15px;
+    margin: 25px 8px;
 }
 
 .comments-icon {
     background-image: url(../icons/icon-46.png);
-    width: 60px;
-    height: 60px;
+    width: 61px;
+    background-repeat: round;
+    height: 54px;
     display: block;
-    margin: 25px 15px;
+    margin: 25px 8px;
 }
 
 .comments-icon {
     background-image: url(../icons/icon-47.png);
-    width: 60px;
-    height: 60px;
+    width: 61px;
+    background-repeat: round;
+    height: 54px;
     display: block;
-    margin: 25px 15px;
+    margin: 25px 8px;
 }
 
 .exit-icon {
     background-image: url(../icons/icon-49.png);
-    width: 60px;
-    height: 60px;
+    width: 61px;
+    background-repeat: round;
+    height: 54px;
     display: block;
-    margin: 15px 15px;
+    margin: 25px 8px;
 }
 
 .panels {
@@ -123,6 +132,7 @@ body {
 .panels p {
     width: 300px;
     height: 60px;
+    font-size: 30px;
     display: block;
     margin: auto;
 }
@@ -140,11 +150,14 @@ body {
 }
 
 .panels-details p {
-    font-size: 28px;
+    width: 60%;
+    font-size: 17px;
+    margin-right: 0px;
+    margin-top: 13%;
     text-align: right;
-    width: 366px;
+    /* width: 366px;
     height: 60px;
-    margin-top: 40px;
+    margin-top: 40px; */
 }
 
 .main-content-userpanel {
@@ -191,10 +204,11 @@ body {
 }
 
 .user-panel-title {
-    margin-right: 9%;
     border-right: 5px solid #F26A4F;
     padding-right: 10px;
     font-size: 24px;
+    color: #585858;
+
 }
 
 .order-history {
@@ -206,7 +220,7 @@ body {
 
 .user-history-box {
     display: flex;
-    margin: 20px 10% 20px 20px;
+    margin: 15px 0% 15px 15px;
 }
 
 .user-history-mainbox {
@@ -224,8 +238,16 @@ body {
     border-radius: 50%;
     margin: auto 15px;
 }
+.user-history-img2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: auto 15px;
+}
 
-.user-history-text {}
+.user-history-text {
+        color: #585858;
+}
 
 .user-history-lefticon {
     width: 50px;
@@ -234,7 +256,15 @@ body {
     margin-top: 15px;
     margin-right: 20px;
 }
-
+.user-history-lefticon3 {
+    width: 20px;
+    height: 32px;
+    background-image: url(../icons/icon-51.png);
+    margin-top: 15px;
+    background-repeat: round;
+    margin-right: 1px;
+    display: none;
+}
 .user-history-box-left {
     direction: ltr;
     float: left;
@@ -264,12 +294,11 @@ body {
 }
 
 .user-discount-img {
-    width: 133px;
-    height: 145px;
+    width: 40%;
+    height: 135px;
     margin-left: 20px;
     border-radius: 10px;
-    background-image: url(../icons/icon-66.png);
-    background-repeat: no-repeat;
+    background-repeat: round;
     padding: 2px;
 }
 
@@ -282,6 +311,8 @@ body {
 
 .user-score-text {
     margin: auto 10px;
+    color: #585858;
+
 }
 
 .rate {
@@ -677,26 +708,31 @@ body {
 }
 
 .yes-btn {
-    width: 570px;
-    height: 100px;
+    width: 45%;
+    height: 77px;
     border: 1px;
+    margin: auto;
     border-radius: 20px;
     background-color: #2ACB34;
     display: block;
     color: #fff;
-    font-size: 50px;
+    font-family: 'sansfont';
+    font-size: 40px;
     cursor: pointer;
+
 }
 
 .no-btn {
-    width: 570px;
-    height: 100px;
+    width: 45%;
+    height: 77px;
     border: 1px;
     border-radius: 20px;
     background-color: #F26A4F;
     display: block;
     color: #fff;
-    font-size: 50px;
+    font-size: 40px;
+    font-family: 'sansfont';
+    margin: auto;
     cursor: pointer;
 }
 
@@ -731,16 +767,18 @@ body {
 
 .qu-two-on {
     background-color: white;
-    width: 1600px;
+    width: 75%;
     position: fixed;
-    height: 800px;
-    right: 18%;
+    height: 427px;
+    right: 16%;
+    margin: auto;
     top: 15%;
     z-index: 15;
     border-radius: 30px;
+    display: none;
 }
 
-.qu-two-off {
+/* .qu-two-off {
     background-color: white;
     width: 1600px;
     position: fixed;
@@ -749,7 +787,7 @@ body {
     top: 15%;
     z-index: 15;
     border-radius: 30px;
-}
+} */
 
 .question-box p {
     font-size: 50px;
@@ -758,7 +796,7 @@ body {
 }
 
 .question-box-two p {
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     display: block;
 }
@@ -773,12 +811,13 @@ body {
 }
 
 .close-icon-big {
-    width: 250px;
-    height: 250px;
+    width: 130px;
+    height: 138px;
     display: block;
+    background-repeat: round;
     margin: auto;
     background-image: url(../icons/icon-59.png);
-    margin-top: 3%;
+    margin-top: 1%;
 }
 
 .close-icon {
@@ -797,13 +836,302 @@ body {
 }
 
 .border {
-    border-right: 13px solid #F26A4F;
+    border-right: 6px solid #F26A4F;
+}
+/* -----------responsiv panel */
+
+.panels-two{
+    display: none;
+}
+.user-history-box-right2{
+    display: flex;
+    width: 90%;
+
+}
+.user-history-box-right-div2{
+    display: flex;
+}
+.user-discount-img3 {
+    width: 120px;
+    height: 85%;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-image: url(../icons/icon-66.png);
+    background-repeat: round;
+    padding: 2px;
+}
+.user-discount-text{
+    color: #585858;
+}
+.user-history-lefticon2 {
+    width: 20px;
+    height: 32px;
+    background-image: url(../icons/icon-51.png);
+    margin-top: 15px;
+    background-repeat: round;
+    margin-right: 1px;
+}
+.user-history-box-right4{
+    display: flex;
+}
+.user-history-box-left3 {
+    direction: ltr;
+    width: 40%;
+    float: left;
+    display: flex;
+    margin: 0 auto 0 15%;
+}
+.rate2 {
+    margin: auto 10px;
+    color: #ffd700;
+
+}
+.user-history-box-left4{
+    direction: ltr;
+    width: 10%;
+    float: left;
+    display: flex;
+    margin: 0 auto 0 15%;
+}
+.user-comments-text{
+    direction: rtl !important;
+    text-align: justify;
+}
+.user-comments-text-p{
+    width: 100%;
+    margin: 0px;
+    direction: rtl;
+}
+@media screen and (min-width:300px) and (max-width: 720px) {
+.user-history-lefticon3{
+    display: block;
+}
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (min-width:720px) and (max-width: 1012px) {
 
-@media (min-width: 300px) and (max-width: 450px) {}
 
-@media (min-width: 768px) and (max-width: 1024px) {}
+}
 
-@media (min-width: 1024px) and (max-width: 1345px) {}
+@media screen and (max-width: 1012px) {
+    .user-history-box-left4{
+        display: none;
+    }
+    .user-comments-text{
+        direction: rtl !important;
+        text-align: justify;
+        font-size: 8px;
+    }
+    .user-comments-img {
+        width: 60px;
+        height: 60px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+    .panels-details p {
+        display: none;
+    }
+    .panels{
+        display: none;
+    }
+    .panels-two{
+        font-weight: bold;
+        width: 100% !important;
+        display: block;
+        text-align: center;
+        font-size: larger;
+        margin-top: -7%;
+        color: #f26a4f;        
+    }
+    .user-score-text{
+        font-size: 10px;
+        color: #585858;
+    }
+    .user-panel-btn {
+        width: 40%;
+        background-color: #F26A4F;
+        color: white;
+        font-family: "sansfont";
+        border-radius: 25px;
+        border: none;
+        height: 55px;
+        margin-top: 4%;
+        margin-right: 9%;
+        margin-bottom: 12%;
+
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .user-panel-input {
+        width: 80%;
+        font-size: 16px;
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+        border: 1px solid #707070;
+        padding-right: 20px;
+        font-family: "sansfont";
+        margin-top: 2%;
+        }
+    .user-history-img {
+        width: 26%;
+        height: 38%;
+        border-radius: 50%;
+        margin: 0px 1px;
+        margin-top: 5px;
+    }
+    .user-history-img2 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 0px 1px;
+        margin-top: 5px;
+    }
+    .user-history-box-right {
+        display: block;
+        width: 65%;
+
+    }
+    .user-history-box-right2{
+        display: flex;
+    }
+
+    .u-h-b{
+        width: 20%;
+    }
+    .user-history-lefticon {
+        width: 20px;
+        height: 32px;
+        background-image: url(../icons/icon-51.png);
+        margin-top: 15px;
+        background-repeat: round;
+        /* margin-right: 1px; */
+    }
+    .user-history-box-left {
+        direction: ltr;
+        /* width: 34%; */
+        float: left;
+        display: flex;
+        margin: 0 auto 0 0%;
+    }
+    .user-history-text {
+        color: #585858;
+        font-size: 12px;
+    }
+    .panels-details {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 90px;
+        cursor: pointer;
+    }
+    .close-icon-big {
+        width: 100px;
+        height: 100px;
+        display: block;
+        background-repeat: round;
+        margin: auto;
+        background-image: url(../icons/icon-59.png);
+        margin-top: 1%;
+    }
+    .close-icon {
+        width: 30px;
+        height: 30px;
+        display: block;
+        background-image: url(../icons/icon-29.png);
+        background-repeat: round;
+        margin-top: 45px;
+        margin-right: 45px;
+        cursor: pointer;
+    }
+    .question-box-two p {
+        font-size: 18px;
+        text-align: center;
+        display: block;
+    }
+    .yes-btn {
+        width: 45%;
+        height: 46px;
+        border: 1px;
+        margin: auto;
+        border-radius: 20px;
+        background-color: #2ACB34;
+        display: block;
+        color: #fff;
+        font-family: 'sansfont';
+        font-size: 26px;
+        cursor: pointer;
+    }
+    .no-btn {
+        width: 45%;
+        height: 46px;
+        border: 1px;
+        border-radius: 20px;
+        background-color: #F26A4F;
+        display: block;
+        color: #fff;
+        font-size: 26px;
+        font-family: 'sansfont';
+        margin: auto;
+        cursor: pointer;
+    }
+    .user-discount-text{
+        font-size: 9px;
+        color: #585858;
+    }
+    .user-discount-btn {
+        width: 45px;
+        height: 28px;
+        color: white;
+        background-color: #F26A4F;
+        border: none;
+        border-radius: 9px 0 9px 0;
+        text-align: center;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .user-history-box-right-div2{
+        display: block;
+        width: 60%;
+        margin: auto;
+        margin-right: 21px;
+    }
+    .user-discount-img3 {
+        width: 50px;
+        height: 60px;    
+        margin-left: 20px;
+        border-radius: 10px;
+        background-image: url(../icons/icon-66.png);
+        background-repeat: round;
+        padding: 2px;
+    }
+    .user-history-lefticon2 {
+        width: 20px;
+        height: 32px;
+        background-image: url(../icons/icon-51.png);
+        margin-top: 15px;
+        background-repeat: round;
+        margin-right: 1px;
+    }
+    .user-discount-img {
+        width: 60px;
+        height: 60px;
+        /* margin-left: 20px; */
+        border-radius: 10px;
+        background-repeat: round;
+        padding: 2px;
+    }
+    .user-history-box-left3 {
+        direction: ltr;
+        width: 40%;
+        float: left;
+        display: flex;
+        margin: 0 auto 0 5%;
+    }
+    .rate2 {
+        margin: auto 0px;
+        font-size: 8px;
+        color: #ffd700;
+
+    }
+}
