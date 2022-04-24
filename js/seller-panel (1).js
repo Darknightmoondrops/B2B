@@ -17,19 +17,19 @@ function trash(n) {
 
 // =================================== close ======================
 function exit(n) {
-    console.log(1);
-    var boxOne1 = document.getElementsByClassName("question-box-two");
-    var shadowBox1 = document.getElementsByClassName("background");
-    if (n == 1) {
-        boxOne1[0].classList.remove("qu-two-off");
-        boxOne1[0].classList.add("qu-two-on");
-        shadowBox1[0].style.display = "block";
-    }
-    if (n == 2) {
-        boxOne1[0].classList.remove("qu-two-on");
-        boxOne1[0].classList.add("qu-two-off");
-        shadowBox1[0].style.display = "none";
-    }
+  console.log(1);
+  var boxOne1 = document.getElementById("qu-two-on");
+  // var shadowBox1 = document.getElementsByClassName("background");
+  if (n == 1) {
+      // boxOne1[0].classList.remove("qu-two-off");
+      // boxOne1[0].classList.add("qu-two-on");
+      boxOne1.style.display = "block";
+  }
+  if (n == 2) {
+      // boxOne1[0].classList.remove("qu-two-on");
+      // boxOne1[0].classList.add("qu-two-off");
+      boxOne1.style.display = "none";
+  }
 }
 
 //============================ panel ==============================
