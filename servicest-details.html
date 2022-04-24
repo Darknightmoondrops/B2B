@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./asset/style/contact_style.css" />
     <link rel="stylesheet" href="./js/splide-3.6.12/dist/css/splide.min.css">
     <link rel="stylesheet" href="./asset/plugins/fontawesome/css/all.min.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--/styles-->
     <title>wellcome to C2|Home</title>
 </head>
@@ -308,6 +308,32 @@
 
     <!--header-->
     <!-- content -->
+    <div id="chat-circle" class="btn btn-raised">
+        <div id="chat-overlay"></div>
+        <div class="chat-icon"></div>
+
+    </div>
+
+    <div class="chat-box">
+        <div class="chat-box-header">
+            ChatBot
+            <span class="chat-box-toggle"><div class="close-btn-icon"></div></span>
+        </div>
+        <div class="chat-box-body">
+            <div class="chat-box-overlay">
+            </div>
+            <div class="chat-logs">
+
+            </div>
+            <!--chat-log -->
+        </div>
+        <div class="chat-input">
+            <form>
+                <input type="text" id="chat-input" placeholder="Send a message..." />
+                <button type="submit" class="chat-submit" id="chat-submit"></button>
+            </form>
+        </div>
+    </div>
 
     <!--   slider   -->
     <div style="width: 100%;background-color: #f7f7f7;">

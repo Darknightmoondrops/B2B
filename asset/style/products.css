@@ -674,11 +674,11 @@
     /******************************** page number *****************************/
     
     .products-page {
-        display: none;
+        display: block;
     }
     
     .products-page1 {
-        display: none;
+        display: block;
     }
     
     .hori-list {

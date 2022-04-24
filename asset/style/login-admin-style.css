@@ -28,11 +28,12 @@
 .login-inp {
     width: 80%;
     height: 50px;
-    border-radius: 10px 10px;
+    border-radius: 20px;
     padding-right: 20px;
     display: block;
     margin: auto;
     margin-top: 3%;
+    border: 1px solid #696969;
 }
 
 .login-check-inp {
@@ -53,9 +54,10 @@
     margin: auto;
     margin-top: 10px;
     font-size: 30px;
-    width: 80%;
+    width: 70%;
     padding: 1%;
-    border-radius: 10px 10px;
+    border-radius: 20px;
+    border: 1px;
     background-color: #F26A4F;
     color: white;
 }
@@ -78,6 +80,8 @@
     display: block;
     margin: auto;
     background-image: url(../img/main-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .bot-login {
@@ -111,3 +115,31 @@
 .login-border-no {
     padding: 3%;
 }
+
+@media screen and (max-width: 768px) {}
+
+@media (min-width: 300px) and (max-width: 450px) {
+    .login-main-icon {
+        width: 135px;
+        height: 92px;
+    }
+    .login-title {
+        font-size: 15px;
+    }
+    .login-btn {
+        font-size: 14px;
+    }
+    .login-a {
+        font-size: 10px;
+    }
+    .login-inp {
+        height: 28px;
+    }
+    .login-box {
+        margin-top: 56%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+@media (min-width: 1024px) and (max-width: 1345px) {}
