@@ -56,15 +56,30 @@ function detailsopenTabs(el) {
 
 // ==========================COUNTER=====================
 var count = 1
+var limitLengh = 5 
+var minLengh = 0
+console.log("count");
+
+var firstPrice = document.getElementById('price-product').innerHTML
+
 
 function plus() {
+    if(count < limitLengh){
     document.getElementById('counter').innerHTML = ++count
+    }
+    else{
+        alert('jjjjjjj')
+    }
 }
 
 function minus() {
+    if(count > minLengh){
     document.getElementById('counter').innerHTML = --count
+    }
+    else{
+        alert('mmmmm')
+    }
 }
-
 
 // =================================== send ======================
 function message(type, msg) {
