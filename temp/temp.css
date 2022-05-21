@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.all-sliders {
+    height: auto !important;
+}
+
 .image {
     position: relative;
     width: 470px;

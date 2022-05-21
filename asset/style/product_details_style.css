@@ -52,7 +52,9 @@ body {
     display: flex;
 }
 
-.forward-linkss-a-b {}
+.forward-linkss-a-b {
+    margin: 0;
+}
 
 .back-linkss {
     margin: 25px;

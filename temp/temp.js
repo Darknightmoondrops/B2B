@@ -1,7 +1,6 @@
 var splide = new Splide('.splide', {
-    type: 'loop',
-    perPage: 3,
-    perMove: 1,
+    direction: 'ttb',
+    height: '10rem',
 });
 
 splide.mount();

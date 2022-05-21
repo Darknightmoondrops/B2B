@@ -1,3 +1,9 @@
+//=========================== slider main product page ==================
+new Splide('#slider1', {
+    direction: 'ttb',
+    height: '10rem',
+}).mount();
+
 //================================================  colors ==============================================
 function colorSelector(n) {
     var i;
